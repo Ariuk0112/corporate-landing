@@ -1,8 +1,8 @@
 //custom
 import { RoomsCard, BannerSlider } from '../components/sections/home';
-import { Container, Footer, Header } from '../components/layouts';
+import { Container, RootLayout } from '../components/layouts';
 import Head from 'next/head';
-const room = [
+const MOCK_ROOMS = [
   {
     type: 'KING room ',
     desc: 'Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..',
@@ -74,21 +74,39 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <div className="w-full  bg-header h-[400px]">
-        <BannerSlider />
-      </div>
-      <div className="bg-custom-ee w-full flex flex-col justify-center items-center">
-        <div className="w-full">
-          <div className="mt-[90px] w-full">
-            <RoomsCard />
+      <RootLayout title="sda" description="sda">
+        <Container>
+          <div className="w-full">
+            <div className="w-full bg-header h-[400px]">
+              <BannerSlider />
+            </div>
+            <div className="w-full bg-header h-[400px]">
+              <BannerSlider />
+            </div>{' '}
+            <div className="w-full bg-header h-[400px]">
+              <BannerSlider />
+            </div>{' '}
+            <div className="w-full bg-header h-[400px]">
+              <BannerSlider />
+            </div>{' '}
+            <div className="w-full bg-header h-[400px]">
+              <BannerSlider />
+            </div>{' '}
+            <div className="w-full bg-header h-[400px]">
+              <BannerSlider />
+            </div>
+            <div className="bg-custom-ee w-full flex flex-col justify-center items-center">
+              <div className="w-full">
+                <div className="m-12 w-full grid grid-cols-2 gap-5">
+                  {MOCK_ROOMS.map((room, index) => (
+                    <RoomsCard key={index} room={room} />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="px-[19px] w-full">
-          <div className=" gradient-separator-border border-b-[6px] mb-[113px]"></div>
-        </div>
-      </div>
+        </Container>
+      </RootLayout>
     </div>
   );
 }
