@@ -1,4 +1,4 @@
-import { Header } from '.';
+import { Header, Footer } from '.';
 import { Helmet } from '../common/Helmet';
 
 const RootLayout = ({ children, title, description }) => {
@@ -8,7 +8,7 @@ const RootLayout = ({ children, title, description }) => {
       <Header />
       {children}
       {/* todo: footer */}
-      {/* <div className="w-full"><Footer /></div> */}
+      <div className="w-full"><Footer /></div>
     </>
   );
 };

@@ -1,7 +1,8 @@
 //custom
-import { RoomsCard, BannerSlider } from '../components/sections/home';
+import { RoomsCard, BannerSlider, News, Map } from '../components/sections/home';
 import { Container, RootLayout } from '../components/layouts';
 import Head from 'next/head';
+import About from '@/components/sections/home/About';
 const MOCK_ROOMS = [
   {
     type: 'KING room ',
@@ -52,6 +53,7 @@ const MOCK_ROOMS = [
     price: '1.500.00 ₮',
   },
 ];
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -89,6 +91,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <News title="NEWS & COMREHENSIVE" desc='Designed as privileged almost private place where you will feel right at home' />
+            <About />
+            <Map />
           </div>
         </Container>
       </RootLayout>
