@@ -61,7 +61,7 @@ const Header = ({ textColor, bgColor }) => {
       }`}
       s
     >
-      <div className={`my-auto mx-5 md:flex-[0.5] flex-initial justify-center items-center`}>
+      <div className={`my-auto mx-5 w-[100px]`}>
         <Link href="/">
           <img src="/logo.png" alt="logo" className="w-12 md:w-[84px] cursor-pointer" />
         </Link>
@@ -104,28 +104,30 @@ const Header = ({ textColor, bgColor }) => {
           </li>
         ))}
       </ul>
-      <div className="flex relative">
-        {!toggleMenu && (
-          <MenuIcon fontSize={28} className=" md:hidden cursor-pointer" onClick={() => setToggleMenu(true)} />
-        )}
-        {toggleMenu && (
-          <MenuIcon fontSize={28} className=" md:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
-        )}
-        {toggleMenu && (
-          <ul
-            className="z-20 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
+      <div className="my-auto">
+        <div className="flex relative text-white">
+          {!toggleMenu && (
+            <MenuIcon fontSize={28} className="md:hidden cursor-pointer" onClick={() => setToggleMenu(true)} />
+          )}
+          {toggleMenu && (
+            <MenuIcon fontSize={28} className="md:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
+          )}
+          {toggleMenu && (
+            <ul
+              className="z-20 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
             flex flex-col justify-start items-end rounded-md bg-gray-100 opacity-95 animate-slide-in text-black"
-          >
-            <li className="text-xl w-full my-2">
-              <Close onClick={() => setToggleMenu(false)} />
-            </li>
-            {navigations.map((item, index) => (
-              <li key={`mobile-nav-${index}`} className="mx-4 cursor-pointer">
-                <Link href={`/${item.id}`}>{item.title}</Link>
+            >
+              <li className="text-xl w-full my-2">
+                <Close onClick={() => setToggleMenu(false)} />
               </li>
-            ))}
-          </ul>
-        )}
+              {navigations.map((item, index) => (
+                <li key={`mobile-nav-${index}`} className="mx-4 cursor-pointer">
+                  <Link href={`/${item.id}`}>{item.title}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </nav>
   );

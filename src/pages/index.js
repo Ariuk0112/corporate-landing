@@ -75,29 +75,14 @@ export default function Home() {
       </Head>
 
       <RootLayout title="sda" description="sda">
+        <div className="w-full">
+          <BannerSlider />
+        </div>
         <Container>
           <div className="w-full">
-            <div className="w-full bg-header h-[400px]">
-              <BannerSlider />
-            </div>
-            <div className="w-full bg-header h-[400px]">
-              <BannerSlider />
-            </div>{' '}
-            <div className="w-full bg-header h-[400px]">
-              <BannerSlider />
-            </div>{' '}
-            <div className="w-full bg-header h-[400px]">
-              <BannerSlider />
-            </div>{' '}
-            <div className="w-full bg-header h-[400px]">
-              <BannerSlider />
-            </div>{' '}
-            <div className="w-full bg-header h-[400px]">
-              <BannerSlider />
-            </div>
             <div className="bg-custom-ee w-full flex flex-col justify-center items-center">
               <div className="w-full">
-                <div className="m-12 w-full grid grid-cols-2 gap-5">
+                <div className=" w-full grid grid-cols-2 gap-5">
                   {MOCK_ROOMS.map((room, index) => (
                     <RoomsCard key={index} room={room} />
                   ))}
