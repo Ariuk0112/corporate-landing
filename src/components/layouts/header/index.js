@@ -67,7 +67,7 @@ const Header = ({ textColor, bgColor }) => {
         </Link>
       </div>
 
-      <ul className="mr-auto hidden md:flex list-none flex-row justify-between items-center flex-initial text-white">
+      <ul className="md:mr-auto hidden md:flex list-none flex-row justify-between items-center flex-initial text-white">
         {navigations.map((item, index) => (
           <li key={`navbar-${index}`} className="mx-4 cursor-pointer md:text-[20px]">
             {item.childNavigations ? (
@@ -104,7 +104,7 @@ const Header = ({ textColor, bgColor }) => {
           </li>
         ))}
       </ul>
-      <div className="my-auto">
+      <div className="my-auto ml-auto mr-5">
         <div className="flex relative text-white">
           {!toggleMenu && (
             <MenuIcon fontSize={28} className="md:hidden cursor-pointer" onClick={() => setToggleMenu(true)} />

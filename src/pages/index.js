@@ -3,6 +3,7 @@ import { RoomsCard, BannerSlider, News, Map } from '../components/sections/home'
 import { Container, RootLayout } from '../components/layouts';
 import Head from 'next/head';
 import About from '@/components/sections/home/About';
+import Sector from '@/components/sections/home/Sector';
 const MOCK_ROOMS = [
   {
     type: 'KING room ',
@@ -82,6 +83,10 @@ export default function Home() {
         </div>
         <Container>
           <div className="w-full">
+            <div className="w-full">
+              <Sector />
+            </div>
+
             <div className="bg-custom-ee w-full flex flex-col justify-center items-center">
               <div className="w-full">
                 <div className=" w-full grid grid-cols-2 gap-5">
@@ -91,7 +96,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <News title="NEWS & COMREHENSIVE" desc='Designed as privileged almost private place where you will feel right at home' />
+            <News
+              title="NEWS & COMREHENSIVE"
+              desc="Designed as privileged almost private place where you will feel right at home"
+            />
             <About />
             <Map />
           </div>
