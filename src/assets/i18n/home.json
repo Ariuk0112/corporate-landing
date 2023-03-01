@@ -1,0 +1,26 @@
+{
+  "home": {
+    "greetings": [
+      {
+        "locale": "mn",
+        "text": "Сайн байна уу?",
+        "title": "Та асуултаа сонгоод заавар аваарай."
+      },
+      {
+        "locale": "en",
+        "text": "Hello?",
+        "title": "You select a question and get instructions."
+      }
+    ],
+    "buttons": [
+      {
+        "locale": "mn",
+        "titles": ["Өргөдөл, гомдол", "Цагдаа", "Дуудлага", "Байршил"]
+      },
+      {
+        "locale": "en",
+        "titles": ["Applications and complaints", "Police", "Call", "Location"]
+      }
+    ]
+  }
+}

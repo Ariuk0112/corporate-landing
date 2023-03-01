@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": [
+      {
+        "locale": "mn",
+        "text": ""
+      },
+      {
+        "locale": "en",
+        "text": "METROPOLITAN POLICEGOVERNMENT PLACE"
+      }
+    ],
+    "input": [
+      {
+        "locale": "mn",
+        "text": "Хайх..."
+      },
+      {
+        "locale": "en",
+        "text": "Search..."
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "locale": "mn",
+      "items": [
+        {
+          "title": "Нүүр",
+          "link": "/"
+        },
+        {
+          "title": "Өрөө",
+          "link": "/"
+        },
+        {
+          "title": "Үйлчилгээ",
+          "link": "/"
+        },
+        {
+          "title": "Холбоо барих",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "items": [
+        {
+          "title": "Home",
+          "link": "/"
+        },
+        {
+          "title": "Room",
+          "link": "/"
+        },
+        {
+          "title": "Service",
+          "link": "/"
+        },
+        {
+          "title": "Contact",
+          "link": "/"
+        }
+      ]
+    }
+  ]
+}
