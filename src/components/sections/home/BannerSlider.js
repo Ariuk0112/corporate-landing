@@ -4,7 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { DotButton, PrevButton, NextButton } from '../../common/CarouselButtons';
+import { PrevButton, NextButton } from '../../common/CarouselButtons';
 
 const BannerSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({});
