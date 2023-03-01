@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import { EyeIcon } from '@heroicons/react/20/solid';
+import { EyeIcon, calendar } from '@heroicons/react/20/solid';
 
 const RoomsCard = ({ room }) => {
   return (
