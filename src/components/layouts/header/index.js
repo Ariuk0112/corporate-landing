@@ -5,38 +5,7 @@ import { Menu as MenuIcon, Close } from '../../../assets/svg';
 import { Menu, Transition } from '@headlessui/react';
 import headerData from '../../../assets/i18n/header.json';
 
-const navigations = [
-  { id: 'about', title: 'Бидний тухай' },
-  {
-    id: 'services',
-    title: 'Үйлчилгээ',
-    childNavigations: [
-      {
-        id: 'category',
-        title: 'Автомашин түрээс',
-      },
-      {
-        id: 'side-service',
-        title: 'Замын хажуугийн үйлчилгээ',
-      },
-      {
-        id: 'logistic',
-        title: 'Логистик, тээврийн үйлчилгээ',
-      },
-      {
-        id: 'wash',
-        title: 'Автомашин угаалга',
-      },
-      {
-        id: 'parts',
-        title: 'Сэлбэг худалдаа',
-      },
-    ],
-  },
-  { id: 'projects', title: 'Хийгдсэн төслүүд' },
-  { id: 'contact', title: 'Холбоо барих' },
-];
-
+const navigations = headerData.navigation.find((data) => data.locale === 'en').items;
 const Header = ({ textColor, bgColor }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -52,7 +21,6 @@ const Header = ({ textColor, bgColor }) => {
       window.removeEventListener('scroll', listener);
     };
   }, []);
-  const data = headerData.navigation.find((data) => data.locale === 'en').items;
 
   return (
     <nav
@@ -104,31 +72,6 @@ const Header = ({ textColor, bgColor }) => {
           </li>
         ))}
       </ul>
-      <div className="my-auto ml-auto mr-5">
-        <div className="flex relative text-white">
-          {!toggleMenu && (
-            <MenuIcon fontSize={28} className="md:hidden cursor-pointer" onClick={() => setToggleMenu(true)} />
-          )}
-          {toggleMenu && (
-            <MenuIcon fontSize={28} className="md:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
-          )}
-          {toggleMenu && (
-            <ul
-              className="z-20 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
-            flex flex-col justify-start items-end rounded-md bg-gray-100 opacity-95 animate-slide-in text-black"
-            >
-              <li className="text-xl w-full my-2">
-                <Close onClick={() => setToggleMenu(false)} />
-              </li>
-              {navigations.map((item, index) => (
-                <li key={`mobile-nav-${index}`} className="mx-4 cursor-pointer">
-                  <Link href={`/${item.id}`}>{item.title}</Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </div>
     </nav>
   );
 };

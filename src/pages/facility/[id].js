@@ -3,19 +3,21 @@ import Facility from '@/components/sections/sector/Facility';
 import Room from '@/components/sections/sector/Room';
 import Image from 'next/image';
 
+import { useParams } from 'react-router-dom';
 import { Container, RootLayout } from '../../components/layouts';
-
-export async function getServerSideProps(context) {
-  const { id } = context.query;
-
-  return {
-    props: {
-      id,
-    },
-  };
-}
-
-const FacilityDetail = ({ id }) => {
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import Datas from '../../assets/i18n/home.json';
+const MOCK = Datas.sectors;
+const FacilityDetail = () => {
+  const router = useRouter();
+  const sector = router.query || router.params;
+  const [facility, setFacility] = useState(MOCK.find((data) => data.locale === 'en').items[sector.sector]);
+  useEffect(() => {
+    const afacility = facility.facilities[sector.id];
+    setFacility(afacility);
+  }, []);
+  // const facality = items.facilities[id];
   return (
     <>
       <RootLayout title="sda" description="sda">

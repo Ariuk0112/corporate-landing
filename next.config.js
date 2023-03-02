@@ -4,12 +4,12 @@ const nextConfig = {
   swcMinify: true,
   i18n: {
     localeDetection: false,
-    defaultLocale: 'mn',
+    defaultLocale: 'en',
     locales: ['mn', 'en'],
     domains: [
       {
         domain: 'http://localhost:3000/',
-        defaultLocale: 'mn',
+        defaultLocale: 'en',
       },
     ],
   },

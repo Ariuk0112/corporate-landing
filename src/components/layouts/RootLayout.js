@@ -8,7 +8,9 @@ const RootLayout = ({ children, title, description }) => {
       <Header />
       {children}
       {/* todo: footer */}
-      <div className="w-full"><Footer /></div>
+      <div className="w-full">
+        <Footer />
+      </div>
     </>
   );
 };
