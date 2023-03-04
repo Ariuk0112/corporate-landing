@@ -24,9 +24,8 @@ const Header = ({ textColor, bgColor }) => {
 
   return (
     <nav
-      className={`h-[100px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${
-        animateHeader && 'shadow-xl'
-      }`}
+      className={`h-[100px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${animateHeader && 'shadow-xl'
+        }`}
       s
     >
       <div className={`my-auto mx-5 w-[100px]`}>

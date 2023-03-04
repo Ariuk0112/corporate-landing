@@ -20,9 +20,8 @@ const Sector = () => {
         {MOCK_SECTOR.map((sector, index) => (
           <Link key={index} href={`/sector/${index}`}>
             <div
-              className={`hover:shadow-md hover:scale-105 transition-all ease-in h-[320px] md:h-[720px] bg-slate-200 text-white p-5 ${
-                index % 2 === 0 ? '-mt-16' : ''
-              }`}
+              className={`hover:shadow-md hover:scale-105 transition-all ease-in h-[320px] md:h-[720px] bg-slate-200 text-white p-5 ${index % 2 === 0 ? '-mt-16' : ''
+                }`}
               style={{
                 backgroundImage: `url('${sector.img}')`,
                 backgroundPosition: 'center',
@@ -41,11 +40,9 @@ const Sector = () => {
           id="player"
           className=""
           type="text/html"
-          autoplay="1"
           width="100%"
           height="100%"
           src={`http://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1`}
-          frameborder="0"
         ></iframe>
       </div>
     </div>
