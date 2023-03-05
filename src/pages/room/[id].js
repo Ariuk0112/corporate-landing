@@ -57,7 +57,7 @@ export default function RoomDetail() {
                         </div>
                       ))}
                     </div>
-                    <div className="text-[#B58E3E] text-[25px] uppercase">{room.title}</div>
+                    <div className="text-[#B58E3E] text-[25px] uppercase truncate">{room.title}</div>
                     <div className="text-gray-600 text-sm">{room.type}</div>
 
                     <div className="mt-5">{room.description}</div>

@@ -10,7 +10,7 @@ const RoomsCard = ({ room }) => {
           <div className="relative">
             <img src={`${room.images[0]}`} alt={room.type} className="rounded-t-20 w-full object-fit h-[268px]" />
             <article className="text-[#283F63] px-4 pt-[10px] pb-2">
-              <h5 className="font-semibold">{room.type}</h5>
+              <h5 className="font-semibold truncate">{room.type}</h5>
               <p>{room.desc}</p>
             </article>
           </div>

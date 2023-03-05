@@ -18,7 +18,6 @@ export async function getServerSideProps(context) {
 const SectorDetail = ({ id }) => {
   const localItems = Datas.sectors.find((data) => data.locale === 'en');
   const MOCK_SECTOR = localItems.items[id];
-  console.log(MOCK_SECTOR.facilities);
   return (
     <>
       <RootLayout title="sda" description="sda">
