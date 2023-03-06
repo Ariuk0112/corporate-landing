@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 //custom
 import Sector_data from '../../../assets/i18n/home.json';
-const VIDEO_ID = 'lhl2BgFhrI0';
 const MOCK_SECTOR = Sector_data.sectors.find((data) => data.locale === 'en').items;
 const Sector = () => {
   return (
@@ -35,16 +34,6 @@ const Sector = () => {
             </div>
           </Link>
         ))}
-      </div>
-      <div className="w-full h-[500px] bg-[#676767] my-10">
-        <iframe
-          id="player"
-          className=""
-          type="text/html"
-          width="100%"
-          height="100%"
-          src={`http://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1`}
-        ></iframe>
       </div>
     </div>
   );

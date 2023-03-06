@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -25,7 +24,6 @@ const responsive = {
 };
 
 const Room = ({ rooms, sector }) => {
-
   return (
     <div className="w-full">
       <div className="flex items-center justify-between py-10 font-[Constantia]">
@@ -40,7 +38,7 @@ const Room = ({ rooms, sector }) => {
         <Carousel responsive={responsive} className="h-full">
           {rooms.map((room, index) => (
             <div className="h-full" key={`zurag-${index}`}>
-              <div className="w-full pr-5 ">
+              <div className="w-full ">
                 <div className="w-full md:min-w-[400px] h-[250px]">
                   <img src={room.images[0].url} alt="" className="w-full h-full object-cover " />
                 </div>
@@ -57,11 +55,11 @@ const Room = ({ rooms, sector }) => {
                       }}
                       className="h-[35px] px-4 py-1 bg-[#0D2944] text-gray-100 text-center uppercase"
                     >
-                      Book now
+                      Details
                     </Link>
                     <div className="text-gray-600 truncate">
                       <span className="font-semibold font-[roboto] text-gray-900">{room.price}/</span>
-                      per night <br /> 03 зочин {room.size}
+                      per night <br /> {room.size}
                     </div>
                   </div>
                 </div>

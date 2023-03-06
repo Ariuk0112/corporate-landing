@@ -1,5 +1,5 @@
 //custom
-import { RoomsCard, BannerSlider, News, Map } from '../components/sections/home';
+import { RoomsCard, BannerSlider, News, Map, Video } from '../components/sections/home';
 import { Container, RootLayout } from '../components/layouts';
 import Head from 'next/head';
 import About from '@/components/sections/home/About';
@@ -16,6 +16,7 @@ export default function Home() {
           <div className="w-full">
             <div className="w-full" id="Room">
               <Sector />
+              <Video />
             </div>
 
             <div id="Service" className="w-full">

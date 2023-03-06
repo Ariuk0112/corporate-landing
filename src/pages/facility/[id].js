@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Container, RootLayout } from '../../components/layouts';
+import { Video } from '@/components/sections/home';
 import StaticData from '../../assets/i18n/home.json';
 
 const LOCALIZED_SECTORS_DATA = StaticData.sectors;
@@ -18,38 +19,41 @@ export async function getServerSideProps(context) {
   const currentLocaleData = LOCALIZED_SECTORS_DATA.find((localizedSectors) => localizedSectors.locale === locale);
   const currentSector = currentLocaleData?.items[sector];
   const currentFacility = currentSector?.facilities[id];
-
   return {
     props: {
       id,
       facility: currentFacility,
+      sector: currentSector,
     },
   };
 }
 
-const FacilityDetail = ({ facility }) => {
-  // console.log(facility)
-
+const FacilityDetail = ({ facility, sector }) => {
   return (
-    <RootLayout title="sda" description="sda">
+    <RootLayout title="sda" description="sda" logo={sector.logo}>
       {facility && (
-        <div className="w-full relative">
-          <div className="grid grid-cols-3 overflow-hidden">
-            {facility.image.map((img, index) => (
-              <div key={index} className="w-full h-[650px] md:h-[950px]">
-                <img src={img.url} alt="sv" className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
+        <div>
+          <div className="w-full relative">
+            <div className="grid grid-cols-3 overflow-hidden">
+              {facility.image.map((img, index) => (
+                <div key={index} className="w-full h-[650px] md:h-[950px]">
+                  <img src={img.url} alt="sv" className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
 
-          <div className="absolute bottom-0 h-[268px] w-full bg-[#B58E3E80] ">
-            <div className="flex flex-col items-center justify-center gap-5 text-center">
-              <h1 className="uppercase text-white text-4xl font-medium">
-                Concert Hall
-                {facility.title}
-              </h1>
+            <div className="absolute bottom-0 h-[268px] w-full bg-[#B58E3E80] ">
+              <div className="flex flex-col items-center justify-center gap-5 text-center">
+                <h1 className="uppercase text-white text-4xl font-medium">{facility.title}</h1>
+                <p className="mx-auto text-white text-3xl font-medium">{facility.description}</p>
+              </div>
             </div>
           </div>
+          <Container>
+            <div className="w-full">
+              <Video VIDEO_ID={facility.video_id} />
+            </div>
+          </Container>
         </div>
       )}
     </RootLayout>

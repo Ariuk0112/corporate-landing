@@ -56,11 +56,9 @@ const BannerSlider = () => {
                     <Link href="/">
                       <img src="/logo.png" alt="logo" className="w-[150px] md:w-[180px] h-[100px] cursor-pointer" />
                     </Link>
-                    <h1 className="uppercase text-white text-xl font-medium">
-                      THE CORPORATE HOTEL & CONVENTION CENTER
-                    </h1>
+                    <h1 className="uppercase text-white text-xl font-medium">THE CORPORATE HOTEL</h1>
                     <p className="uppercase text-white text-6xl font-bold">WELCOME TO THE CORPORATE</p>
-                    <span className="uppercase text-white text-lg">A PLACE TO EXPERIENCE AND ENJOY THE LIFE</span>
+                    <span className="uppercase text-white text-lg">Superior Service & Warm Hospitality</span>
                   </div>
                 </div>
               </div>

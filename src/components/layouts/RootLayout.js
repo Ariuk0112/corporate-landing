@@ -1,7 +1,8 @@
 import { Header, Footer } from '.';
 import { Helmet } from '../common/Helmet';
 
-const RootLayout = ({ children, title, description }) => {
+const RootLayout = ({ children, title, description, logo }) => {
+  console.log(logo);
   return (
     <>
       {/* <Helmet title={title} description={description} /> */}
@@ -9,7 +10,7 @@ const RootLayout = ({ children, title, description }) => {
       {children}
       {/* todo: footer */}
       <div className="w-full">
-        <Footer />
+        <Footer logo={logo} />
       </div>
     </>
   );

@@ -2,7 +2,8 @@
 import { Element } from 'react-scroll';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Datas from '../../assets/i18n/home.json';
+import StaticData from '../../assets/i18n/home.json';
+
 import { useRouter } from 'next/router';
 //custom
 import { Container, RootLayout } from '../../components/layouts';
@@ -25,14 +26,34 @@ const responsive = {
     items: 1,
   },
 };
+const LOCALIZED_SECTORS_DATA = StaticData.sectors;
 
-export default function RoomDetail() {
-  const router = useRouter();
-  const { sector, id } = router.query;
-  const room = Datas.sectors.find((data) => data.locale === 'en').items[sector].rooms[0][id];
+// Server taldaa doorh function ajilaad request shidsen urlaas id bolon locale-n utgiig awna
+// locale utga ni  "en" | "mn" bn.
+// yor n bol backend-s dataa duudaad ahij CRUD hiideggv zvger haruuldag page ntr hiih gej baigaa bol getServerSideProps ashiglasan n zvgeer bdg
+export async function getServerSideProps(context) {
+  const { id } = context.params;
+  const { sector } = context.query;
+  //  Default-r "en" bolgoson
+  const { locale = 'en' } = context;
 
+  // index bolon sector index deer tohirson utga zarlasan json deer bhgv bol aldaa zaana shvv
+  // badly hard written here :()
+  const currentLocaleData = LOCALIZED_SECTORS_DATA.find((localizedSectors) => localizedSectors.locale === locale);
+  const currentSector = currentLocaleData?.items[sector];
+  const currentRoom = currentSector.rooms[0][id];
+  return {
+    props: {
+      id,
+      room: currentRoom,
+      sector: currentSector,
+    },
+  };
+}
+
+export default function RoomDetail({ room, sector }) {
   return (
-    <RootLayout title="sda" description="sda">
+    <RootLayout title="sda" description="sda" logo={sector.logo}>
       <div className="">
         <Element name="detail" className="element">
           <div>

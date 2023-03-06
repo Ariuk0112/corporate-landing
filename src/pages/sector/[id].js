@@ -20,7 +20,7 @@ const SectorDetail = ({ id }) => {
   const MOCK_SECTOR = localItems.items[id];
   return (
     <>
-      <RootLayout title="sda" description="sda">
+      <RootLayout title="sda" description="sda" logo={MOCK_SECTOR.logo}>
         <div className="w-full h-[530px] relative overflow-hidden">
           <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" />
           <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">
@@ -32,7 +32,7 @@ const SectorDetail = ({ id }) => {
         <Container>
           <div className="w-full">
             <div className="w-full">
-              <Room rooms={MOCK_SECTOR.rooms[0]} sector={id} />
+              {MOCK_SECTOR.rooms === undefined ? '' : <Room rooms={MOCK_SECTOR.rooms[0]} sector={id} />}
             </div>
             <div className="w-full">
               <Facility facilities={MOCK_SECTOR.facilities} sector={id} />

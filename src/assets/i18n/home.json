@@ -6,8 +6,9 @@
         {
           "title": "The Corporate Hotel Ulaanbaatar",
           "desc": "Located in the heart of Ulaanbaatar City, The Corporate Hotel Ulaanbaatar has the ideal location for sightseeing with majority of the city tourist hotspots and night life within walking distance. We offer 56 guest rooms and suites with a modern design coupled with all the necessary accommodations to meet our guests’ expectation and satisfaction.",
-          "img": "/2.png",
-          "background_image": "/home-bg-2.jpg",
+          "img": "/2.jpg",
+          "background_image": "/3M9A5243.JPG",
+          "logo": "/logo/tuv.png",
           "rooms": [
             [
               {
@@ -219,6 +220,7 @@
           "facilities": [
             {
               "title": "CONFERENCE HALL & MEETING ROOM",
+              "video_id": "wnXgzH2JJ9g",
               "description": "Located on the 3rd floor, we have the perfect venue for all types of conferences and meetings coupled with our expertise to ensure your event is hosted seamlessly.\nOUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT\n• MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \n 976-88118569 \n976-11334411",
               "image": [
                 { "url": "/service/concert1.jpg" },
@@ -267,8 +269,9 @@
         {
           "title": "THE CORPORATE HOTEL NUKHT RESORT",
           "desc": "The Corporate Hotel &amp; Nukht Resort with it amazing location in Nukht Valley, Bogd Reserve, will offer our guests an experience of serene natural location, outstanding accommodations, and exceptional services. The hotel resort is pioneering the use of the eco-green technology hallow Geothermal Energy in Mongolia. With a limited number of rooms and suites,  Nukht Resort is a perfect getaway for anyone seeking privacy and relaxation.",
-          "img": "/4.png",
+          "img": "/4.jpg",
           "background_image": "/home-bg-1.jpg",
+          "logo": "/logo/nukht.png",
           "rooms": [
             [
               {
@@ -447,7 +450,8 @@
                 { "url": "/service/concert1.jpg" },
                 { "url": "/service/concert1.jpg" },
                 { "url": "/service/concert1.jpg" }
-              ]
+              ],
+              "video_id": "5r_CtgsCVrs"
             },
 
             {
@@ -484,8 +488,9 @@
         {
           "title": "The Corporate Hotel & Convention Centre",
           "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-          "img": "/3.png",
-          "background_image": "/home-bg-1.jpg",
+          "img": "/3.jpg",
+          "logo": "/logo/convention.png",
+          "background_image": "/aaa.jpg",
           "rooms": [
             [
               {
@@ -524,6 +529,10 @@
                 "images": [
                   {
                     "title": "zurag-1",
+                    "url": "/room/b.jpg"
+                  },
+                  {
+                    "title": "zurag-1",
                     "url": "/room/b1.jpg"
                   },
                   {
@@ -534,9 +543,10 @@
                     "title": "zurag-1",
                     "url": "/room/b3.jpg"
                   },
+
                   {
                     "title": "zurag-1",
-                    "url": "/room/b4.jpg"
+                    "url": "/room/b5.jpg"
                   }
                 ]
               },
@@ -548,6 +558,10 @@
                 "type": "Single room",
                 "size": "25 м2",
                 "images": [
+                  {
+                    "title": "zurag-1",
+                    "url": "/room/c.jpg"
+                  },
                   {
                     "title": "zurag-1",
                     "url": "/room/c1.jpg"
@@ -576,47 +590,15 @@
                 "images": [
                   {
                     "title": "zurag-1",
+                    "url": "/room/k.jpg"
+                  },
+                  {
+                    "title": "zurag-1",
                     "url": "/room/k1.jpg"
                   },
                   {
                     "title": "zurag-1",
-                    "url": "/room/k2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k3.jpeg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k4.jpeg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k5.jpeg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k6.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k7.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k8.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k9.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k10.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k11.jpg"
+                    "url": "/room/k2.jpeg"
                   }
                 ]
               },
@@ -630,6 +612,10 @@
                 "images": [
                   {
                     "title": "zurag-1",
+                    "url": "/room/t.jpg"
+                  },
+                  {
+                    "title": "zurag-1",
                     "url": "/room/t1.jpg"
                   },
                   {
@@ -639,18 +625,6 @@
                   {
                     "title": "zurag-1",
                     "url": "/room/t3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t4.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t5.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t6.jpg"
                   }
                 ]
               },
@@ -664,31 +638,15 @@
                 "images": [
                   {
                     "title": "zurag-1",
+                    "url": "/room/a.jpg"
+                  },
+                  {
+                    "title": "zurag-1",
                     "url": "/room/a1.jpg"
                   },
                   {
                     "title": "zurag-1",
                     "url": "/room/a2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a4.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a5.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a6.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a7.jpg"
                   }
                 ]
               }
@@ -699,17 +657,17 @@
               "title": "CONCERT HALL",
               "description": "The Corporate Hotel &amp; Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
               "image": [
+                { "url": "/service/convention/hall.jpg" },
                 { "url": "/service/concert1.jpg" },
-                { "url": "/service/concert1.jpg" },
-                { "url": "/service/concert1.jpg" }
+                { "url": "/service/convention/hall1.jpg" }
               ]
             },
             {
               "title": "EVENT HALL",
               "description": "With capacity to service up to 800 seating and 1200 standing, our event Hall at The Corporate Hotel is spacious and versatile. Ability to host from weddings and parties to large scale seminars, it is an outstanding facility with top notch services backed by our dedicated team of staff to meet any of our clients&#39; needs. Recommend Events: •Wedding •Company functions •Conferences and seminars •Anniversary Celebrations •Exhibitions • Product launches • Fashion Show • Parties  ",
               "image": [
-                { "url": "/service/event2.jpg" },
-                { "url": "/service/event2.jpg" },
+                { "url": "/service/convention/event.jpg" },
+                { "url": "/service/convention/1.jpg" },
                 { "url": "/service/event2.jpg" }
               ]
             },
@@ -717,9 +675,9 @@
               "title": "CHAIRMAN RESTAURANTS",
               "description": "The hotel is home to the one of the finest restaurants in Ulaanbaatar. Located on the 3rd floor, The Chairman restaurant is an excellent choice for all kinds of meetings. We invite you for delicious lunch during work day, spontaneous dinner with family, romantic evening with your loved ones. The high ceiling dining room with warm colored walls, widely spaced tables and  friendly service offers a decidedly 21st century take on Western and Asian cuisines. Our team of dedicated workers will serve you with proud and show you top notch service. The restaurant offers many vegetable dishes in the menu, making it convenient for vegetarians. Our regularly changing and extensive menu satisfy all tastes and is a good mixture of traditional and new dishes. The top- grade beef, fresh vegetables are carefully selected to create our delicious dishes accompanied by variety of specially made sauces. The Chairman Restaurant will delight you with an interplay of flavors that keeps you expectant and interested. We also offer 5 VIP rooms for your convenience and privacy.    ",
               "image": [
-                { "url": "/service/chairman.jpg" },
-                { "url": "/service/chairman.jpg" },
-                { "url": "/service/chairman.jpg" }
+                { "url": "/service/convention/chairman.jpg" },
+                { "url": "/service/convention/chairman2.jpg" },
+                { "url": "/service/convention/chairman1.jpg" }
               ]
             },
 
@@ -727,9 +685,9 @@
               "title": "CONFERENCE HALL & ROOMS",
               "description": "The Corporate Hotel conference facilities aim to provide top notch services to ensure our clients satisfaction. With a capacity for gatherings up to 150 persons, from high level board meetings to seminars can be comfortably accommodated in our conference halls. For further information, please contact the front desk or call 70002030 • Ulaanbaatar Conference Hall - 120 seating • Seoul Hall- 40 seating • Hong Kong Meeting Room- 25 seating • Tokyo Meeting Room- 15 seating ",
               "image": [
-                { "url": "/service/hall2.jpg" },
-                { "url": "/service/hall2.jpg" },
-                { "url": "/service/hall2.jpg" }
+                { "url": "/service/convention/conference.jpg" },
+                { "url": "/service/convention/conference2.jpg" },
+                { "url": "/service/convention/conference1.jpg" }
               ]
             },
 
@@ -737,9 +695,9 @@
               "title": "COFFEE LOUNGE",
               "description": "Start your day with an assortment of delicious hot and cold beverages, light snacks, lunch at our coffee shop located on the first floor of the hotel. With its casual and relaxing atmosphere and comfortable seating, it&#39;s the perfect place to relax over a delicious cup of coffee or have a quick impromptu meeting. Operating hours: Monday -Friday 8:00am -10:00 pm Saturday &amp; Sunday 10:00am - 8:00 pm  ",
               "image": [
-                { "url": "/service/coffe1.jpg" },
-                { "url": "/service/coffe1.jpg" },
-                { "url": "/service/coffe1.jpg" }
+                { "url": "/service/convention/coffe.jpg" },
+                { "url": "/service/convention/coffe1.jpg" },
+                { "url": "/service/convention/coffe2.jpg" }
               ]
             },
             {
@@ -747,239 +705,37 @@
               "description": "Perfectly located at the entrance of the hotel, the Lobby Bar offers wide selection of beers, cigars, craft cocktails and many more beverages. Wowing first arrivals with its modern design, elegant city photos and high ceiling bar, the Lobby Bar is an ideal place to relax and meet for drinks. Operating Hours: Monday-Friday 12:00 pm- 02:00 am Saturday and Sunday 06:00 pm -02:00am  ",
               "image": [
                 { "url": "/service/cigar2.jpg" },
-                { "url": "/service/cigar2.jpg" },
-                { "url": "/service/cigar2.jpg" }
+                { "url": "/service/convention/cigar2.jpg" },
+                { "url": "/service/convention/cigar1.jpg" }
               ]
             },
             {
               "title": "HEALTH CLUB",
               "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage &amp; Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday &amp; Sunday 10:00 am - 7:00 pm ",
               "image": [
-                { "url": "/service/club2.jpg" },
-                { "url": "/service/club2.jpg" },
-                { "url": "/service/club2.jpg" }
+                { "url": "/service/convention/club2.jpg" },
+                { "url": "/service/convention/club1.jpg" },
+                { "url": "/service/convention/club.jpg" }
               ]
             },
             {
               "title": "BEAUTY SALON & MASSAGE AND SPA",
               "description": "Conveniently located at the entrance of the hotel, our beauty salon offers haircut, manicure, pedicure, eyelash and waxing service. And At Corporate Hotels, we are always looking for new ways to make your stay even more unforgettable. On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.   ",
-              "image": [{ "url": "/service/spa.jpg" }, { "url": "/service/spa.jpg" }, { "url": "/service/spa.jpg" }]
+              "image": [
+                { "url": "/service/spa1.jpg" },
+                { "url": "/service/convention/spa2.jpg" },
+                { "url": "/service/spa.jpg" }
+              ]
             }
           ]
         },
         {
           "title": "SHAMBHA LA GARDEN AND VILLAGE",
           "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city&#39;s smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
-          "img": "/1.png",
+          "img": "/1.jpg",
           "background_image": "/home-bg-2.jpg",
-          "rooms": [
-            [
-              {
-                "title": "A suite room",
-                "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+          "logo": "/logo/shambala.png",
 
-                "price": "2.100.000 ₮",
-                "type": "Single room",
-                "size": "25 м2",
-                "images": [
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a_1.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a_2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a_3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a_4.jpg"
-                  }
-                ]
-              },
-              {
-                "title": "B suite room",
-                "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
-
-                "price": "1.800.00 ₮",
-                "type": "Single room",
-                "size": "25 м2",
-                "images": [
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/b1.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/b2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/b3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/b4.jpg"
-                  }
-                ]
-              },
-              {
-                "title": "C suite room",
-                "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
-
-                "price": "1.500.00 ₮",
-                "type": "Single room",
-                "size": "25 м2",
-                "images": [
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/c1.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/c2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/c3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/c4.jpg"
-                  }
-                ]
-              },
-              {
-                "title": "KING room",
-                "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
-
-                "price": "257.320 ₮",
-                "type": "Single room",
-                "size": "25 м2",
-                "images": [
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k1.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k3.jpeg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k4.jpeg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k5.jpeg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k6.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k7.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k8.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k9.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k10.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/k11.jpg"
-                  }
-                ]
-              },
-              {
-                "title": "TWIN room",
-                "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
-
-                "price": "257.320 ₮",
-                "type": "Single room",
-                "size": "25 м2",
-                "images": [
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t1.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t4.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t5.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/t6.jpg"
-                  }
-                ]
-              },
-              {
-                "title": "APARTMENT Suite",
-                "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
-
-                "price": "257.320 ₮",
-                "type": "Single room",
-                "size": "25 м2",
-                "images": [
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a1.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a2.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a3.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a4.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a5.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a6.jpg"
-                  },
-                  {
-                    "title": "zurag-1",
-                    "url": "/room/a7.jpg"
-                  }
-                ]
-              }
-            ]
-          ],
           "facilities": [
             {
               "title": "CONCERT HALL",
