@@ -49,7 +49,7 @@ const BannerSlider = () => {
         <div className="embla__container">
           {[0, 1, 2].map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="w-full h-[982px] relative">
+              <div className="w-full h-[982px] relative bg-[#ebebeb]">
                 <Image fill src="/home-bg-1.jpg" alt="sb" className="w-full" />
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="flex flex-col items-center justify-center gap-5 text-center">

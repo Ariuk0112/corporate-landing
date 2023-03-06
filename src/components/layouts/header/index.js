@@ -66,7 +66,7 @@ const Header = ({ textColor, bgColor }) => {
               </Menu>
             ) : (
               // <Link href={`/${item.id}`}>{item.title}</Link>
-              <Link href={`/${item.id}`}>{item.title}</Link>
+              <Link href={`/#${item.title}`}>{item.title}</Link>
             )}
           </li>
         ))}

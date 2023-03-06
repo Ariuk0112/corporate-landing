@@ -1,35 +1,30 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import useEmblaCarousel from 'embla-carousel-react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-const VIDEO_ID = 'sVTy_wmn5SU';
-import { PrevButton, NextButton } from '../../common/CarouselButtons';
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 4,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 2,
+  },
+};
 
 const Room = ({ rooms, sector }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({});
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
-
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-  const scrollTo = useCallback((index) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-    setPrevBtnEnabled(emblaApi.canScrollPrev());
-    setNextBtnEnabled(emblaApi.canScrollNext());
-  }, [emblaApi, setSelectedIndex]);
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    setScrollSnaps(emblaApi.scrollSnapList());
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
-  }, [emblaApi, setScrollSnaps, onSelect]);
 
   return (
     <div className="w-full">
@@ -42,43 +37,38 @@ const Room = ({ rooms, sector }) => {
         </div>
       </div>
       <div className="my-10 w-full">
-        {/* todo: declare mock data */}
-        <div className="embla text-white relative">
-          <div className="embla__viewport" ref={emblaRef}>
-            <div className="embla__container">
-              {rooms.map((room, index) => (
-                <div className="w-full pr-5" key={index}>
-                  <div className="w-[450px] h-[250px]">
-                    <img src="/home-bg-4.jpg" alt="" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="h-[200px] bg-white font-[Constantia] p-10 border">
-                    <div className="text-[#B58E3E] text-[25px]">{room.title}</div>
-                    <div className="text-gray-600 text-sm">{room.type}</div>
-                    <div className="flex items-center justify-between mt-4">
-                      <Link
-                        href={{
-                          pathname: `/room/${index}`,
-                          query: {
-                            sector: sector,
-                          },
-                        }}
-                        className="h-[35px] px-4 py-1 bg-[#0D2944] text-gray-100 text-center uppercase"
-                      >
-                        Book now
-                      </Link>
-                      <div className="text-gray-600">
-                        <span className="font-semibold font-[roboto] text-gray-900">{room.price}/</span>
-                        per night <br /> 03 зочин {room.size}
-                      </div>
+        <Carousel responsive={responsive} className="h-full">
+          {rooms.map((room, index) => (
+            <div className="h-full" key={`zurag-${index}`}>
+              <div className="w-full pr-5 ">
+                <div className="w-full md:min-w-[400px] h-[250px]">
+                  <img src={room.images[0].url} alt="" className="w-full h-full object-cover " />
+                </div>
+                <div className="h-[200px] bg-white font-[Constantia] p-10 border">
+                  <div className="text-[#B58E3E] text-[25px] truncate">{room.title}</div>
+                  <div className="text-gray-600 text-sm">{room.type}</div>
+                  <div className="flex items-center justify-between mt-4">
+                    <Link
+                      href={{
+                        pathname: `/room/${index}`,
+                        query: {
+                          sector: sector,
+                        },
+                      }}
+                      className="h-[35px] px-4 py-1 bg-[#0D2944] text-gray-100 text-center uppercase"
+                    >
+                      Book now
+                    </Link>
+                    <div className="text-gray-600 truncate">
+                      <span className="font-semibold font-[roboto] text-gray-900">{room.price}/</span>
+                      per night <br /> 03 зочин {room.size}
                     </div>
                   </div>
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
-          <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} fillColor="#ebebeb" />
-          <NextButton onClick={scrollNext} enabled={nextBtnEnabled} fillColor="#ebebeb" />
-        </div>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

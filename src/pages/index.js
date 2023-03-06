@@ -8,22 +8,27 @@ import Sector from '@/components/sections/home/Sector';
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <RootLayout title="sda" description="sda">
-        <div className="w-full">
+      <RootLayout>
+        <div className="w-full" id="Home">
           <BannerSlider />
         </div>
         <Container>
           <div className="w-full">
-            <div className="w-full">
+            <div className="w-full" id="Room">
               <Sector />
             </div>
 
-            <News
-              title="NEWS & COMREHENSIVE"
-              desc="Designed as privileged almost private place where you will feel right at home"
-            />
-            <About />
-            <Map />
+            <div id="Service" className="w-full">
+              <News
+                title="NEWS & COMREHENSIVE"
+                desc="Designed as privileged almost private place where you will feel right at home"
+              />
+            </div>
+
+            <div id="Contact" className="w-full">
+              <About />
+              <Map />
+            </div>
           </div>
         </Container>
       </RootLayout>

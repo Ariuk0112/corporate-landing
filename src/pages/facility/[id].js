@@ -1,58 +1,58 @@
 /* eslint-disable @next/next/no-img-element */
-import Facility from '@/components/sections/sector/Facility';
-import Room from '@/components/sections/sector/Room';
-import Image from 'next/image';
-
-import { useParams } from 'react-router-dom';
 import { Container, RootLayout } from '../../components/layouts';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import Datas from '../../assets/i18n/home.json';
-const MOCK = Datas.sectors;
+import StaticData from '../../assets/i18n/home.json';
 
+const LOCALIZED_SECTORS_DATA = StaticData.sectors;
+
+// Server taldaa doorh function ajilaad request shidsen urlaas id bolon locale-n utgiig awna
+// locale utga ni  "en" | "mn" bn.
+// yor n bol backend-s dataa duudaad ahij CRUD hiideggv zvger haruuldag page ntr hiih gej baigaa bol getServerSideProps ashiglasan n zvgeer bdg
 export async function getServerSideProps(context) {
-  const { id } = context.query;
+  const { id } = context.params;
+  const { sector } = context.query;
+  //  Default-r "en" bolgoson
+  const { locale = 'en' } = context;
+
+  // index bolon sector index deer tohirson utga zarlasan json deer bhgv bol aldaa zaana shvv
+  // badly hard written here :()
+  const currentLocaleData = LOCALIZED_SECTORS_DATA.find((localizedSectors) => localizedSectors.locale === locale);
+  const currentSector = currentLocaleData?.items[sector];
+  const currentFacility = currentSector?.facilities[id];
+
   return {
     props: {
       id,
+      facility: currentFacility,
     },
   };
 }
 
-const FacilityDetail = ({ id }) => {
-  const router = useRouter();
-  const sector = router.query || router.params;
-  const facility = MOCK.find((data) => data.locale === 'en').items[sector.sector].facilities[id];
+const FacilityDetail = ({ facility }) => {
+  // console.log(facility)
 
-  console.log(facility);
-
-  // const facality = items.facilities[id];
   return (
-    <>
-      <RootLayout title="sda" description="sda">
+    <RootLayout title="sda" description="sda">
+      {facility && (
         <div className="w-full relative">
-          <div className="grid grid-cols-2 overflow-hidden">
-            <div className="w-full h-[670px]">
-              <img src="/home-bg-3.jpg" alt="sv" className="w-full" />
-            </div>
-            <div className="w-full grid grid-cols-1">
-              <div className="w-full h-[335px]">
-                <img src="/home-bg-3.jpg" alt="sv" className="w-full" />
+          <div className="grid grid-cols-3 overflow-hidden">
+            {facility.image.map((img, index) => (
+              <div key={index} className="w-full h-[650px] md:h-[950px]">
+                <img src={img.url} alt="sv" className="w-full h-full object-cover" />
               </div>
-              <div className="w-full h-[335px]">
-                <img src="/home-bg-3.jpg" alt="sv" className="w-full" />
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="absolute bottom-0 h-[268px] w-full bg-[#B58E3E80] ">
             <div className="flex flex-col items-center justify-center gap-5 text-center">
-              <h1 className="uppercase text-white text-4xl font-medium">Concert Hall</h1>
+              <h1 className="uppercase text-white text-4xl font-medium">
+                Concert Hall
+                {facility.title}
+              </h1>
             </div>
           </div>
         </div>
-      </RootLayout>
-    </>
+      )}
+    </RootLayout>
   );
 };
 
