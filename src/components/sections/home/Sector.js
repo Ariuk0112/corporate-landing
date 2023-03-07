@@ -30,7 +30,6 @@ const Sector = () => {
               }}
             >
               <div className="mt-10 mb-32 font-semibold text-xl ">{sector.title}</div>
-              <div className="">{sector.desc}</div>
             </div>
           </Link>
         ))}

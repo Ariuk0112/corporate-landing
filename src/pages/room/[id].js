@@ -58,15 +58,17 @@ export default function RoomDetail({ room, sector }) {
         <Element name="detail" className="element">
           <div>
             <div className="w-full h-[107px] bg-[#00000080] opacity-50"></div>
-            <div className="md:h-[75vh] w-full">
-              <Carousel responsive={responsive} className="h-full">
-                {room.images.map((img, index) => (
-                  <div className="h-full" key={`zurag-${index}`}>
-                    <img src={img.url} alt="" className="w-full h-full object-cover " />
-                  </div>
-                ))}
-              </Carousel>
-            </div>
+            <Container>
+              <div className="md:h-[75vh] w-full">
+                <Carousel responsive={responsive} className="h-full">
+                  {room.images.map((img, index) => (
+                    <div className="h-full" key={`zurag-${index}`}>
+                      <img src={img.url} alt="" className="w-full h-full object-cover " />
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
+            </Container>
             <Container>
               <div className="px-5 md:px-10 my-5">
                 <div className="flex">
@@ -87,7 +89,7 @@ export default function RoomDetail({ room, sector }) {
                     <div className="w-32 md:w-96">
                       <div className="text-gray-600">
                         <span className="font-semibold italic font-[roboto] text-gray-900">{room.price}</span>
-                        / per night <br /> 1-2 guest 25м2
+                        1-2 guest 25м2
                       </div>
                       <div>
                         room RATE INCLUDES:

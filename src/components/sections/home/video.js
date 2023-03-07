@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 const Video = ({ VIDEO_ID }) => {
-  console.log(VIDEO_ID);
   return (
     <div className="overflow-hidden">
       <div className="w-full h-[500px] bg-[#676767] my-10">

@@ -16,7 +16,6 @@ export default function Home() {
           <div className="w-full">
             <div className="w-full" id="Room">
               <Sector />
-              <Video />
             </div>
 
             <div id="Service" className="w-full">

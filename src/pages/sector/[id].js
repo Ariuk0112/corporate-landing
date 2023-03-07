@@ -3,7 +3,7 @@ import Room from '@/components/sections/sector/Room';
 import Image from 'next/image';
 //custom
 import Datas from '../../assets/i18n/home.json';
-
+import { News, About } from '@/components/sections/home';
 import { Container, RootLayout } from '../../components/layouts';
 
 export async function getServerSideProps(context) {
@@ -37,6 +37,13 @@ const SectorDetail = ({ id }) => {
             <div className="w-full">
               <Facility facilities={MOCK_SECTOR.facilities} sector={id} />
             </div>
+
+            <News
+              title="NEWS & COMREHENSIVE"
+              desc="Designed as privileged almost private place where you will feel right at home"
+              VIDEO_ID={MOCK_SECTOR.video_id}
+            />
+            <About about={MOCK_SECTOR.desc} />
           </div>
         </Container>
       </RootLayout>

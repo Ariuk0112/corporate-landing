@@ -58,8 +58,8 @@ const Room = ({ rooms, sector }) => {
                       Details
                     </Link>
                     <div className="text-gray-600 truncate">
-                      <span className="font-semibold font-[roboto] text-gray-900">{room.price}/</span>
-                      per night <br /> {room.size}
+                      <span className="font-semibold font-[roboto] text-gray-900"></span>
+                      <br /> {room.size}
                     </div>
                   </div>
                 </div>
