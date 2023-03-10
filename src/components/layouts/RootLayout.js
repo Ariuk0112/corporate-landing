@@ -1,15 +1,13 @@
 import { Header, Footer } from '.';
-import { Helmet } from '../common/Helmet';
 
-const RootLayout = ({ children, title, description, logo }) => {
+const RootLayout = ({ children, title, description, logo, address, mail }) => {
   return (
     <>
-      {/* <Helmet title={title} description={description} /> */}
       <Header />
       {children}
       {/* todo: footer */}
       <div className="w-full">
-        <Footer logo={logo} />
+        <Footer logo={logo} address={address} mail={mail} />
       </div>
     </>
   );

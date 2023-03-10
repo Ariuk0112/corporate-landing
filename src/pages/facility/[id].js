@@ -35,7 +35,7 @@ const FacilityDetail = ({ facility, sector }) => {
           {facility && (
             <div>
               <div className="w-full relative">
-                <div className="grid grid-cols-3 overflow-hidden">
+                <div className="grid grid-cols-3 overflow-hidden gap-2">
                   {facility.image.map((img, index) => (
                     <div key={index} className="w-full h-[650px] md:h-[950px]">
                       <img src={img.url} alt="sv" className="w-full h-full object-cover" />

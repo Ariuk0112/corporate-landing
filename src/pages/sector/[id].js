@@ -18,9 +18,17 @@ export async function getServerSideProps(context) {
 const SectorDetail = ({ id }) => {
   const localItems = Datas.sectors.find((data) => data.locale === 'en');
   const MOCK_SECTOR = localItems.items[id];
+  console.log(MOCK_SECTOR.logo);
+
   return (
     <>
-      <RootLayout title="sda" description="sda" logo={MOCK_SECTOR.logo}>
+      <RootLayout
+        title="sda"
+        description="sda"
+        logo={MOCK_SECTOR.logo}
+        address={MOCK_SECTOR.address}
+        mail={MOCK_SECTOR.mail}
+      >
         <div className="w-full h-[530px] relative overflow-hidden">
           <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" />
           <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">

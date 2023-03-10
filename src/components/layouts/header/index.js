@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Menu as MenuIcon, Close } from '../../../assets/svg';
 import { Menu, Transition } from '@headlessui/react';
 import headerData from '../../../assets/i18n/header.json';
-
+import Head from 'next/head';
 const navigations = headerData.navigation.find((data) => data.locale === 'en').items;
 const Header = ({ textColor, bgColor }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -24,8 +24,9 @@ const Header = ({ textColor, bgColor }) => {
 
   return (
     <nav
-      className={`h-[100px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${animateHeader && 'shadow-xl'
-        }`}
+      className={`h-[100px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${
+        animateHeader && 'shadow-xl'
+      }`}
       s
     >
       <div className={`my-auto mx-5 w-[100px]`}>
@@ -33,7 +34,13 @@ const Header = ({ textColor, bgColor }) => {
           <img src="/logo.png" alt="logo" className="w-12 md:w-[84px] cursor-pointer" />
         </Link>
       </div>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>{`The Corporate`}</title>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <ul className="md:mr-auto hidden md:flex list-none flex-row justify-between items-center flex-initial text-white">
         {navigations.map((item, index) => (
           <li key={`navbar-${index}`} className="mx-4 cursor-pointer md:text-[20px]">

@@ -10,6 +10,8 @@
           "background_image": "/3M9A5243.JPG",
           "video_id": "wnXgzH2JJ9g",
           "logo": "/logo/tuv.png",
+          "address": "Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia",
+          "mail": " 11-33 4411 manager@corporatehotel.mn",
           "rooms": [
             [
               {
@@ -210,6 +212,8 @@
           "img": "/4.jpg",
           "background_image": "/nukht/bg.jpg",
           "logo": "/logo/nukht.png",
+          "address": "Khan-Uul district 5th khoroo, Ulaanbaatar, Mongolia ",
+          "mail": " 7701 5555 Corporatenukht@gmail.com",
           "rooms": [
             [
               {
@@ -322,7 +326,11 @@
             {
               "title": "CONFERENCE HALL & MEETING ROOM",
               "description": "Our resort offers two Conference Halls with the state- of the art equipment for your private affairs and can be tailored to your needs. Both halls are equipped with high - definition projectors, wireless microphones, 4 channels of simultaneous translation  equipment, and high-speed internet access. We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT \n•  MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \nTel: 976-7701-5555,976-8811-3601",
-              "image": [{ "url": "/nukht/services/hall.jpg" }],
+              "image": [
+                { "url": "/nukht/services/hall1.jpg" },
+                { "url": "/nukht/services/hall.jpg" },
+                { "url": "/nukht/services/hall2.jpg" }
+              ],
               "video_id": "5r_CtgsCVrs"
             },
 
@@ -340,9 +348,9 @@
               "title": "EVENT HALL & EVENT TERRACE",
               "description": "Your events could well become the most unforgettable experience in our amazing events hall. We ensure your special day run smoothly. Take advantage of our event terrace and event hall to plan your special day. We offer event spaces and rooms ideal  for meetings, celebrations, weddings, exhibitions and seminars. Our event hall can accommodate up to 280 people depending on seating arrangements. \nAddress: Khan-Uul district-5, Bogd Khan National Reserve Ulaanbaatar, Mongolia \nTel: 976-7701-5555, 976-8811-3601, Fax: 976-11-334422 Web: www.corporatehotel.mn E-mail: mail@corporatehotel.mn",
               "image": [
-                { "url": "/service/hall2.jpg" },
-                { "url": "/service/hall2.jpg" },
-                { "url": "/service/hall2.jpg" }
+                { "url": "/nukht/services/event4.jpg" },
+                { "url": "/nukht/services/event2.jpeg" },
+                { "url": "/nukht/services/event3.jpg" }
               ]
             },
 
@@ -362,6 +370,8 @@
           "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum",
           "img": "/3.jpg",
           "logo": "/logo/convention.png",
+          "address": "Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia",
+          "mail": " 7000 2030",
           "background_image": "/aaa.jpg",
           "rooms": [
             [
@@ -589,7 +599,7 @@
               "description": "Conveniently located at the entrance of the hotel, our beauty salon offers haircut, manicure, pedicure, eyelash and waxing service. And At Corporate Hotels, we are always looking for new ways to make your stay even more unforgettable. On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.   ",
               "image": [
                 { "url": "/service/spa1.jpg" },
-                { "url": "/service/convention/spa2.jpg" },
+                { "url": "/service/convention/spa23.png" },
                 { "url": "/service/spa.jpg" }
               ]
             }
@@ -601,7 +611,8 @@
           "img": "/1.jpg",
           "background_image": "/shambala/bg.jpg",
           "logo": "/logo/shambala.png",
-
+          "address": "Shambha-La garden and village, khan uul district-11, South Zaisan",
+          "mail": "",
           "facilities": [
             {
               "title": "CHAIRMAN RESTAURANTS",

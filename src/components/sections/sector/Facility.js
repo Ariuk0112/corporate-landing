@@ -12,7 +12,7 @@ const Facility = ({ facilities, sector }) => {
         </div>
       </div>
       <div className="my-10 w-full h-[520px]">
-        <div className="w-full flex justify-between items-stretch">
+        <div className="w-full flex justify-between items-stretch gap-2">
           {facilities.map((facility, index) => (
             <div
               key={index}

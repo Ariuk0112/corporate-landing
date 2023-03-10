@@ -37,7 +37,7 @@ const Room = ({ rooms, sector }) => {
       <div className="my-10 w-full">
         <Carousel responsive={responsive} className="h-full">
           {rooms.map((room, index) => (
-            <div className="h-full" key={`zurag-${index}`}>
+            <div className="h-full px-2" key={`zurag-${index}`}>
               <div className="w-full ">
                 <div className="w-full md:min-w-[400px] h-[250px]">
                   <img src={room.images[0].url} alt="" className="w-full h-full object-cover " />

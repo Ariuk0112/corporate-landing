@@ -1,5 +1,4 @@
 const About = (about) => {
-  console.log(about.about);
   return (
     <div>
       <div className="flex flex-col pt-10 w-full">
