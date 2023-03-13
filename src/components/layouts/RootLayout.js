@@ -5,7 +5,6 @@ const RootLayout = ({ children, title, description, logo, address, mail }) => {
     <>
       <Header />
       {children}
-      {/* todo: footer */}
       <div className="w-full">
         <Footer logo={logo} address={address} mail={mail} />
       </div>

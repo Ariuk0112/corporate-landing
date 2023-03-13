@@ -58,7 +58,6 @@ export default function RoomDetail({ room, sector }) {
       <div className="">
         <Element name="detail" className="element">
           <div>
-            <div className="w-full h-[107px] bg-[#00000080] opacity-50"></div>
             <Container>
               <div className="md:h-[75vh] w-full">
                 <Carousel responsive={responsive} className="h-full">
@@ -72,7 +71,7 @@ export default function RoomDetail({ room, sector }) {
             </Container>
             <Container>
               <div className="px-5 md:px-10 my-5">
-                <div className="flex">
+                <div className="flex flex-col md:flex-row">
                   <div className="pr-5">
                     <div className="w-full grid grid-cols-3 md:grid-cols-8 my-5 gap-5">
                       {room.images.map((img, index) => (
@@ -86,7 +85,7 @@ export default function RoomDetail({ room, sector }) {
 
                     <div className="mt-5">{room.description}</div>
                   </div>
-                  <div className="pl-5 border-black border-l">
+                  <div className="pl-5 border-black md:border-l">
                     <div className="w-32 md:w-96">
                       <div className="text-gray-600">
                         <span className="font-semibold italic font-[roboto] text-gray-900">{room.price}</span>

@@ -8,10 +8,10 @@ const Sector = () => {
     <div className="overflow-hidden">
       <div className="flex items-center justify-between py-10">
         <div>
-          <h1 className="text-[30px] uppercase">
+          <h1 className="text-[24px] md:text-[30px] uppercase">
             <span className="text-[#B58E3E]">Sectors</span> & comprehensive
           </h1>
-          <p>{`Designed as a privileged almost private place where you'll feel right at homes`}</p>
+          <p className="text-[14px]">{`Designed as a privileged almost private place where you'll feel right at homes`}</p>
         </div>
       </div>
       <div className="my-10 grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -19,7 +19,7 @@ const Sector = () => {
         {MOCK_SECTOR.map((sector, index) => (
           <Link key={index} href={`/sector/${index}`}>
             <div
-              className={`hover:shadow-md hover:scale-105 transition-all ease-in h-[320px] md:h-[720px] bg-slate-200 text-white p-5 ${
+              className={`hover:shadow-md hover:scale-105 transition-all ease-in h-[320px] md:h-[720px] bg-slate-200 text-white p-5 relative  ${
                 index % 2 === 0 ? '-mt-16' : ''
               }`}
               style={{
@@ -29,7 +29,7 @@ const Sector = () => {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <div className="mt-10 mb-32 font-semibold text-xl ">{sector.title}</div>
+              <div className="absolute bottom-5 font-semibold md:lg md:text-xl bottom">{sector.title}</div>
             </div>
           </Link>
         ))}

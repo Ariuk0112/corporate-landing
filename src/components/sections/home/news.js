@@ -18,7 +18,7 @@ const News = ({ title, desc, VIDEO_ID }) => {
   return (
     <div>
       <div className="overflow-hidden">
-        <div className="w-full h-[500px] bg-[#676767] my-10">
+        <div className="w-full md:h-[500px] bg-[#676767] my-10">
           <iframe
             id="player"
             className=""
@@ -36,7 +36,7 @@ const News = ({ title, desc, VIDEO_ID }) => {
 
       <div className="bg-custom-ee w-full flex flex-col justify-center items-center">
         <div className="w-full">
-          <div className="w-full grid grid-cols-2 gap-5">
+          <div className="w-full grid md:grid-cols-2 gap-5">
             {MOCK_NEWS.map((news, index) => (
               <NewsCard key={index} news={news} />
             ))}

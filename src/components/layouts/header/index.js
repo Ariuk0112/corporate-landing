@@ -25,12 +25,12 @@ const Header = ({ textColor, bgColor }) => {
 
   return (
     <nav
-      className={`h-[100px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${
+      className={`h-[70px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${
         animateHeader && 'shadow-xl'
       }`}
       s
     >
-      <div className={`my-auto mx-5 w-[100px]`}>
+      <div className={`my-auto mx-5 md:w-[100px]`}>
         <Link href="/">
           <img src="/logo.png" alt="logo" className="w-12 md:w-[84px] cursor-pointer" />
         </Link>

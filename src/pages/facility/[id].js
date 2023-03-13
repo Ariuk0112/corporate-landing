@@ -36,7 +36,7 @@ const FacilityDetail = ({ facility, sector }) => {
           {facility && (
             <div>
               <div className="w-full relative">
-                <div className="grid grid-cols-3 overflow-hidden gap-2">
+                <div className="grid grid-cols-3 overflow-hidden gap-1 md:gap-2">
                   {facility.image.map((img, index) => (
                     <div key={index} className="w-full h-[650px] md:h-[950px]">
                       <img src={img.url} alt="sv" className="w-full h-full object-cover" />
@@ -44,10 +44,10 @@ const FacilityDetail = ({ facility, sector }) => {
                   ))}
                 </div>
 
-                <div className="absolute bottom-0 h-[268px] w-full bg-[#B58E3E80] ">
+                <div className="absolute bottom-0 md:h-[268px] w-full bg-[#B58E3E80] ">
                   <div className="flex flex-col items-center justify-center gap-5 text-center">
-                    <h1 className="uppercase text-white text-4xl font-medium">{facility.title}</h1>
-                    <p className="mx-auto text-white text-3xl font-medium">{facility.description}</p>
+                    <h1 className="uppercase text-white md:text-4xl font-medium">{facility.title}</h1>
+                    <p className="mx-auto text-white text-xs md:text-3xl font-medium">{facility.description}</p>
                   </div>
                 </div>
               </div>

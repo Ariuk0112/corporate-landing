@@ -29,16 +29,16 @@ const SectorDetail = ({ id }) => {
         address={MOCK_SECTOR.address}
         mail={MOCK_SECTOR.mail}
       >
-        <div className="w-full h-[530px] relative overflow-hidden">
-          <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" />
-          <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">
-            <div className="flex flex-col items-center justify-center gap-5 text-center">
-              <h1 className="uppercase text-white text-4xl font-medium">{MOCK_SECTOR.title}</h1>
-            </div>
-          </div>
-        </div>
         <Container>
           <div className="w-full">
+            <div className="w-full md:h-[530px] relative overflow-hidden">
+              <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" />
+              <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">
+                <div className="flex flex-col items-center justify-center gap-5 text-center">
+                  <h1 className="uppercase text-white text-lg md:text-4xl font-medium">{MOCK_SECTOR.title}</h1>
+                </div>
+              </div>
+            </div>
             <div className="w-full">
               {MOCK_SECTOR.rooms === undefined ? '' : <Room rooms={MOCK_SECTOR.rooms[0]} sector={id} />}
             </div>

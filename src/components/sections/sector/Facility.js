@@ -6,18 +6,18 @@ const Facility = ({ facilities, sector }) => {
     <div className="w-full">
       <div className="flex items-center justify-between py-10 font-[Constantia]">
         <div>
-          <h1 className="text-[30px] uppercase">
+          <h1 className="text-[20px] md:text-[30px] uppercase">
             <span className="text-[#B58E3E]">FACILITIES</span> & SERVICES
           </h1>
-          <p>{`Designed as a privileged almost private place where you'll feel right at homes`}</p>
+          <p className="text-[12px] md:text-[24px]">{`Designed as a privileged almost private place where you'll feel right at homes`}</p>
         </div>
       </div>
-      <div className="my-10 w-full h-[520px]">
-        <div className="w-full flex justify-between items-stretch gap-2">
+      <div className="md:my-10 w-full md:h-[520px]">
+        <div className="w-full flex flex-col md:flex-row justify-between items-stretch gap-2">
           {facilities.map((facility, index) => (
             <div
               key={index}
-              className="w-full flex items-center justify-center h-[520px] relative"
+              className="w-full flex items-center justify-center md:h-[520px] h-[100px] relative"
               style={{
                 backgroundImage: `url('${facility.image[0].url}')`,
                 backgroundPosition: 'center',
