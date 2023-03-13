@@ -3,6 +3,7 @@ import { Element } from 'react-scroll';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import StaticData from '../../assets/i18n/home.json';
+import Image from 'next/image';
 
 import { useRouter } from 'next/router';
 //custom

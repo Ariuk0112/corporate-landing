@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Fragment, useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Menu as MenuIcon, Close } from '../../../assets/svg';
 import { Menu, Transition } from '@headlessui/react';

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Container, RootLayout } from '../../components/layouts';
 import StaticData from '../../assets/i18n/home.json';
+import Image from 'next/image';
 
 const LOCALIZED_SECTORS_DATA = StaticData.sectors;
 
