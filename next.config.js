@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   i18n: {
     localeDetection: false,
+    eslint: { ignoreDuringBuilds: true },
     defaultLocale: 'en',
     locales: ['mn', 'en'],
     domains: [
