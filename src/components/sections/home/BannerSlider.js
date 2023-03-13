@@ -54,7 +54,12 @@ const BannerSlider = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="flex flex-col items-center justify-center gap-5 text-center">
                     <Link href="/">
-                      <img src="/logo.png" alt="logo" className="w-[150px] md:w-[180px] h-[100px] cursor-pointer" />
+                      <Image
+                        fill
+                        src="/logo.png"
+                        alt="logo"
+                        className="w-[150px] md:w-[180px] h-[100px] cursor-pointer"
+                      />
                     </Link>
                     <h1 className="uppercase text-white text-xl font-medium">THE CORPORATE HOTEL</h1>
                     <p className="uppercase text-white text-6xl font-bold">WELCOME TO THE CORPORATE</p>
