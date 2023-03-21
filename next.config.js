@@ -9,7 +9,7 @@ const nextConfig = {
     locales: ['mn', 'en'],
     domains: [
       {
-        domain: 'http://localhost:3000/',
+        domain: 'http://corporatehotel.mn/',
         defaultLocale: 'en',
       },
     ],
