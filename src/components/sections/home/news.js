@@ -3,13 +3,13 @@ import Link from 'next/link';
 const MOCK_NEWS = [
   {
     title: 'Төрсөн өдрийн хүлээн авалт хийж байна',
-    phone: '99111199',
+    phone: '99111355',
     date: '2022-02-23',
     image: '/news.png',
   },
   {
     title: 'Төрсөн өдрийн хүлээн авалт  хийж байна ',
-    phone: '99111199',
+    phone: '99111355',
     date: '2022-02-23',
     image: '/news.png',
   },
