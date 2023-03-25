@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Facility from '@/components/sections/sector/Facility';
 import Room from '@/components/sections/sector/Room';
-import Image from 'next/image';
 //custom
-import Datas from '../../assets/i18n/home.json';
-import { News, About, Video } from '@/components/sections/home';
+import { Video } from '@/components/sections/home';
 import { Container, RootLayout } from '../../components/layouts';
 
 import MOCK_DATA from '@/assets/i18n/data.json';

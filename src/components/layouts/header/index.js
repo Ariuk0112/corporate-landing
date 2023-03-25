@@ -6,6 +6,7 @@ import { Menu as MenuIcon, Close } from '../../../assets/svg';
 import { Menu, Transition } from '@headlessui/react';
 import headerData from '../../../assets/i18n/header.json';
 import Head from 'next/head';
+
 const navigations = headerData.navigation.find((data) => data.locale === 'en').items;
 const Header = ({ textColor, bgColor }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
