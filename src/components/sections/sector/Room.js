@@ -27,47 +27,22 @@ const responsive = {
 const Room = ({ rooms, sector }) => {
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between py-4 md:py-10 font-[Constantia]">
-        <div>
-          <h1 className="text-[20px] md:text-[30px] uppercase">
-            <span className="text-[#B58E3E]">ROOMS</span> & ACCOMMODATION
-          </h1>
-          <p className="text-[12px] md:text-[30px]">{`Designed as a privileged almost private place where you'll feel right at homes`}</p>
+      <div className="flex text-white relative py-4 md:py-12 font-[Constantia] w-full ">
+        <div className="text-[148px] left-[149px] absolute -top-14 opacity-30 font-[Montserrat]">ROOMS</div>
+        <div className="absolute -top-10 left-[11px]">
+          <div className="flex">
+            <div className="my-auto w-[72px] h-0 border-[5px] border-solid border-[#B0985A]"></div>
+            <div className="text-[20px] md:text-[48px] pl-[29px]">
+              <h1 className=" uppercase">
+                <span className="text-[#B58E3E]">01</span>
+              </h1>
+              <p className="">ROOMS</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="md:my-10 w-full">
-        <Carousel responsive={responsive} className="h-full">
-          {rooms.map((room, index) => (
-            <div className="h-full px-2" key={`zurag-${index}`}>
-              <div className="w-full ">
-                <div className="w-full md:min-w-[400px] h-[200px]">
-                  <img src={room.images[0].url} alt="" className="w-full h-full object-cover " />
-                </div>
-                <div className="md:h-[200px] bg-white font-[Constantia] p-4 md:p-10 border">
-                  <div className="text-[#B58E3E] md:text-[25px] truncate">{room.title}</div>
-                  <div className="text-gray-600 text-sm">{room.type}</div>
-                  <div className="flex items-center justify-between mt-1 md:mt-4">
-                    <Link
-                      href={{
-                        pathname: `/room/${index}`,
-                        query: {
-                          sector: sector,
-                        },
-                      }}
-                      className="md:h-[35px] px-4 py-1 bg-[#0D2944] text-gray-100 text-center uppercase"
-                    >
-                      Details
-                    </Link>
-                    <div className="text-gray-600 truncate">
-                      <span className="font-semibold font-[roboto] text-gray-900"></span>
-                      <br /> {room.size}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Carousel>
+        <div></div>
       </div>
     </div>
   );

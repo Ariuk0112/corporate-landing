@@ -39,7 +39,7 @@ const SectorDetail = ({ id }) => {
                 </div>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full bg-black">
               {MOCK_SECTOR.rooms === undefined ? '' : <Room rooms={MOCK_SECTOR.rooms[0]} sector={id} />}
             </div>
             <div className="w-full">
