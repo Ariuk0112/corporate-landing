@@ -32,7 +32,7 @@ const Header = ({ textColor, bgColor }) => {
     >
       <div className={`my-auto mx-5 md:w-[100px]`}>
         <Link href="/">
-          <img src="/logo.png" alt="logo" className="w-12 md:w-[84px] cursor-pointer" />
+          <Image width={48} height={48} src="/logo.png" alt="logo" className="w-12 md:w-[84px] cursor-pointer" />
         </Link>
       </div>
       <Head>
