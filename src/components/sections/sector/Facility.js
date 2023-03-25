@@ -5,8 +5,6 @@ import { Video } from '../home';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 
-// Import Swiper styles
-import 'swiper/css';
 const Facility = ({ facilities, sector }) => {
   return (
     <div className="w-full overflow-x-hidden font-Montserrat">

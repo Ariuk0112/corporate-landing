@@ -27,3 +27,18 @@ html {
   text-orientation: mixed;
   writing-mode: vertical-rl;
 }
+.room-list{
+  position: relative;
+  padding-left: 35px;
+}
+.room-list::before{
+  position: absolute;
+  inset: 0;
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-image: url('/icons/room-list.png');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}

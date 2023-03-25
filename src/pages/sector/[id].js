@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Facility from '@/components/sections/sector/Facility';
 import Room from '@/components/sections/sector/Room';
-import Image from 'next/image';
 //custom
-import Datas from '../../assets/i18n/home.json';
-import { News, About, Video } from '@/components/sections/home';
+import { Video } from '@/components/sections/home';
 import { Container, RootLayout } from '../../components/layouts';
 
 import MOCK_DATA from '@/assets/i18n/data.json';
+import HeroSlider from '@/components/common/HeroSlider';
 
 export async function getServerSideProps(context) {
   const { id } = context.query;
@@ -23,6 +22,8 @@ export async function getServerSideProps(context) {
 const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
 
+  const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
+console.log(MOCK_SECTOR.background_image)
   return (
     <>
       <RootLayout
@@ -34,6 +35,9 @@ const SectorDetail = ({ id, locale }) => {
       >
         <Container>
           <div className="w-full ">
+            <div className="w-full ">
+              <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
+            </div>
             <div className="w-full relative ">
               <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" />
               <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">

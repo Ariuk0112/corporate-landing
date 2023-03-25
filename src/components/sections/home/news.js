@@ -3,6 +3,7 @@ import SectionTitle from '@/components/common/SectionTitle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Link from 'next/link';
 import { Container } from '@/components/layouts';
+
 const MOCK_NEWS = [
   {
     title: 'Төрсөн өдрийн хүлээн авалт хийж байна',
@@ -39,7 +40,6 @@ const News = ({ title, desc, VIDEO_ID }) => {
                   <NewsCard news={news} />
                 </SwiperSlide>
               ))}
-              <span slot="wrapper-end">Wrapper End</span>
             </Swiper>
           </div>
 

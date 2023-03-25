@@ -1,112 +1,125 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { Element } from 'react-scroll';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import StaticData from '../../assets/i18n/home.json';
-import Image from 'next/image';
-
-import { useRouter } from 'next/router';
+/* eslint-disable @next/next/no-img-element */
+import { useRef, useCallback } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 //custom
 import { Container, RootLayout } from '../../components/layouts';
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-const LOCALIZED_SECTORS_DATA = StaticData.sectors;
 
-// Server taldaa doorh function ajilaad request shidsen urlaas id bolon locale-n utgiig awna
-// locale utga ni  "en" | "mn" bn.
-// yor n bol backend-s dataa duudaad ahij CRUD hiideggv zvger haruuldag page ntr hiih gej baigaa bol getServerSideProps ashiglasan n zvgeer bdg
+import MOCK_DATA from '@/assets/i18n/data.json';
+
 export async function getServerSideProps(context) {
   const { id } = context.params;
   const { sector } = context.query;
-  //  Default-r "en" bolgoson
   const { locale = 'en' } = context;
 
-  // index bolon sector index deer tohirson utga zarlasan json deer bhgv bol aldaa zaana shvv
-  // badly hard written here :()
-  const currentLocaleData = LOCALIZED_SECTORS_DATA.find((localizedSectors) => localizedSectors.locale === locale);
-  const currentSector = currentLocaleData?.items[sector];
-  const currentRoom = currentSector.rooms[0][id];
   return {
     props: {
       id,
-      room: currentRoom,
-      sector: currentSector,
+      sectorId: sector,
+      locale: locale || 'en',
     },
   };
 }
 
-export default function RoomDetail({ room, sector }) {
-  return (
-    <RootLayout title="sda" description="sda" logo={sector.logo}>
-      <div className="">
-        <Element name="detail" className="element">
-          <div>
-            <Container>
-              <div className="md:h-[75vh] w-full">
-                <Carousel responsive={responsive} className="h-full">
-                  {room.images.map((img, index) => (
-                    <div className="h-full" key={`zurag-${index}`}>
-                      <img src={img.url} alt="" className="w-full h-full object-cover " />
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
-            </Container>
-            <Container>
-              <div className="px-5 md:px-10 my-5">
-                <div className="flex flex-col md:flex-row">
-                  <div className="pr-5">
-                    <div className="w-full grid grid-cols-3 md:grid-cols-8 my-5 gap-5">
-                      {room.images.map((img, index) => (
-                        <div className="h-32" key={`zurag-${index}`}>
-                          <img src={img.url} alt="" className="w-full h-full object-cover hover:opacity-60" />
-                        </div>
-                      ))}
-                    </div>
-                    <div className="text-[#B58E3E] text-[25px] uppercase truncate">{room.title}</div>
-                    <div className="text-gray-600 text-sm">{room.type}</div>
+export default function RoomDetail({ id, sectorId, locale }) {
+  const MOCK_SECTOR = MOCK_DATA[locale]?.[sectorId] || {};
+  const ROOMS = MOCK_SECTOR?.rooms || [];
+  const currentRoom = ROOMS[id];
+  const { images = [] } = currentRoom;
 
-                    <div className="mt-5">{room.description}</div>
+  const sliderRef = useRef(null);
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slideNext();
+  }, []);
+
+  return (
+    <RootLayout title="room" description="room" logo={MOCK_SECTOR.logo}>
+      <div>
+        <Container>
+          <div className="w-full h-screen relative overflow-hidden">
+            <div className="absolute inset-0">
+              <div className="w-full relative">
+                <Swiper ref={sliderRef} slidesPerView={1} slidesPerGroup={1} spaceBetween={0} loop>
+                  {images.map((image, index) => (
+                    <SwiperSlide key={index}>
+                      <img src={image.url} alt="bg image" className="w-full h-full object-cover " />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </div>
+            <div className="absolute bottom-16 right-0 left-1/3 z-50">
+              <div className="flex items-center justify-center gap-10 md:gap-[400px] w-full">
+                <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handlePrev}>
+                  <div className="m-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
                   </div>
-                  <div className="pl-5 border-black md:border-l">
-                    <div className="w-32 md:w-96">
-                      <div className="text-gray-600">
-                        <span className="font-semibold italic font-[roboto] text-gray-900">{room.price}</span>
-                        1-2 guest 25м2
-                      </div>
-                      <div>
-                        room RATE INCLUDES:
-                        <ul>
-                          <li>WIFI</li>
-                          <li>HEALTH CLUB</li>
-                          <li>BREAKFAST BUFEET</li>
-                          <li>VAT 10%</li>
-                        </ul>
-                      </div>
+                </button>
+                <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handleNext}>
+                  <div className="m-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div className="absolute inset-y-0 left-0 right-2/3 z-50">
+              <div className="h-full w-full bg-[#00000099]">
+                <div className="p-5 md:p-[45px] md:pt-[100px] text-[#B58E3E]">
+                  <div className="">
+                    <div className="text-2xl md:text-[80px] uppercase leading-none">{currentRoom.title}</div>
+                    <div className="text-lg md:text-[24px] leading-none">{currentRoom.type}</div>
+                  </div>
+
+                  <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[26px]">
+                    <div>
+                      <h5 className="uppercase">guest</h5>
+                      <p className="text-white uppercase truncate w-[200px]">{currentRoom.description}</p>
+                    </div>
+                    <div>
+                      <h5 className="uppercase">size</h5>
+                      <p className="text-white uppercase">{currentRoom.size}</p>
+                    </div>
+                  </div>
+                  <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[22px]">
+                    <div>
+                      <h5 className="uppercase">room includes:</h5>
+                      <ul className="decoration-none">
+                        <li className="text-white room-list uppercase">Wifi</li>
+                        <li className="text-white room-list">Health Club</li>
+                        <li className="text-white room-list">Breakfast Bufeet</li>
+                        <li className="text-white room-list">VAT 10%</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-            </Container>
+            </div>
           </div>
-        </Element>
+        </Container>
       </div>
     </RootLayout>
   );
