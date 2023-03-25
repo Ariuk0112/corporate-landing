@@ -39,8 +39,7 @@ export default function Home() {
             <Video />
           </div>
           <div className="w-full" id="News">
-          <News
-            />
+            <News />
             <Map />
           </div>
 
@@ -57,7 +56,6 @@ export default function Home() {
           </div> */}
         </div>
       </Container>
-
     </div>
   );
 }
