@@ -9,9 +9,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 const Facility = ({ facilities, sector }) => {
   return (
-    <div className="w-full  font-Montserrat">
+    <div className="w-full overflow-x-hidden font-Montserrat">
       <div className="text-white -mr-28">
-        <SectionTitle index="02" title="Services" isRight={false} isTransparent={true} />
+        <SectionTitle index="02" title="Services" isRight={true} isTransparent={true} />
       </div>
       <div className="md:h-[600px] items-center justify-center">
         <div className="w-full flex flex-col md:flex-row justify-between items-stretch relative gap-2">

@@ -1,6 +1,4 @@
 const SectionTitle = ({ title, index, isRight, isTransparent }) => {
-  console.log(title, index, isRight, isTransparent);
-
   return (
     <div className={`h-32 md:h-[230px] w-full ${isTransparent ? 'bg-transparent' : 'bg-black'}`}>
       <div className="relative w-full h-full font-montserrat">

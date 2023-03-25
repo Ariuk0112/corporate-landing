@@ -1,18 +1,20 @@
 import Link from 'next/link';
-import Head from 'next/head';
-//custom
-import Sector_data from '../../../assets/i18n/home.json';
 import SectionTitle from '@/components/common/SectionTitle';
-const MOCK_SECTOR = Sector_data.sectors.find((data) => data.locale === 'en').items;
-const Sector = () => {
+//custom
+import MOCK_DATA from '@/assets/i18n/data.json';
+
+// TODO: change when locale changes
+const Sector = ({ locale = 'en' }) => {
+  const sectors = MOCK_DATA[locale]?.sectors || [];
+  console.log(locale, sectors);
   return (
     <div className="overflow-hidden text-white my-10">
       <div className="">
         <SectionTitle index="01" title="Sectors" isRight={true} />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4">
-        {MOCK_SECTOR.map((sector, index) => (
-          <Link key={index} href={`/sector/${index}`}>
+        {sectors.map((sector, index) => (
+          <Link key={index} href={`/sector/${sector.id}`}>
             <div
               className={`opacity-30 hover:opacity-100 transition-all duration-700 text-[#B58E3E] hover:text-black ease-out h-[320px] md:h-[750px]  p-5 relative`}
               style={{

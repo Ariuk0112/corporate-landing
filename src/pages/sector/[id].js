@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Facility from '@/components/sections/sector/Facility';
 import Room from '@/components/sections/sector/Room';
 import Image from 'next/image';
@@ -6,19 +7,21 @@ import Datas from '../../assets/i18n/home.json';
 import { News, About, Video } from '@/components/sections/home';
 import { Container, RootLayout } from '../../components/layouts';
 
+import MOCK_DATA from '@/assets/i18n/data.json';
+
 export async function getServerSideProps(context) {
   const { id } = context.query;
+  const { locale } = context.locale;
   return {
     props: {
       id,
+      locale: locale || 'en',
     },
   };
 }
 
-const SectorDetail = ({ id }) => {
-  const localItems = Datas.sectors.find((data) => data.locale === 'en');
-  const MOCK_SECTOR = localItems.items[id];
-  console.log(MOCK_SECTOR.logo);
+const SectorDetail = ({ id, locale }) => {
+  const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
 
   return (
     <>
@@ -40,7 +43,7 @@ const SectorDetail = ({ id }) => {
               </div>
             </div>
             <div className="w-full bg-black">
-              {MOCK_SECTOR.rooms === undefined ? '' : <Room rooms={MOCK_SECTOR.rooms[0]} sector={id} />}
+              {MOCK_SECTOR.rooms && MOCK_SECTOR.rooms.length > 0 && <Room rooms={MOCK_SECTOR.rooms} sector={id} />}
             </div>
             <div
               className="h-[1379px] "
@@ -52,12 +55,6 @@ const SectorDetail = ({ id }) => {
             >
               <Facility facilities={MOCK_SECTOR.facilities} sector={id} />
             </div>
-
-            {/* <News
-              title="NEWS & COMREHENSIVE"
-              desc="Designed as privileged almost private place where you will feel right at home"
-              VIDEO_ID={MOCK_SECTOR.video_id}
-            /> */}
             <div className="mx-[90px] md:-mt-[600px]">
               <Video />
             </div>

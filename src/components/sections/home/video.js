@@ -20,7 +20,7 @@ const Video = () => {
       </div>
       <div className="p-5 w-full md:-mt-[230px] bg-[#B0985A] md:h-[430px] md:w-[560px] rounded-[8px] text-center text-white">
         <b className="text-[75px] md:text-[200px] leading-[1]">“</b>
-        <p className="leading-none text-[32px] px-[65px] text-justify tracking-tighter">
+        <p className="leading-none text-xl md:text-[32px] px-5 md:px-[65px] text-justify tracking-tighter">
           Great hospitality is the key to Pride of Britain’s longstanding reputation for excellence.
         </p>
       </div>
