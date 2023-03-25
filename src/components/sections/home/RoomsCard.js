@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { EyeIcon, calendar } from '@heroicons/react/20/solid';
 import Image from 'next/image';
-
 const RoomsCard = ({ room }) => {
   return (
     <div className="rounded-20 bg-white w-full shadow-md">

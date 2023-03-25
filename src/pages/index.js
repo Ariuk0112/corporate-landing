@@ -19,9 +19,9 @@ export default function Home() {
     }, [3000]);
   }, []);
 
-  // if (loading) {
-  //   return <Splash />;
-  // }
+  if (loading) {
+    return <Splash />;
+  }
 
   return (
     <div className="overflow-hidden">

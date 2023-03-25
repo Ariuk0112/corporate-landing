@@ -6,3 +6,4 @@ export { default as Time } from './Time';
 export { default as Heart } from './Heart';
 export { default as Gear } from './Gear';
 export { default as User } from './User';
+export { default as Arrow } from './arrow';
