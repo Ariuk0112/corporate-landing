@@ -26,7 +26,7 @@ const HeroSlider = (props) => {
         >
           {images &&
             images.length > 0 &&
-            images.map((imgSrc, index) => {
+            images.map((imgSrc, index) => (
               <SwiperSlide key={index}>
                 <motion.div
                   exit={{ opacity: 0 }}
@@ -38,8 +38,8 @@ const HeroSlider = (props) => {
                     <img src={imgSrc} alt={title || 'image'} className="w-full h-full" />
                   </div>
                 </motion.div>
-              </SwiperSlide>;
-            })}
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
       <div className="absolute inset-x-0 bottom-32 z-20">

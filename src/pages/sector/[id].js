@@ -23,7 +23,7 @@ const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
 
   const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
-
+console.log(MOCK_SECTOR.background_image)
   return (
     <>
       <RootLayout
