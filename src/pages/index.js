@@ -38,6 +38,11 @@ export default function Home() {
             <About />
             <Video />
           </div>
+          <div className="w-full" id="News">
+          <News
+            />
+            <Map />
+          </div>
 
           {/* <div id="Service" className="w-full">
             <News
@@ -48,10 +53,11 @@ export default function Home() {
 
           <div id="Contact" className="w-full">
             <About />
-            <Map />
+            
           </div> */}
         </div>
       </Container>
+
     </div>
   );
 }
