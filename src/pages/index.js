@@ -1,9 +1,11 @@
 //custom
-import { RoomsCard, BannerSlider, News, Map, Video } from '../components/sections/home';
+import { RoomsCard, BannerSlider, News, Map, VideoPlayer } from '../components/sections/home';
 import { Container, RootLayout } from '../components/layouts';
 import Head from 'next/head';
 import About from '@/components/sections/home/About';
 import Sector from '@/components/sections/home/Sector';
+import Video from '@/components/sections/home/Video';
+
 import Splash from '@/components/common/Splash';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -30,8 +32,12 @@ export default function Home() {
       </RootLayout> */}
       <Container>
         <div className="w-full">
-          <div className="w-full" id="Room">
+          <div className="w-full" id="Sectors">
             <Sector />
+          </div>
+          <div className="w-full" id="About-us">
+            <About isRight />
+            <VideoSection />
           </div>
 
           {/* <div id="Service" className="w-full">
