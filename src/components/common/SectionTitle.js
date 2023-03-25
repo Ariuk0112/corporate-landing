@@ -2,10 +2,10 @@ const SectionTitle = ({ title, index, isRight, isTransparent }) => {
   console.log(title, index, isRight, isTransparent);
 
   return (
-    <div className={`h-[230px] w-full ${isTransparent ? 'bg-transparent' : 'bg-black'}`}>
+    <div className={`h-32 md:h-[230px] w-full ${isTransparent ? 'bg-transparent' : 'bg-black'}`}>
       <div className="relative w-full h-full font-montserrat">
         <div className={`absolute bottom-0 ${isRight ? 'right-0' : 'left-10 md:left-[180px]'}`}>
-          <h5 className="text-[148px] text-[#FFFFFF33] leading-none uppercase">{title}</h5>
+          <h5 className="text-[74px] md:text-[148px] text-[#FFFFFF33] leading-none uppercase">{title}</h5>
         </div>
         <div
           className={`z-20 absolute top-1/2 transform -translate-y-1/2 

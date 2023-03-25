@@ -1,5 +1,7 @@
-import NewsCard from './NewsCard'; /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
+import NewsCard from './NewsCard';
+import SectionTitle from '@/components/common/SectionTitle';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 const MOCK_NEWS = [
   {
     title: 'Төрсөн өдрийн хүлээн авалт хийж байна',
@@ -13,22 +15,38 @@ const MOCK_NEWS = [
     date: '2022-02-23',
     image: '/news.png',
   },
+  {
+    title: 'Төрсөн өдрийн хүлээн авалт  хийж байна ',
+    phone: '99111355',
+    date: '2022-02-23',
+    image: '/news.png',
+  },
 ];
 const News = ({ title, desc, VIDEO_ID }) => {
   return (
-    <div>
-      <div className="flex flex-col py-11 md:py-[54px]">
-        <p className="text-[#B58E3E] text-[14px] md:text-[29px] gap-[24px]">{title}</p>
-        <p>{desc}</p>
+    <div className="">
+      <div className="w-full text-white">
+        <SectionTitle title="news" index="03" />
       </div>
 
-      <div className="bg-custom-ee w-full flex flex-col justify-center items-center">
-        <div className="w-full">
+      <div className="w-full py-5 md:py-10">
+        <div className="w-full relative h-64 md:h-[450px]">
+            <div className="w-full">
+              <Swiper slidesPerView={2} slidesPerGroup={2} spaceBetween={16}>
+                {MOCK_NEWS.map((news, index) => (
+                  <SwiperSlide key={index}>
+                    <NewsCard news={news} />
+                  </SwiperSlide>
+                ))}
+                 <span slot="wrapper-end">Wrapper End</span>
+              </Swiper>
+            </div>
+
+          {/* <div className="w-full">
           <div className="w-full grid md:grid-cols-2 gap-5">
-            {MOCK_NEWS.map((news, index) => (
-              <NewsCard key={index} news={news} />
-            ))}
+           
           </div>
+        </div> */}
         </div>
       </div>
     </div>
