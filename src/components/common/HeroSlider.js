@@ -11,7 +11,7 @@ const HeroSlider = (props) => {
   const { images, title, subTitle } = props;
   console.log(images);
   return (
-    <div className="relative h-screen w-screen">
+    <div className="relative h-96 md:h-screen w-screen">
       <div className="absolute inset-0 z-10 opacity-90">
         <Swiper
           effect="fade"
@@ -42,7 +42,7 @@ const HeroSlider = (props) => {
             ))}
         </Swiper>
       </div>
-      <div className="absolute inset-x-0 bottom-32 z-20">
+      <div className="absolute inset-x-0 md:bottom-32 z-20">
         <div className="px-5 md:px-[36px] text-left flex flex-col items-center justify-around text-white h-full w-full">
           <div className="w-full">
             <h1 className="font-medium my-5 leading-none text-[48px] md:text-[64px]">{title}</h1>

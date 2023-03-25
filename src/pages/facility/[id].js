@@ -34,7 +34,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       <Container>
         {currentFacility && (
           <div className="w-full font-Montserrat flex flex-col text-white text-justify">
-            <div className="flex justify-end -mt-10 mb-[50px]">
+            <div className="flex justify-end -mt-10 mb-[50px] z-50">
               <div className="w-[926px] h-[358px] bg-[#B0985A] text-[#E9E9E9] text-[40px] md:text-[28px]">
                 <div className="flex flex-col w-full justify-center items-center ">
                   <div className="mx-[80px] md:mx-[105px] mt-[14px]">

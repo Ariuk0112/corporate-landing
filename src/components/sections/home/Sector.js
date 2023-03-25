@@ -10,7 +10,7 @@ const Sector = ({ locale = 'en' }) => {
   return (
     <div className="overflow-hidden text-white my-10">
       <div className="">
-        <SectionTitle index="01" title="Sectors" isRight={true} />
+        <SectionTitle index="01" title="Sectors" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4">
         {sectors.map((sector, index) => (
