@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { Container, RootLayout } from '../../components/layouts';
 import StaticData from '../../assets/i18n/home.json';
@@ -31,32 +32,84 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       <div className="w-full">
         <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
       </div>
+      <div className="max-w-[1550px]">
+        <div className="flex justify-end -mt-10 mb-[50px] z-20">
+          <div className="w-full md:w-[926px] md:h-[358px] bg-[#B0985A] text-[#E9E9E9] text-[40px] md:text-[28px] z-30">
+            <div className="flex flex-col w-full justify-center items-center">
+              <div className="mx-5 md:mx-[105px] mt-[14px]">
+                <div className="mt-[24px]">
+                  <p className="mx-auto text-[20px] md:text-[40px]">Chairman Restaurants</p>
+                </div>
+                <div className="mb-10 mt-5 md:mt-[60px] text-[24px]">
+                  <p className="text-[20px] text-[#E9E9E9] md:leading-[24px] font-normal">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Container>
         {currentFacility && (
           <div className="w-full font-Montserrat flex flex-col text-white text-justify">
-            <div className="flex justify-end -mt-10 mb-[50px] z-50">
-              <div className="w-[926px] h-[358px] bg-[#B0985A] text-[#E9E9E9] text-[40px] md:text-[28px]">
-                <div className="flex flex-col w-full justify-center items-center ">
-                  <div className="mx-[80px] md:mx-[105px] mt-[14px]">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[120px] pb-10 md:pb-[120px]">
+              <div>
+                <div className="h-46 md:h-[589px]">
+                  <img className="h-full" src="/service/111.png" />
+                </div>
+                <div className="h-46 md:h-[292px] mt-10 md:mt-[120px]">
+                  <img className="h-full w-full" src="/service/111.png" />
+                </div>
+                <div className="flex flex-col w-full text-right mt-10 md:mt-[76px] justify-end items-end">
+                  <div>
+                    <div className="w-[72px] border-[5px] border-solid  border-[#B0985A]"></div>
+                  </div>
+                  <div>
                     <div className="mt-[24px]">
-                      <p className=" mx-auto text-[20px] md:text-[40px]">Chairman Restaurants</p>
-                    </div>
-                    <div className="mt-[60px] text-[24px]">
-                      <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
-                      </p>
+                      <div className="mb-[32px]">
+                        <p className="text-[40px] leading-none"> Feel Real Comfortable</p>
+                      </div>
+                      <div>
+                        <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal text-justify">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry standard dummy text ever since the 1500s, when an unknown printer took a
+                          galley of type and scrambled it to make a type specimen book.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full flex-col">
-              <div className="mx-[40px] flex gap-14">
+              <div className="flex flex-col-reverse md:flex-col">
+                <div className="flex flex-col w-full">
+                  <div>
+                    <div className="w-[72px] border-[5px] border-solid border-[#B0985A]"></div>
+                    <div className="mt-[24px]">
+                      <div className="mb-[32px]">
+                        <p className="text-[40px] leading-none text-left"> Feel Real Comfortable</p>
+                      </div>
+                      <div>
+                        <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry standard dummy text ever since the 1500s, when an unknown printer took a
+                          galley of type and scrambled it to make a type specimen book.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="h-64 md:h-[776px] w-full mt-10 md:mt-[120px]">
+                  <img className="h-full" src="/service/111.png" />
+                </div>
+              </div>
+
+              {/* <div className="mx-5 md:mx-[40px] flex gap-5 md:gap-14">
                 <div className="w-1/2">
-                  <div className="">
-                    <img className="h-[589px]" src="/service/111.png" />
+                  <div className="h-[589px]">
+                    <img className="h-full" src="/service/111.png" />
                   </div>
                 </div>
                 <div className="w-1/2">
@@ -91,9 +144,9 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                       <div className="w-[72px] border-[5px] border-solid  border-[#B0985A]"></div>
                     </div>
                     <div>
-                      <div className="mt-[24px] ">
+                      <div className="mt-[24px]">
                         <div className="mb-[32px]">
-                          <p className="text-[40px] "> Feel Real Comfortable</p>
+                          <p className="text-[40px]"> Feel Real Comfortable</p>
                         </div>
                         <div>
                           <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal text-justify">
@@ -111,27 +164,9 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                     <img className="h-[776px]" src="/service/111.png" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
-          // <div>
-          //   <div className="w-full relative">
-          //     <div className="grid grid-cols-3 overflow-hidden gap-1 md:gap-2">
-          //       {facility.image.map((img, index) => (
-          //         <div key={index} className="w-full h-[650px] md:h-[950px]">
-          //           <img src={img.url} alt="sv" className="w-full h-full object-cover" />
-          //         </div>
-          //       ))}
-          //     </div>
-
-          //     <div className="absolute bottom-0 md:h-[268px] w-full bg-[#B58E3E80] ">
-          //       <div className="flex flex-col items-center justify-center gap-5 text-center">
-          //         <h1 className="uppercase text-white md:text-4xl font-medium">{facility.title}</h1>
-          //         <p className="mx-auto text-white text-xs md:text-3xl font-medium">{facility.description}</p>
-          //       </div>
-          //     </div>
-          //   </div>
-          // </div>
         )}
       </Container>
     </RootLayout>

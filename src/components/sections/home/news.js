@@ -35,9 +35,10 @@ const News = () => {
           <div className="w-full">
             <Swiper
               slidesPerView={1}
-              slidesPerGroup={2}
+              slidesPerGroup={1}
               breakpoints={{
                 768: {
+                  slidesPerGroup: 2,
                   slidesPerView: 2,
                 },
               }}

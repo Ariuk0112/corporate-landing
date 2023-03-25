@@ -1,7 +1,7 @@
-const Container = ({ children }) => {
+const Container = ({ children, mx = '5' }) => {
   return (
-    <div className="max-w-[1550px] md:mx-auto mx-5">
-      <div className="w-full flex ">{children}</div>
+    <div className={`max-w-[1550px] overflow-x-hidden overflow-y-visible md:mx-auto mx-${mx}`}>
+      <div className="w-full flex">{children}</div>
     </div>
   );
 };

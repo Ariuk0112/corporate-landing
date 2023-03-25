@@ -24,10 +24,13 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
     >
       <Container>
         <div className="flex-row w-full text-white font-Montserrat">
-          <div className="w-full flex ">
-            <div className="w-32 md:w-[300px]">
-              <img src={(logo && logo) || '/logo/main.png'} alt="sb" className="w-full md:h-full" />
-              <div className="flex items-center justify-center md:gap-[30px]">
+          <div className="w-full flex flex-col md:flex-row">
+            <div className="w-full md:w-[300px] flex flex-col items-center justify-center">
+              <div className="w-32 md:w-[300px]">
+                {/* <img src={'/logo/logo-white.png'} alt="sb" className="w-full h-full" /> */}
+                <img src={(logo && logo) || '/logo/logo-white.png'} alt="sb" className="w-full md:h-full" />
+              </div>
+              <div className="flex items-center justify-center gap-[30px]">
                 <Image src={'/icons/facebook.png'} width={32} height={32}></Image>
                 <Image src={'/icons/twitter.png'} width={32} height={32}></Image>
                 <Image src={'/icons/youtube.png'} width={32} height={32}></Image>
@@ -72,7 +75,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                       </div>
                     </div>
                     <div>
-                      <div className="mb-[11px]" href="/sector">
+                      <div className="mb-[11px] overflow-hidden" href="/sector">
                         {(mail && mail) || '11-33 4411 manager@corporatehotel.mn'}
                       </div>
                     </div>
@@ -92,15 +95,6 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
           </div>
         </div>
       </Container>
-      {/* <div className="flex flex-col justify-center items-center">
-        <div className="md:h-[150px] md:w-[280px] md:mb-16 h-[100px] w-[200px]">
-          <img src={logo ? logo : '/logo/main.png'} alt="sb" className="w-full h-full" />
-        </div>
-        <div className="flex md:text-[15px] text-[12px] font-bold">
-          <p>{address ? address : 'Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia'}</p>
-          <p className=""> {mail ? mail : ' (+976) 7000 2030 - INFO@CORPORATEHOTEL.MN'}</p>
-        </div>
-      </div> */}
     </section>
   );
 };

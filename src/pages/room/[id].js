@@ -40,8 +40,8 @@ export default function RoomDetail({ id, sectorId, locale }) {
 
   return (
     <RootLayout title="room" description="room" logo={MOCK_SECTOR.logo}>
-      <div>
-        <Container>
+      <div className="pt-[70px] md:pt-0">
+        <Container mx="0">
           <div className="w-full h-screen relative overflow-hidden">
             <div className="absolute inset-0">
               <div className="w-full h-full relative">
@@ -54,9 +54,12 @@ export default function RoomDetail({ id, sectorId, locale }) {
                 </Swiper>
               </div>
             </div>
-            <div className="absolute bottom-16 right-0 left-1/3 z-50">
+            <div className="absolute bottom-16 right-0 left-1/2 md:left-1/3 z-50">
               <div className="flex items-center justify-center gap-10 md:gap-[400px] w-full">
-                <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handlePrev}>
+                <button
+                  className="bg-white rounded-full shadow w-10 h-10 md:w-[100px] md:h-[100px] flex"
+                  onClick={handlePrev}
+                >
                   <div className="m-auto">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +73,10 @@ export default function RoomDetail({ id, sectorId, locale }) {
                     </svg>
                   </div>
                 </button>
-                <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handleNext}>
+                <button
+                  className="bg-white rounded-full shadow w-10 h-10 md:w-[100px] md:h-[100px] flex"
+                  onClick={handleNext}
+                >
                   <div className="m-auto">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +92,7 @@ export default function RoomDetail({ id, sectorId, locale }) {
                 </button>
               </div>
             </div>
-            <div className="absolute inset-y-0 left-0 right-2/3 z-50">
+            <div className="absolute inset-y-0 left-0 right-1/2 md:right-2/3 z-50">
               <div className="h-full w-full bg-[#00000099]">
                 <div className="p-5 md:p-[45px] md:pt-[100px] text-[#B58E3E]">
                   <div className="">
@@ -94,10 +100,10 @@ export default function RoomDetail({ id, sectorId, locale }) {
                     <div className="text-lg md:text-[24px] leading-none">{currentRoom.type}</div>
                   </div>
 
-                  <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[26px]">
+                  <div className="mt-5 md:mt-[85px] flex flex-col md:flex-row gap-5 md:gap-[120px] text-xl md:text-[26px]">
                     <div>
                       <h5 className="uppercase">guest</h5>
-                      <p className="text-white uppercase truncate w-[200px]">{currentRoom.description}</p>
+                      <p className="text-white uppercase truncate md:w-[200px]">{currentRoom.description}</p>
                     </div>
                     <div>
                       <h5 className="uppercase">size</h5>
