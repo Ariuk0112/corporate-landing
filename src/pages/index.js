@@ -34,7 +34,7 @@ export default function Home() {
             <Sector />
           </div>
 
-          <div id="Service" className="w-full">
+          {/* <div id="Service" className="w-full">
             <News
               title="NEWS & COMREHENSIVE"
               desc="Designed as privileged almost private place where you will feel right at home"
@@ -44,7 +44,7 @@ export default function Home() {
           <div id="Contact" className="w-full">
             <About />
             <Map />
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>

@@ -13,7 +13,7 @@ import 'swiper/css/effect-fade';
 const BannerSlider = () => {
   return (
     <div className="relative h-screen w-screen">
-      <div className="absolute inset-0 z-10 opacity-90">
+      {/* <div className="absolute inset-0 z-10 opacity-90">
         <Swiper
           effect="fade"
           modules={[EffectFade, Autoplay]}
@@ -50,7 +50,7 @@ const BannerSlider = () => {
             </motion.div>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </div> */}
       <div className="absolute inset-0 z-20">
         <div className="text-center flex flex-col items-center justify-around text-white h-full w-full">
           <div className="w-[300px] h-auto">

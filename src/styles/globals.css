@@ -14,7 +14,7 @@ html {
 }
 
 .font-montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .swiper {
@@ -28,4 +28,9 @@ html {
   justify-content: center;
   align-items: center;
   background: black;
+}
+
+.text-vertical {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
 }
