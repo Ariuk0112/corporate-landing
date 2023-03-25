@@ -2,8 +2,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Container from '../Container';
+import MOCK_DATA from '@/assets/i18n/data.json';
+import { useRouter } from 'next/router';
 
-const Footer = ({ logo, address, mail }) => {
+// TODO: change when locale changes
+
+const Footer = ({ logo, address, mail,id ,locale = 'en'  }) => {
+  const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
+  const sectors = MOCK_DATA[locale]?.sectors || [];
+  console.log(MOCK_SECTOR)
   return (
     <section
       className="w-full md:p-[60px]  font-light bg-[#E5E5E5]"
@@ -18,8 +25,8 @@ const Footer = ({ logo, address, mail }) => {
         <div className="flex-row w-full text-white font-Montserrat">
           <div className="w-full flex ">
             <div className="w-32 md:w-[300px]">
-              <img src={'/logo/main.png'} alt="sb" className="w-full h-full" />
-              <div className="flex items-center justify-center gap-[30px]">
+              <img src={logo && logo || "/logo/main.png"} alt="sb" className="w-full md:h-full" />
+              <div className="flex items-center justify-center md:gap-[30px]">
                 <Image src={'/icons/facebook.png'} width={32} height={32}></Image>
                 <Image src={'/icons/twitter.png'} width={32} height={32}></Image>
                 <Image src={'/icons/youtube.png'} width={32} height={32}></Image>
@@ -32,76 +39,49 @@ const Footer = ({ logo, address, mail }) => {
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">Sectors</div>
                   <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
+                    {sectors.map((sector,index)=> (
+                      <div key = {`sector-${index}`}>
+                      <Link className="mb-[11px]" href={`/sector/${sector.id}`}>
+                      {sector.title}
                       </Link>
                     </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
+                    ))}
+                    
                   </div>
-                </div>
-                <div className="w-full flex-row pl-[20px] md:pl-[41px]">
+                </div>{
+                  MOCK_SECTOR.facilities &&  <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">Service</div>
-                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
+                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">{
+                     MOCK_SECTOR.facilities.map((facility,index) => (
+                      <div key ={index}>
+                      <Link className="mb-[11px]" href={`/facility/${index}`}>
+                      {facility.title}
                       </Link>
                     </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
+                     ))
+                  }
                   </div>
-                </div>
+                </div> 
+                }
+              
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">Contact us</div>
                   <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
                     <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
+                      <div className="mb-[11px]" href="/sector">
+                      {
+                    address && address || "Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia"
+                  }
+                      </div>
                     </div>
                     <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
+                      <div className="mb-[11px]" href="/sector">
+                      {
+                    mail && mail || "11-33 4411 manager@corporatehotel.mn"
+                  }
+                      </div>
                     </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="mb-[11px]" href="/sector">
-                        The Corporate Hotel
-                      </Link>
-                    </div>
+                    
                   </div>
                 </div>
               </div>

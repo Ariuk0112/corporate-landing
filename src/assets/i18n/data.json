@@ -236,7 +236,7 @@
         }
       ]
     },
-    "sector-2": {
+    "sector-3": {
       "rooms": [
           {
             "title": "Superior A",
@@ -386,7 +386,7 @@
         }
       ]
     },
-    "sector-3": {
+    "sector-4": {
       "rooms": [
           {
             "title": "A suite room",
@@ -617,7 +617,7 @@
         }
       ]
     },
-    "sector-4": {
+    "sector-5": {
       "facilities": [
         {
           "title": "CHAIRMAN RESTAURANTS",

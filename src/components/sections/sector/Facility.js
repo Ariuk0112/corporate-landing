@@ -11,13 +11,24 @@ const Facility = ({ facilities, sector }) => {
       <div className="text-white -mr-28">
         <SectionTitle index="02" title="Services" isRight={true} isTransparent={true} />
       </div>
-      <div className="md:h-[600px] items-center justify-center">
+      <div className="h-[350px] md:h-[600px] items-center justify-center">
         <div className="w-full flex flex-col md:flex-row justify-between items-stretch relative gap-2">
-          <div className="absolute inset-0 z-10 opacity-90 h-[570px] mx-[150px] rounded-[8px]">
-            <Swiper className="mySwiper" slidesPerView={5} spaceBetween={23}>
+          <div className="absolute inset-0 z-10 opacity-90 h-[350px] md:h-[570px] md:mx-[150px] rounded-[8px]">
+            <Swiper className="mySwiper" slidesPerView={1} spaceBetween={23}  breakpoints={{
+    // when window width is >= 640px
+    280: {
+      width: 280,
+      slidesPerView: 1,
+    },
+    // when window width is >= 768px
+    640: {
+      width: 768,
+      slidesPerView: 5,
+    },
+  }}>
               {facilities.map((facility, index) => (
                 <SwiperSlide key={index}>
-                  <div className="h-[570px] mx-auto rounded-[8px]">
+                  <div className="h-[300px] md:h-[570px] mx-auto rounded-[8px]">
                     <div
                       className="w-full h-full flex items-center justify-center  relative rounded-[8px]"
                       style={{

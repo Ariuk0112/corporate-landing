@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
 
 const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
-
+  const sectorDetail= MOCK_DATA[locale]?.sectors.find((sctr)=>sctr.id===id)
   const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
   // console.log(MOCK_SECTOR.background_image)
   return (
@@ -29,9 +29,10 @@ const SectorDetail = ({ id, locale }) => {
       <RootLayout
         title="sda"
         description="sda"
-        logo={MOCK_SECTOR.logo}
-        address={MOCK_SECTOR.address}
-        mail={MOCK_SECTOR.mail}
+        logo={sectorDetail.logo}
+        address={sectorDetail.address}
+        mail={sectorDetail.mail}
+        id = {id}
       >
         <Container>
           <div className="w-full ">
@@ -50,7 +51,7 @@ const SectorDetail = ({ id, locale }) => {
               {MOCK_SECTOR.rooms && MOCK_SECTOR.rooms.length > 0 && <Room rooms={MOCK_SECTOR.rooms} sector={id} />}
             </div>
             <div
-              className="h-[1379px] "
+              className="h-[450px] md:h-[1379px] "
               style={{
                 backgroundSize: `cover;`,
                 backgroundRepeat: `no-repeat`,
@@ -59,7 +60,7 @@ const SectorDetail = ({ id, locale }) => {
             >
               <Facility facilities={MOCK_SECTOR.facilities} sector={id} />
             </div>
-            <div className="mx-[90px] md:-mt-[600px]">
+            <div className="md:mx-[90px] md:-mt-[600px]">
               <Video />
             </div>
           </div>
