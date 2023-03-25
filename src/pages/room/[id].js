@@ -40,88 +40,86 @@ export default function RoomDetail({ id, sectorId, locale }) {
 
   return (
     <RootLayout title="room" description="room" logo={MOCK_SECTOR.logo}>
-      <div className="">
-        <div>
-          <Container>
-            <div className="w-full h-screen relative overflow-hidden">
-              <div className="absolute inset-0">
-                <div className="w-full relative">
-                  <Swiper ref={sliderRef} slidesPerView={1} slidesPerGroup={1} spaceBetween={0} loop>
-                    {images.map((image, index) => (
-                      <SwiperSlide key={index}>
-                        <img src={image.url} alt="bg image" className="w-full h-full object-cover " />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
+      <div>
+        <Container>
+          <div className="w-full h-screen relative overflow-hidden">
+            <div className="absolute inset-0">
+              <div className="w-full relative">
+                <Swiper ref={sliderRef} slidesPerView={1} slidesPerGroup={1} spaceBetween={0} loop>
+                  {images.map((image, index) => (
+                    <SwiperSlide key={index}>
+                      <img src={image.url} alt="bg image" className="w-full h-full object-cover " />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
-              <div className="absolute bottom-16 right-0 left-1/3 z-50">
-                <div className="flex items-center justify-center gap-10 md:gap-[400px] w-full">
-                  <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handlePrev}>
-                    <div className="m-auto">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                      </svg>
-                    </div>
-                  </button>
-                  <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handleNext}>
-                    <div className="m-auto">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                      </svg>
-                    </div>
-                  </button>
-                </div>
+            </div>
+            <div className="absolute bottom-16 right-0 left-1/3 z-50">
+              <div className="flex items-center justify-center gap-10 md:gap-[400px] w-full">
+                <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handlePrev}>
+                  <div className="m-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                  </div>
+                </button>
+                <button className="bg-white rounded-full shadow w-[100px] h-[100px] flex" onClick={handleNext}>
+                  <div className="m-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </div>
+                </button>
               </div>
-              <div className="absolute inset-y-0 left-0 right-2/3 z-50">
-                <div className="h-full w-full bg-[#00000099]">
-                  <div className="p-5 md:p-[45px] md:pt-[100px] text-[#B58E3E]">
-                    <div className="">
-                      <div className="text-2xl md:text-[80px] uppercase leading-none">{currentRoom.title}</div>
-                      <div className="text-lg md:text-[24px] leading-none">{currentRoom.type}</div>
-                    </div>
+            </div>
+            <div className="absolute inset-y-0 left-0 right-2/3 z-50">
+              <div className="h-full w-full bg-[#00000099]">
+                <div className="p-5 md:p-[45px] md:pt-[100px] text-[#B58E3E]">
+                  <div className="">
+                    <div className="text-2xl md:text-[80px] uppercase leading-none">{currentRoom.title}</div>
+                    <div className="text-lg md:text-[24px] leading-none">{currentRoom.type}</div>
+                  </div>
 
-                    <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[26px]">
-                      <div>
-                        <h5 className="uppercase">guest</h5>
-                        <p className="text-white uppercase">{currentRoom.description}</p>
-                      </div>
-                      <div>
-                        <h5 className="uppercase">size</h5>
-                        <p className="text-white uppercase">{currentRoom.size}</p>
-                      </div>
+                  <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[26px]">
+                    <div>
+                      <h5 className="uppercase">guest</h5>
+                      <p className="text-white uppercase truncate w-[200px]">{currentRoom.description}</p>
                     </div>
-                    <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[22px]">
-                      <div>
-                        <h5 className="uppercase">room includes:</h5>
-                        <ul className="decoration-none">
-                          <li className="text-white room-list uppercase">Wifi</li>
-                          <li className="text-white room-list">Health Club</li>
-                          <li className="text-white room-list">Breakfast Bufeet</li>
-                          <li className="text-white room-list">VAT 10%</li>
-                        </ul>
-                      </div>
+                    <div>
+                      <h5 className="uppercase">size</h5>
+                      <p className="text-white uppercase">{currentRoom.size}</p>
+                    </div>
+                  </div>
+                  <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[22px]">
+                    <div>
+                      <h5 className="uppercase">room includes:</h5>
+                      <ul className="decoration-none">
+                        <li className="text-white room-list uppercase">Wifi</li>
+                        <li className="text-white room-list">Health Club</li>
+                        <li className="text-white room-list">Breakfast Bufeet</li>
+                        <li className="text-white room-list">VAT 10%</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container>
       </div>
     </RootLayout>
   );
