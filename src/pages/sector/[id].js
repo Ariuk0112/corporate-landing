@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
 
 const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
-  const sectorDetail= MOCK_DATA[locale]?.sectors.find((sctr)=>sctr.id===id)
+  const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === id);
   const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
   // console.log(MOCK_SECTOR.background_image)
   return (
@@ -32,7 +32,7 @@ const SectorDetail = ({ id, locale }) => {
         logo={sectorDetail.logo}
         address={sectorDetail.address}
         mail={sectorDetail.mail}
-        id = {id}
+        id={id}
       >
         <Container>
           <div className="w-full ">

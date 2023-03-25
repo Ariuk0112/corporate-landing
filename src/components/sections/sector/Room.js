@@ -16,18 +16,23 @@ const Room = ({ rooms, sector }) => {
           </div>
         </div>
         <div className="w-full font-Montserrat">
-          <Swiper slidesPerView={1} slidesPerGroup={1} spaceBetween={24}  breakpoints={{
-    // when window width is >= 640px
-    280: {
-      width: 280,
-      slidesPerView: 1,
-    },
-    // when window width is >= 768px
-    640: {
-      width: 768,
-      slidesPerView: 5,
-    },
-  }} >
+          <Swiper
+            slidesPerView={1}
+            slidesPerGroup={1}
+            spaceBetween={24}
+            breakpoints={{
+              // when window width is >= 640px
+              280: {
+                width: 280,
+                slidesPerView: 1,
+              },
+              // when window width is >= 768px
+              640: {
+                width: 768,
+                slidesPerView: 5,
+              },
+            }}
+          >
             {rooms.map((room, index) => (
               <SwiperSlide key={`room-${index}`}>
                 <div className="md:my-10 w-full text-white">
