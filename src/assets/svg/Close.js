@@ -1,4 +1,4 @@
-const Close = props => (
+const Close = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -13,6 +13,6 @@ const Close = props => (
   >
     <path d="M18 6 6 18M6 6l12 12" />
   </svg>
-)
+);
 
-export default Close
+export default Close;
