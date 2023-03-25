@@ -11,10 +11,10 @@ const About = () => {
     <div className="text-white">
       <div className="flex flex-col pt-10 w-full">
         <div className="text-white">
-          <SectionTitle index="01" title="About us" side="right" />
+          <SectionTitle index="01" title="About us" isRight />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <article className="py-32 text-[12px] md:text-[14px] text[#CACACA] text-justify font-montserrat">
+          <article className="py-5 md:py-32 text-[12px] md:text-[14px] text[#CACACA] text-justify font-montserrat">
             The Corporate Hotel and Convention Centre is one of the newest additions to The Corporate Hotels. It is a
             hotel where member of the team takes terrific pride in offering the highest levels of service, where guests
             are sincerely welcomed and can enjoy elegant accommodations, and the splendid lobby bar, restaurant, coffee
@@ -37,7 +37,7 @@ const About = () => {
 
           {/* swiper-container */}
           <div className="swiper-container">
-            <div className="p-16">
+            <div className="md:p-16">
               <Swiper
                 effect={'cards'}
                 grabCursor={true}

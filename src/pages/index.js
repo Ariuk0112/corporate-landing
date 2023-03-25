@@ -1,10 +1,9 @@
 //custom
-import { RoomsCard, BannerSlider, News, Map, VideoPlayer } from '../components/sections/home';
+import { RoomsCard, BannerSlider, News, Map, VideoPlayer, Video } from '../components/sections/home';
 import { Container, RootLayout } from '../components/layouts';
 import Head from 'next/head';
 import About from '@/components/sections/home/About';
 import Sector from '@/components/sections/home/Sector';
-import Video from '@/components/sections/home/Video';
 
 import Splash from '@/components/common/Splash';
 import { useEffect } from 'react';
@@ -36,8 +35,8 @@ export default function Home() {
             <Sector />
           </div>
           <div className="w-full" id="About-us">
-            <About isRight />
-            <VideoSection />
+            <About />
+            <Video />
           </div>
 
           {/* <div id="Service" className="w-full">

@@ -4,12 +4,12 @@ const SectionTitle = ({ title, index, isRight, isTransparent }) => {
   return (
     <div className={`h-[230px] w-full ${isTransparent ? 'bg-transparent' : 'bg-black'}`}>
       <div className="relative w-full h-full font-montserrat">
-        <div className={`absolute bottom-0 ${isRight ? 'left-10 md:left-[180px]' : 'right-0'}`}>
+        <div className={`absolute bottom-0 ${isRight ? 'right-0' : 'left-10 md:left-[180px]'}`}>
           <h5 className="text-[148px] text-[#FFFFFF33] leading-none uppercase">{title}</h5>
         </div>
         <div
           className={`z-20 absolute top-1/2 transform -translate-y-1/2 
-        ${isRight ? 'left-10 md:left-[40px]' : 'right-32'}
+        ${isRight ? 'right-32' : 'left-10 md:left-[40px]'}
        `}
         >
           <div className="flex items-end h-full">
