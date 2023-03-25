@@ -1,18 +1,12 @@
 //custom
-import {
-  RoomsCard,
-  BannerSlider,
-  News,
-  Map,
-  Video,
-} from "../components/sections/home";
-import { Container, RootLayout } from "../components/layouts";
-import Head from "next/head";
-import About from "@/components/sections/home/About";
-import Sector from "@/components/sections/home/Sector";
-import Splash from "@/components/common/Splash";
-import { useEffect } from "react";
-import { useState } from "react";
+import { RoomsCard, BannerSlider, News, Map, Video } from '../components/sections/home';
+import { Container, RootLayout } from '../components/layouts';
+import Head from 'next/head';
+import About from '@/components/sections/home/About';
+import Sector from '@/components/sections/home/Sector';
+import Splash from '@/components/common/Splash';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -24,7 +18,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return (<Splash />);
+    return <Splash />;
   }
 
   return (
