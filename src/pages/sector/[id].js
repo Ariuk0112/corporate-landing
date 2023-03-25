@@ -23,7 +23,7 @@ const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
 
   const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
-console.log(MOCK_SECTOR.background_image)
+  // console.log(MOCK_SECTOR.background_image)
   return (
     <>
       <RootLayout
@@ -39,7 +39,7 @@ console.log(MOCK_SECTOR.background_image)
               <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
             </div>
             <div className="w-full relative ">
-              <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" />
+              {/* <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" /> */}
               <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">
                 <div className="flex flex-col items-center justify-center gap-5 text-center">
                   <h1 className="uppercase text-white text-lg md:text-4xl font-medium">{MOCK_SECTOR.title}</h1>

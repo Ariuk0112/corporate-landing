@@ -1,41 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
 import { Container, RootLayout } from '../../components/layouts';
 import StaticData from '../../assets/i18n/home.json';
-import Image from 'next/image';
-import { BannerSlider } from '@/components/sections/home';
-const LOCALIZED_SECTORS_DATA = StaticData.sectors;
 
-// Server taldaa doorh function ajilaad request shidsen urlaas id bolon locale-n utgiig awna
-// locale utga ni  "en" | "mn" bn.
-// yor n bol backend-s dataa duudaad ahij CRUD hiideggv zvger haruuldag page ntr hiih gej baigaa bol getServerSideProps ashiglasan n zvgeer bdg
+import MOCK_DATA from '@/assets/i18n/data.json';
+import HeroSlider from '@/components/common/HeroSlider';
+
 export async function getServerSideProps(context) {
   const { id } = context.params;
   const { sector } = context.query;
-  //  Default-r "en" bolgoson
   const { locale = 'en' } = context;
 
-  // index bolon sector index deer tohirson utga zarlasan json deer bhgv bol aldaa zaana shvv
-  // badly hard written here :()
-  const currentLocaleData = LOCALIZED_SECTORS_DATA.find((localizedSectors) => localizedSectors.locale === locale);
-  const currentSector = currentLocaleData?.items[sector];
-  const currentFacility = currentSector?.facilities[id];
   return {
     props: {
       id,
-      facility: currentFacility,
-      sector: currentSector,
+      sectorId: sector,
+      locale: locale || 'en',
     },
   };
 }
 
-const FacilityDetail = ({ facility, sector }) => {
+const FacilityDetail = ({ id, sectorId, locale }) => {
+  const MOCK_SECTOR = MOCK_DATA[locale]?.[sectorId] || {};
+  const FACILITIES = MOCK_SECTOR?.facilities || [];
+  const currentFacility = FACILITIES[id];
+
+  const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
+
   return (
-    <RootLayout title="sda" description="sda" logo={sector.logo}>
+    <RootLayout title="sda" description="sda" logo={MOCK_SECTOR.logo}>
       <div className="w-full">
-        <BannerSlider />
+        <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
       </div>
       <Container>
-        {facility && (
+        {currentFacility && (
           <div className="w-full font-Montserrat flex flex-col text-white text-justify">
             <div className="flex justify-end -mt-10 mb-[50px]">
               <div className="w-[926px] h-[358px] bg-[#B0985A] text-[#E9E9E9] text-[40px] md:text-[28px]">
