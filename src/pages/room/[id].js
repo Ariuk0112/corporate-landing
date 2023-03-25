@@ -44,7 +44,7 @@ export default function RoomDetail({ id, sectorId, locale }) {
         <Container>
           <div className="w-full h-screen relative overflow-hidden">
             <div className="absolute inset-0">
-              <div className="w-full relative">
+              <div className="w-full h-full relative">
                 <Swiper ref={sliderRef} slidesPerView={1} slidesPerGroup={1} spaceBetween={0} loop>
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>
