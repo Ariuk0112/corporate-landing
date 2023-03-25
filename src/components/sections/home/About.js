@@ -5,6 +5,7 @@ import { EffectCards, Autoplay } from 'swiper';
 import SectionTitle from '@/components/common/SectionTitle';
 
 import 'swiper/css/effect-cards';
+import { Container } from '@/components/layouts';
 
 const About = () => {
   return (

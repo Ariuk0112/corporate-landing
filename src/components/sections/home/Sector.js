@@ -8,7 +8,7 @@ const Sector = () => {
   return (
     <div className="overflow-hidden text-white my-10">
       <div className="">
-        <SectionTitle index="01" title="Sectors" />
+        <SectionTitle index="01" title="Sectors" isRight={true} />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4">
         {MOCK_SECTOR.map((sector, index) => (
