@@ -35,7 +35,7 @@ const SectorDetail = ({ id, locale }) => {
       >
         <Container>
           <div className="w-full ">
-            <div className="w-full ">
+            <div className="w-full overflow-x-hidden">
               <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
             </div>
             <div className="w-full relative ">
