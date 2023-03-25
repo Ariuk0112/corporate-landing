@@ -10,7 +10,7 @@ import { Autoplay, EffectFade } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-const BannerSlider = () => {
+const BannerSlider = ({ facility }) => {
   return (
     <div className="relative h-screen w-screen">
       {/* <div className="absolute inset-0 z-10 opacity-90">
