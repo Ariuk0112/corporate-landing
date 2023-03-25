@@ -17,36 +17,36 @@ export default function Home() {
     }, [3000]);
   }, []);
 
-  if (loading) {
-    return <Splash />;
-  }
+  // if (loading) {
+  //   return <Splash />;
+  // }
 
   return (
     <div className="overflow-hidden">
-      <RootLayout>
-        <div className="w-full" id="Home">
-          <BannerSlider />
-        </div>
-        <Container>
-          <div className="w-full">
-            <div className="w-full" id="Room">
-              <Sector />
-            </div>
-
-            <div id="Service" className="w-full">
-              <News
-                title="NEWS & COMREHENSIVE"
-                desc="Designed as privileged almost private place where you will feel right at home"
-              />
-            </div>
-
-            <div id="Contact" className="w-full">
-              <About />
-              <Map />
-            </div>
+      <div className="w-full" id="Home">
+        <BannerSlider />
+      </div>
+      {/* <RootLayout>
+      </RootLayout> */}
+      <Container>
+        <div className="w-full">
+          <div className="w-full" id="Room">
+            <Sector />
           </div>
-        </Container>
-      </RootLayout>
+
+          <div id="Service" className="w-full">
+            <News
+              title="NEWS & COMREHENSIVE"
+              desc="Designed as privileged almost private place where you will feel right at home"
+            />
+          </div>
+
+          <div id="Contact" className="w-full">
+            <About />
+            <Map />
+          </div>
+        </div>
+      </Container>
     </div>
   );
 }

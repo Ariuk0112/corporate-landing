@@ -1,74 +1,73 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import React, { useState, useEffect, useCallback } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import Image from 'next/image';
-import Link from 'next/link';
+// Import Swiper React components
+import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { Autoplay, EffectFade } from 'swiper';
 
-import { PrevButton, NextButton } from '../../common/CarouselButtons';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 const BannerSlider = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({});
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
-
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-  const scrollTo = useCallback((index) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-    setPrevBtnEnabled(emblaApi.canScrollPrev());
-    setNextBtnEnabled(emblaApi.canScrollNext());
-  }, [emblaApi, setSelectedIndex]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    setScrollSnaps(emblaApi.scrollSnapList());
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
-  }, [emblaApi, setScrollSnaps, onSelect]);
-
   return (
-    // <div className="embla" ref={emblaRef}>
-    //   <div className="embla__container">
-    //     {[0, 1, 2].map((index) => (
-    //       <div key={index} className="embla__slide">
-    //         <div className="w-full h-[982px] relative">
-    //           <Image fill src="/home-bg-1.jpg" alt="sb" className="w-full" />
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
-    <div className="embla text-white">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {[0, 1, 2].map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="w-full h-[100vh] md:h-[982px] relative bg-[#ebebeb]">
-                <Image fill src="/home-bg-1.jpg" alt="sb" className="w-full" />
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="flex flex-col items-center justify-center gap-5 text-center">
-                    <Link href="/">
-                      <img src="/logo.png" alt="logo" className="w-[150px] md:w-[180px] h-[100px] cursor-pointer" />
-                    </Link>
-                    <h1 className="uppercase text-white text-xl font-medium">THE CORPORATE HOTEL</h1>
-                    <p className="uppercase text-white text-xl md:text-6xl font-bold">WELCOME TO THE CORPORATE</p>
-                    <span className="uppercase text-white md:xs md:text-lg">Superior Service & Warm Hospitality</span>
-                  </div>
-                </div>
+    <div className="relative h-screen w-screen">
+      <div className="absolute inset-0 z-10 opacity-90">
+        <Swiper
+          effect="fade"
+          modules={[EffectFade, Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          centeredSlides
+          loop
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <motion.div
+              exit={{ opacity: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <div className="h-full w-full">
+                <img src="/logo.png" className="w-full h-full" />
               </div>
-            </div>
-          ))}
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <motion.div
+              exit={{ opacity: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <div className="h-full w-full">
+                <img src="/news.png" className="w-full h-full" />
+              </div>
+            </motion.div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div className="absolute inset-0 z-20">
+        <div className="text-center flex flex-col items-center justify-around text-white h-full w-full">
+          <div className="w-[300px] h-auto">
+            <img src="/logo.png" alt="logo" className="w-full h-full" />
+          </div>
+          <div className="w-full">
+            <p className="font-light text-2xl">The Corporate Hotel</p>
+            <h1 className="font-medium text-[64px]">WELCOME TO THE CORPORATE</h1>
+            <h className="font-light text-2xl">Superior service & Warm hospitality</h>
+          </div>
+          <div className="w-full my-2">
+            <button className="rounded shadow hover:opacity-70 bg-[#B0985A] w-[280px] h-[60px] text-lg">
+              Book now
+            </button>
+          </div>
         </div>
       </div>
-
-      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
     </div>
   );
 };
