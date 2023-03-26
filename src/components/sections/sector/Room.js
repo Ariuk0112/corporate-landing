@@ -5,6 +5,7 @@ import SectionTitle from '@/components/common/SectionTitle';
 import { Container } from '@/components/layouts';
 import { Arrow } from '@/assets/svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 const Room = ({ rooms, sector }) => {
   console.log(rooms);
@@ -40,9 +41,9 @@ const Room = ({ rooms, sector }) => {
           >
             {rooms.map((room, index) => (
               <SwiperSlide key={`room-${index}`}>
-                <div className="md:my-10 w-full text-white">
+                <div className="md:my -10 w-full text-white">
                   <div className="h-[350px] md:h-[400px] rounded-[8px] relative">
-                    <img className="h-full  rounded-[8px]" src={room.images[0].url} />
+                    <Image className="h-full  rounded-[8px]" fill src={room.images[0].url} />
                     <div
                       className="absolute w-full bottom-0 h-[150px]"
                       style={{

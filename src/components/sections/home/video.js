@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Image from 'next/image';
+
 const Video = () => {
   return (
     <section className="w-full flex flex-col justify-end items-end py-10 md:pb-64 gap-2 md:gap-0 overflow-hidden">
@@ -15,7 +17,7 @@ const Video = () => {
         <div className="w-full h-full flex justify-center items-center">
           <div className="w-16 h-16 md:w-[90px] md:h-[90px] pulse hover:scale-95">
             <a target="_blank" href="http://www.youtube.com/embed/lhl2BgFhrI0">
-              <img src="/icons/play.png" className="w-full h-full" alt="play" />
+              <Image src="/icons/play.png" fill className="w-full h-full" alt="play" />
             </a>
           </div>
         </div>

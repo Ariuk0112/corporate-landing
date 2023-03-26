@@ -67,8 +67,6 @@ const Facility = ({ facilities, sector }) => {
             </Swiper>
           </div>
         </div>
-
-        {/* <img fill src="/home-bg-1.jpg" alt="sb" className="w-full" /> */}
       </div>
     </div>
   );

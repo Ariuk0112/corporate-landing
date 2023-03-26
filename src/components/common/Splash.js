@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Splash = () => {
   return (
@@ -12,7 +13,7 @@ const Splash = () => {
         transition={{ delay: 1, duration: 2 }}
       >
         <div className="w-42 h-auto">
-          <img src="/logo.png" alt="logo" className="w-full h-full" />
+          <Image src="/logo.png" alt="logo" fill className="w-full h-full" />
         </div>
       </motion.div>
       ;

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Container, RootLayout } from '../../components/layouts';
 
 import MOCK_DATA from '@/assets/i18n/data.json';
+import Image from 'next/image';
 
 export async function getServerSideProps(context) {
   const { id } = context.params;
@@ -48,7 +49,7 @@ export default function RoomDetail({ id, sectorId, locale }) {
                 <Swiper ref={sliderRef} slidesPerView={1} slidesPerGroup={1} spaceBetween={0} loop>
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                      <img src={image.url} alt="bg image" className="w-full h-full object-cover " />
+                      <Image src={image.url} alt="bg image" fill className="w-full h-full object-cover " />
                     </SwiperSlide>
                   ))}
                 </Swiper>

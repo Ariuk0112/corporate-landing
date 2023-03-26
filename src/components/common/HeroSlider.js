@@ -6,6 +6,7 @@ import { Autoplay, EffectFade } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import Image from 'next/image';
 
 const HeroSlider = (props) => {
   const { images, title, subTitle } = props;
@@ -37,7 +38,7 @@ const HeroSlider = (props) => {
                   className="w-full h-full"
                 >
                   <div className="h-full w-full">
-                    <img src={imgSrc} alt={title || 'image'} className="w-full h-full" />
+                    <Image src={imgSrc} alt={title || 'image'} fill className="w-full h-full" />
                   </div>
                 </motion.div>
               </SwiperSlide>

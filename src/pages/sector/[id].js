@@ -43,7 +43,6 @@ const SectorDetail = ({ id, locale }) => {
               <HeroSlider images={sliderImages} title={sectorDetail.title} subTitle="Ulaanbaatar" />
             </div>
             <div className="w-full relative ">
-              {/* <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" /> */}
               <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">
                 <div className="flex flex-col items-center justify-center gap-5 text-center">
                   <h1 className="uppercase text-white text-lg md:text-4xl font-medium">{MOCK_SECTOR.title}</h1>
