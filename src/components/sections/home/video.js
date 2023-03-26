@@ -15,11 +15,11 @@ const Video = () => {
         }}
       >
         <div className="w-full h-full flex justify-center items-center">
-          <div className="w-16 h-16 md:w-[90px] md:h-[90px] pulse hover:scale-95">
-            <a target="_blank" href="http://www.youtube.com/embed/lhl2BgFhrI0">
+          <a target="_blank" href="http://www.youtube.com/embed/lhl2BgFhrI0">
+            <div className="w-16 h-16 md:w-[90px] md:h-[90px] pulse hover:scale-95">
               <img src="/icons/play.png" className="w-full h-full" alt="play" />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         <div className="hidden md:block absolute -bottom-16 -right-16 md:-bottom-[215px] md:-right-[280px]">
           <div className="bg-[#B0985A] p-5 w-32 h-32 md:h-[430px] md:w-[560px] rounded-lg text-center text-white">
