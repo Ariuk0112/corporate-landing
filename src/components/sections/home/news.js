@@ -51,7 +51,7 @@ const News = () => {
               ))}
             </Swiper>
           </div>
-          <div className="w-8">sda</div>
+          {/* <div className="w-8">sda</div> */}
         </div>
       </div>
     </div>

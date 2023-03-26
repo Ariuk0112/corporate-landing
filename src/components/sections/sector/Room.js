@@ -43,7 +43,7 @@ const Room = ({ rooms, sector }) => {
               <SwiperSlide key={`room-${index}`}>
                 <div className="md:my -10 w-full text-white">
                   <div className="h-[350px] md:h-[400px] rounded-[8px] relative">
-                    <Image className="h-full  rounded-[8px]" fill src={room.images[0].url} />
+                    <Image className="h-full  rounded-[8px]" alt="rooms" fill src={room.images[0].url} />
                     <div
                       className="absolute w-full bottom-0 h-[150px]"
                       style={{
