@@ -57,10 +57,10 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[120px] pb-10 md:pb-[120px]">
               <div>
                 <div className="h-46 md:h-[589px]">
-                  <Image className="h-full w-full" fill src={currentFacility.image[0].url} />
+                  <img className="h-full w-full" src={currentFacility.image[0].url} />
                 </div>
                 <div className="h-46 md:h-[292px] mt-10 md:mt-[120px]">
-                  <Image className="h-full w-full" fill src={currentFacility.image[1].url} />
+                  <img className="h-full w-full" src={currentFacility.image[1].url} />
                 </div>
                 <div className="flex flex-col w-full text-right mt-10 md:mt-[76px] justify-end items-end">
                   <div>
@@ -101,7 +101,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   </div>
                 </div>
                 <div className="h-64 md:h-[776px] w-full mt-10 md:mt-[120px]">
-                  <Image className="h-full" fill src={currentFacility.image[2].url} />
+                  <img className="h-full" src={currentFacility.image[2].url} />
                 </div>
               </div>
             </div>
