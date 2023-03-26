@@ -26,7 +26,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
   const FACILITIES = MOCK_SECTOR?.facilities || [];
   const currentFacility = FACILITIES[id];
   console.log(currentFacility);
-  const sliderImages = ['/slider/corp-1.png', '/slider/corp-2.png', '/slider/corp-1.png', '/slider/corp-1.png'];
+  const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
 
   return (
     <RootLayout title="sda" description="sda" logo={MOCK_SECTOR.logo}>
