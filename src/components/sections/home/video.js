@@ -16,7 +16,7 @@ const Video = () => {
       >
         <div className="w-full h-full flex justify-center items-center">
           <a target="_blank" href="http://www.youtube.com/embed/lhl2BgFhrI0">
-            <div className="w-16 h-16 md:w-[90px] md:h-[90px] pulse hover:scale-95">
+            <div className="w-16 h-16 md:w-[90px] md:h-[90px] pulse">
               <img src="/icons/play.png" className="w-full h-full" alt="play" />
             </div>
           </a>
