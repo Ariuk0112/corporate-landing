@@ -1,7 +1,6 @@
 //custom
-import { RoomsCard, BannerSlider, News, Map, VideoPlayer, Video } from '../components/sections/home';
-import { Container, Footer, RootLayout } from '../components/layouts';
-import Head from 'next/head';
+import { BannerSlider, News, Map, Video } from '../components/sections/home';
+import { Container, Footer } from '../components/layouts';
 import About from '@/components/sections/home/About';
 import Sector from '@/components/sections/home/Sector';
 
@@ -18,9 +17,9 @@ export default function Home() {
     }, [3000]);
   }, []);
 
-  // if (loading) {
-  //   return <Splash />;
-  // }
+  if (loading) {
+    return <Splash />;
+  }
 
   return (
     <div className="overflow-hidden">

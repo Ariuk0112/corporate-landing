@@ -9,6 +9,7 @@ import { Autoplay, EffectFade } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import Image from 'next/image';
 
 const BannerSlider = ({ facility }) => {
   return (
@@ -35,7 +36,7 @@ const BannerSlider = ({ facility }) => {
               className="w-full h-full"
             >
               <div className="h-full w-full">
-                <img src="/slider/hero-0.png" className="w-full h-full" />
+                <Image src="/slider/hero-0.png" fill className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>
@@ -48,7 +49,7 @@ const BannerSlider = ({ facility }) => {
               className="w-full h-full"
             >
               <div className="h-full w-full">
-                <img src="/slider/hero-1.png" className="w-full h-full" />
+                <Image src="/slider/hero-1.png" fill className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>
@@ -61,7 +62,7 @@ const BannerSlider = ({ facility }) => {
               className="w-full h-full"
             >
               <div className="h-full w-full">
-                <img src="/slider/hero-2.png" className="w-full h-full" />
+                <Image src="/slider/hero-2.png" fill className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>

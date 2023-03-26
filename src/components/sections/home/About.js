@@ -1,13 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useEffect } from 'react';
 import { EffectCards, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
+import { Container } from '@/components/layouts';
 import SectionTitle from '@/components/common/SectionTitle';
 
 import 'swiper/css/effect-cards';
-import { Container } from '@/components/layouts';
+import Image from 'next/image';
 
 const About = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible');
+    } else {
+      // control.start('hidden');
+    }
+  }, [control, inView]);
+
   return (
     <div className="text-white">
       <div className="flex flex-col pt-10 w-full">
@@ -15,7 +30,16 @@ const About = () => {
           <SectionTitle index="01" title="About us" isRight />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <article className="py-5 md:py-32 text-[14px] md:text-[16px] text[#CACACA] text-justify font-montserrat">
+          <motion.article
+            ref={ref}
+            variants={{
+              visible: { x: 0, transition: { duration: 1.5 } },
+              hidden: { x: -500 },
+            }}
+            initial="hidden"
+            animate={control}
+            className="py-5 md:py-32 text-[14px] md:text-[16px] text[#CACACA] text-justify font-montserrat"
+          >
             The Corporate Hotel and Convention Centre is one of the newest additions to The Corporate Hotels. It is a
             hotel where member of the team takes terrific pride in offering the highest levels of service, where guests
             are sincerely welcomed and can enjoy elegant accommodations, and the splendid lobby bar, restaurant, coffee
@@ -34,9 +58,17 @@ const About = () => {
             gather with friends and family for a delicious meal at Chairman Restaurant. Stay in touch with what matters
             to you the most with high-speed internet access and refresh yourself with a coffee at our coffee Lounge
             conveniently located in the lobby.
-          </article>
-
-          <div className="md:p-16 md:mt-16">
+          </motion.article>
+          <motion.div
+            ref={ref}
+            variants={{
+              visible: { x: 0, transition: { duration: 1.5 } },
+              hidden: { x: 500 },
+            }}
+            initial="hidden"
+            animate={control}
+            className="md:p-16 md:mt-16 min-h-[300px]"
+          >
             <Swiper
               effect={'cards'}
               grabCursor={true}
@@ -52,21 +84,21 @@ const About = () => {
               {/* todo: images */}
               <SwiperSlide>
                 <div className="w-42 h-auto">
-                  <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                  <Image fill src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-42 h-auto">
-                  <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                <Image fill src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-42 h-auto">
-                  <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                <Image fill src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
                 </div>
               </SwiperSlide>
             </Swiper>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

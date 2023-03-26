@@ -4,7 +4,7 @@ const Video = () => {
   return (
     <section className="w-full flex flex-col justify-end items-end py-10 md:pb-64 gap-2 md:gap-0 overflow-hidden">
       <div
-        className="w-full md:w-[840px] lg:w-[1080px] h-56 md:h-[530px] md:mr-auto rounded-md relative"
+        className="w-full md:w-[840px] lg:w-[1080px] h-[330px] md:h-[530px] md:mr-auto rounded-md relative"
         style={{
           backgroundImage: "url('/home-bg-1.jpg')",
           backgroundPosition: 'center',
@@ -12,10 +12,11 @@ const Video = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* TODO: fix button center position */}
         <div className="w-full h-full flex justify-center items-center">
-          <div className="w-10 h-10 md:w-[90px] md:h-[90px]">
-            <img src="/icons/play.png" className="w-full h-full" alt="play" />
+          <div className="w-16 h-16 md:w-[90px] md:h-[90px] pulse hover:scale-95">
+            <a target="_blank" href="http://www.youtube.com/embed/lhl2BgFhrI0">
+              <img src="/icons/play.png" className="w-full h-full" alt="play" />
+            </a>
           </div>
         </div>
         <div className="hidden md:block absolute -bottom-16 -right-16 md:-bottom-[215px] md:-right-[280px]">
