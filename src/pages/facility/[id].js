@@ -24,12 +24,12 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[sectorId] || {};
   const FACILITIES = MOCK_SECTOR?.facilities || [];
   const currentFacility = FACILITIES[id];
-
-  const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
+  console.log(currentFacility);
+  const sliderImages = ['/slider/corp-1.png', '/slider/corp-2.png', '/slider/corp-1.png', '/slider/corp-1.png'];
 
   return (
     <RootLayout title="sda" description="sda" logo={MOCK_SECTOR.logo}>
-      <div className="w-full">
+      <div className="w-full mt-[76px]">
         <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
       </div>
       <div className="max-w-[1420px]">
@@ -38,13 +38,11 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
             <div className="flex flex-col w-full justify-center items-center">
               <div className="mx-5 md:mx-[105px] mt-[14px]">
                 <div className="mt-[24px]">
-                  <p className="mx-auto text-[20px] md:text-[40px]">Chairman Restaurants</p>
+                  <p className="mx-auto text-[20px] md:text-[32px]">{currentFacility.title}</p>
                 </div>
-                <div className="mb-10 mt-5 md:mt-[60px] text-[24px]">
+                <div className="mb-10 mt-5 md:mt-[20px] text-[24px]">
                   <p className="text-[20px] text-[#E9E9E9] md:leading-[24px] font-normal">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+                    {currentFacility.description}
                   </p>
                 </div>
               </div>
@@ -58,10 +56,10 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[120px] pb-10 md:pb-[120px]">
               <div>
                 <div className="h-46 md:h-[589px]">
-                  <img className="h-full" src="/service/111.png" />
+                  <img className="h-full w-full" src={currentFacility.image[0].url} />
                 </div>
                 <div className="h-46 md:h-[292px] mt-10 md:mt-[120px]">
-                  <img className="h-full w-full" src="/service/111.png" />
+                  <img className="h-full w-full" src={currentFacility.image[1].url} />
                 </div>
                 <div className="flex flex-col w-full text-right mt-10 md:mt-[76px] justify-end items-end">
                   <div>
@@ -102,7 +100,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   </div>
                 </div>
                 <div className="h-64 md:h-[776px] w-full mt-10 md:mt-[120px]">
-                  <img className="h-full" src="/service/111.png" />
+                  <img className="h-full" src={currentFacility.image[2].url} />
                 </div>
               </div>
 

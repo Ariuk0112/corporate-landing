@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 
 const Facility = ({ facilities, sector }) => {
+  const slidesLength = facilities.length > 8 ? 7 : facilities.length;
+  console.log(slidesLength);
   return (
     <div className="w-full overflow-x-hidden font-Montserrat">
       <div className="text-white -mr-28">
@@ -13,20 +15,22 @@ const Facility = ({ facilities, sector }) => {
       </div>
       <div className="h-[350px] md:h-[600px] items-center justify-center">
         <div className="w-full flex flex-col md:flex-row justify-between items-stretch relative gap-2">
-          <div className="absolute inset-0 z-10 opacity-90 h-[350px] md:h-[570px] md:mx-[150px] rounded-[8px]">
+          <div className="absolute inset-0 z-10 opacity-90 h-[350px] md:h-[570px] md:mx-[50px] rounded-[8px]">
             <Swiper
               className="mySwiper"
               slidesPerView={1}
               spaceBetween={23}
               breakpoints={{
-                // when window width is >= 640px
-                280: {
-                  width: 280,
-                  slidesPerView: 1,
-                },
-                // when window width is >= 768px
                 640: {
                   width: 768,
+                  slidesPerView: 1,
+                },
+                1080: {
+                  width: 1080,
+                  slidesPerView: 2,
+                },
+                1420: {
+                  width: 1320,
                   slidesPerView: 5,
                 },
               }}
@@ -35,7 +39,7 @@ const Facility = ({ facilities, sector }) => {
                 <SwiperSlide key={index}>
                   <div className="h-[300px] md:h-[570px] mx-auto rounded-[8px]">
                     <div
-                      className="w-full h-full flex items-center justify-center  relative rounded-[8px]"
+                      className="w-full h-full flex items-center justify-center relative rounded-[8px]"
                       style={{
                         backgroundImage: `url('${facility.image[0].url}')`,
                         backgroundPosition: 'center',

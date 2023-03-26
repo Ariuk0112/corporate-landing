@@ -7,6 +7,8 @@ import { Container, RootLayout } from '../../components/layouts';
 
 import MOCK_DATA from '@/assets/i18n/data.json';
 import HeroSlider from '@/components/common/HeroSlider';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export async function getServerSideProps(context) {
   const { id } = context.query;
@@ -22,8 +24,9 @@ export async function getServerSideProps(context) {
 const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
   const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === id);
-  const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
+  const sliderImages = sectorDetail.background_image;
   // console.log(MOCK_SECTOR.background_image)
+  console.log();
   return (
     <>
       <RootLayout
@@ -36,8 +39,8 @@ const SectorDetail = ({ id, locale }) => {
       >
         <Container>
           <div className="w-full ">
-            <div className="w-full overflow-x-hidden">
-              <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
+            <div className="w-full overflow-x-hidden mt-[76px]">
+              <HeroSlider images={sliderImages} title={sectorDetail.title} subTitle="Ulaanbaatar" />
             </div>
             <div className="w-full relative ">
               {/* <img fill src={MOCK_SECTOR.background_image} alt="sb" className="w-full" /> */}
@@ -53,9 +56,10 @@ const SectorDetail = ({ id, locale }) => {
             <div
               className="h-[450px] md:h-[1379px] "
               style={{
-                backgroundSize: `cover;`,
-                backgroundRepeat: `no-repeat`,
-                backgroundImage: `url(/services-bg.png);`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundImage: 'url("/services-bg.png")',
               }}
             >
               <Facility facilities={MOCK_SECTOR.facilities} sector={id} />

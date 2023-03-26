@@ -31,10 +31,10 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                 <img src={(logo && logo) || '/logo/logo-white.png'} alt="sb" className="w-full md:h-full" />
               </div>
               <div className="flex items-center justify-center gap-[30px]">
-                <Image src={'/icons/facebook.png'} width={32} height={32}></Image>
-                <Image src={'/icons/twitter.png'} width={32} height={32}></Image>
-                <Image src={'/icons/youtube.png'} width={32} height={32}></Image>
-                <Image src={'/icons/instagram.png'} width={32} height={32}></Image>
+                <Image alt="zurag" src={'/icons/facebook.png'} width={32} height={32}></Image>
+                <Image alt="zurag" src={'/icons/twitter.png'} width={32} height={32}></Image>
+                <Image alt="zurag" src={'/icons/youtube.png'} width={32} height={32}></Image>
+                <Image alt="zurag" src={'/icons/instagram.png'} width={32} height={32}></Image>
               </div>
             </div>
             <div className="w-full">

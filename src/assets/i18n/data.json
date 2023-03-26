@@ -3,190 +3,198 @@
     "sectors": [
       {
         "id": "sector-1",
-        "title": "The Corporate Hotel Ulaanbaatar",
+        "title": "The Corporate Hotel ",
+        "subTitle": "Ulaanbaatar",
         "desc": "Located in the heart of Ulaanbaatar City, The Corporate Hotel Ulaanbaatar has the ideal location for sightseeing with majority of the city tourist hotspots and night life within walking distance. We offer 56 guest rooms and suites with a modern design coupled with all the necessary accommodations to meet our guests’ expectation and satisfaction.",
         "img": "/2.jpg",
-        "background_image": "/3M9A5243.jpg",
+        "background_image": ["/3M9A5243.jpg", "/3M9A5243.jpg", "/3M9A5243.jpg"],
         "video_id": "wnXgzH2JJ9g",
         "logo": "/logo/tuv.png",
         "address": "Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia",
-        "mail": " 11-33 4411 manager@corporatehotel.mn"
+        "mail": " 11-33 4411 manager@corporatehotel.mn",
+        "text": "SUPERIOR SERVICE"
       },
       {
         "id": "sector-3",
-        "title": "THE CORPORATE HOTEL NUKHT RESORT",
+        "title": "THE CORPORATE HOTEL ",
+        "subTitle": "NUKHT RESORT",
         "desc": "The Corporate Hotel &amp; Nukht Resort with it amazing location in Nukht Valley, Bogd Reserve, will offer our guests an experience of serene natural location, outstanding accommodations, and exceptional services. The hotel resort is pioneering the use of the eco-green technology hallow Geothermal Energy in Mongolia. With a limited number of rooms and suites,  Nukht Resort is a perfect getaway for anyone seeking privacy and relaxation.",
         "img": "/4.jpg",
-        "background_image": "/nukht/bg.jpg",
+        "background_image": ["/nukht/bg.jpg", "/nukht/bg.jpg", "/nukht/bg.jpg"],
         "logo": "/logo/nukht.png",
         "address": "Khan-Uul district 5th khoroo, Ulaanbaatar, Mongolia ",
-        "mail": " 7701 5555 Corporatenukht@gmail.com"
+        "mail": " 7701 5555 Corporatenukht@gmail.com",
+        "text": "CONVENIENCE"
       },
       {
         "id": "sector-4",
-        "title": "The Corporate Hotel & Convention Centre",
+        "title": "The Corporate Hotel & ",
+        "subTitle": "Convention Centre",
         "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "img": "/3.jpg",
         "logo": "/logo/convention.png",
         "address": "Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia",
         "mail": " 7000 2030",
-        "background_image": "/aaa.jpg"
+        "background_image": ["/home-bg-1.jpg", "/home-bg-1.jpg", "/home-bg-1.jpg"],
+        "text": "LUXURY ENVIRONMENT"
       },
       {
         "id": "sector-5",
-        "title": "SHAMBHA LA GARDEN AND VILLAGE",
+        "title": "SHAMBHA LA GARDEN AND ",
+        "subTitle": "VILLAGE",
         "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city&#39;s smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
         "img": "/1.jpg",
-        "background_image": "/shambala/bg.jpg",
+        "background_image": ["/shambala/bg.jpg", "/shambala/bg.jpg", "/shambala/bg.jpg"],
         "logo": "/logo/shambala.png",
         "address": "Shambha-La garden and village, khan uul district-11, South Zaisan",
-        "mail": ""
+        "mail": "",
+        "text": "SUPERIOR SERVICE"
       }
     ],
     "sector-1": {
       "rooms": [
-          {
-            "title": "STANDARD KING",
-            "description": "1 king sized bed",
+        {
+          "title": "STANDARD KING",
+          "description": "1 king sized bed",
 
-            "type": "Single room",
-            "size": "35m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/king1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/king.jpg"
-              }
-            ]
-          },
-          {
-            "title": "STANDARD TWIN",
-            "description": "Decorated using variety of soft colors with natural materials. These rooms are ideal for those who travel for work.Exclusively designed bed linen, an interior bathed in warm light, sparkling clean bathroom. In this atmosphere, guests are sure to feel the detailedattentiveness. The standard king room has a large comfortable bed with 2 pillows. The standard twin room has two queen size beds with 2 pillows on each bed.",
+          "type": "Single room",
+          "size": "35m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/king1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/king.jpg"
+            }
+          ]
+        },
+        {
+          "title": "STANDARD TWIN",
+          "description": "Decorated using variety of soft colors with natural materials. These rooms are ideal for those who travel for work.Exclusively designed bed linen, an interior bathed in warm light, sparkling clean bathroom. In this atmosphere, guests are sure to feel the detailedattentiveness. The standard king room has a large comfortable bed with 2 pillows. The standard twin room has two queen size beds with 2 pillows on each bed.",
 
-            "type": "Single room",
-            "size": "33m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/s_twin.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/s_twin1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/s_twin2.jpg"
-              }
-            ]
-          },
-          {
-            "title": "APARTMENT ",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+          "type": "Single room",
+          "size": "33m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/s_twin.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/s_twin1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/s_twin2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "APARTMENT ",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "2 rooms",
-            "size": "53m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "DELUXE ",
-            "description": "The deluxe rooms are comfortable and spacious ideal for a romantic evening or a business traveling entrepreneurs separating the work area.",
+          "type": "2 rooms",
+          "size": "53m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "DELUXE ",
+          "description": "The deluxe rooms are comfortable and spacious ideal for a romantic evening or a business traveling entrepreneurs separating the work area.",
 
-            "type": "Single room",
-            "size": "53m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/Deluxe.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/Deluxe1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/Deluxe2.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Premium suite ",
-            "description": "With luxurious furnishings and decoration, the spacious suite is consisted of 2 separate rooms. The bedroom has a luxurious Jacuzzi. It comes with a mini-bar, 1 flat-screen TVand 1 smart TV with home theater. Private bathrooms in each room. ",
+          "type": "Single room",
+          "size": "53m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/Deluxe.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/Deluxe1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/Deluxe2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Premium suite ",
+          "description": "With luxurious furnishings and decoration, the spacious suite is consisted of 2 separate rooms. The bedroom has a luxurious Jacuzzi. It comes with a mini-bar, 1 flat-screen TVand 1 smart TV with home theater. Private bathrooms in each room. ",
 
-            "type": "Single room",
-            "size": "95m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium3.jpg"
-              }
-            ]
-          },
-          {
-            "title": "THE PENTHOUSE SUITE",
-            "description": "",
+          "type": "Single room",
+          "size": "95m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "THE PENTHOUSE SUITE",
+          "description": "",
 
-            "type": "Single room",
-            "size": "150m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse4.jpg"
-              }
-            ]
-          }
+          "type": "Single room",
+          "size": "150m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse4.jpg"
+            }
+          ]
+        }
       ],
       "facilities": [
         {
@@ -238,110 +246,110 @@
     },
     "sector-3": {
       "rooms": [
-          {
-            "title": "Superior A",
-            "description": "",
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a4.jpg"
-              },
+        {
+          "title": "Superior A",
+          "description": "",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a4.jpg"
+            },
 
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a5.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Superior B",
-            "description": "",
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a5.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Superior B",
+          "description": "",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Standard Twin",
-            "description": " ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Standard Twin",
+          "description": " ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t3.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Standard Single",
-            "description": " ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Standard Single",
+          "description": " ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s4.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s5.jpg"
-              }
-            ]
-          }
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s4.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s5.jpg"
+            }
+          ]
+        }
       ],
       "facilities": [
         {
@@ -388,157 +396,157 @@
     },
     "sector-4": {
       "rooms": [
-          {
-            "title": "A suite room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+        {
+          "title": "A suite room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/a_1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a_2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a_3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a_4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "B suite room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/a_1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a_2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a_3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a_4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "B suite room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/b.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/b1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/b2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/b3.jpg"
-              },
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/b.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/b1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/b2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/b3.jpg"
+            },
 
-              {
-                "title": "zurag-1",
-                "url": "/room/b5.jpg"
-              }
-            ]
-          },
-          {
-            "title": "C suite room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+            {
+              "title": "zurag-1",
+              "url": "/room/b5.jpg"
+            }
+          ]
+        },
+        {
+          "title": "C suite room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/c.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "KING room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/c.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "KING room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/k.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/k1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/k2.jpeg"
-              }
-            ]
-          },
-          {
-            "title": "TWIN room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/k.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/k1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/k2.jpeg"
+            }
+          ]
+        },
+        {
+          "title": "TWIN room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/t.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/t1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/t2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/t3.jpg"
-              }
-            ]
-          },
-          {
-            "title": "APARTMENT Suite",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/t.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/t1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/t2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/t3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "APARTMENT Suite",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/a.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a2.jpg"
-              }
-            ]
-          }
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/a.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a2.jpg"
+            }
+          ]
+        }
       ],
       "facilities": [
         {
@@ -696,146 +704,146 @@
     ],
     "sector-1": {
       "rooms": [
-          {
-            "title": "STANDARD KING",
-            "description": "1 king sized bed",
-            "type": "Single room",
-            "size": "35m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/king1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/king.jpg"
-              }
-            ]
-          },
-          {
-            "title": "STANDARD TWIN",
-            "description": "Decorated using variety of soft colors with natural materials. These rooms are ideal for those who travel for work.Exclusively designed bed linen, an interior bathed in warm light, sparkling clean bathroom. In this atmosphere, guests are sure to feel the detailedattentiveness. The standard king room has a large comfortable bed with 2 pillows. The standard twin room has two queen size beds with 2 pillows on each bed.",
-            "type": "Single room",
-            "size": "33m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/s_twin.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/s_twin1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/s_twin2.jpg"
-              }
-            ]
-          },
-          {
-            "title": "APARTMENT ",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+        {
+          "title": "STANDARD KING",
+          "description": "1 king sized bed",
+          "type": "Single room",
+          "size": "35m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/king1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/king.jpg"
+            }
+          ]
+        },
+        {
+          "title": "STANDARD TWIN",
+          "description": "Decorated using variety of soft colors with natural materials. These rooms are ideal for those who travel for work.Exclusively designed bed linen, an interior bathed in warm light, sparkling clean bathroom. In this atmosphere, guests are sure to feel the detailedattentiveness. The standard king room has a large comfortable bed with 2 pillows. The standard twin room has two queen size beds with 2 pillows on each bed.",
+          "type": "Single room",
+          "size": "33m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/s_twin.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/s_twin1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/s_twin2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "APARTMENT ",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "2 rooms",
-            "size": "53m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/apartment4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "DELUXE ",
-            "description": "The deluxe rooms are comfortable and spacious ideal for a romantic evening or a business traveling entrepreneurs separating the work area.",
+          "type": "2 rooms",
+          "size": "53m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/apartment4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "DELUXE ",
+          "description": "The deluxe rooms are comfortable and spacious ideal for a romantic evening or a business traveling entrepreneurs separating the work area.",
 
-            "type": "Single room",
-            "size": "53m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/Deluxe.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/Deluxe1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/Deluxe2.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Premium suite ",
-            "description": "With luxurious furnishings and decoration, the spacious suite is consisted of 2 separate rooms. The bedroom has a luxurious Jacuzzi. It comes with a mini-bar, 1 flat-screen TVand 1 smart TV with home theater. Private bathrooms in each room. ",
+          "type": "Single room",
+          "size": "53m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/Deluxe.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/Deluxe1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/Deluxe2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Premium suite ",
+          "description": "With luxurious furnishings and decoration, the spacious suite is consisted of 2 separate rooms. The bedroom has a luxurious Jacuzzi. It comes with a mini-bar, 1 flat-screen TVand 1 smart TV with home theater. Private bathrooms in each room. ",
 
-            "type": "Single room",
-            "size": "95m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/premium3.jpg"
-              }
-            ]
-          },
-          {
-            "title": "THE PENTHOUSE SUITE",
-            "description": "",
+          "type": "Single room",
+          "size": "95m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/premium3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "THE PENTHOUSE SUITE",
+          "description": "",
 
-            "type": "Single room",
-            "size": "150m2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/tuv/room/penthouse4.jpg"
-              }
-            ]
-          }
+          "type": "Single room",
+          "size": "150m2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/tuv/room/penthouse4.jpg"
+            }
+          ]
+        }
       ],
       "facilities": [
         {
@@ -887,110 +895,110 @@
     },
     "sector-2": {
       "rooms": [
-          {
-            "title": "Superior A",
-            "description": "",
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a4.jpg"
-              },
+        {
+          "title": "Superior A",
+          "description": "",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a4.jpg"
+            },
 
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/a5.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Superior B",
-            "description": "",
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/a5.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Superior B",
+          "description": "",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/b4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Standard Twin",
-            "description": " ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/b4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Standard Twin",
+          "description": " ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/t3.jpg"
-              }
-            ]
-          },
-          {
-            "title": "Standard Single",
-            "description": " ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/t3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Standard Single",
+          "description": " ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s4.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/nukht/room/s5.jpg"
-              }
-            ]
-          }
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s4.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/nukht/room/s5.jpg"
+            }
+          ]
+        }
       ],
       "facilities": [
         {
@@ -1037,157 +1045,157 @@
     },
     "sector-3": {
       "rooms": [
-          {
-            "title": "A suite room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+        {
+          "title": "A suite room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/a_1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a_2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a_3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a_4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "B suite room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/a_1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a_2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a_3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a_4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "B suite room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/b.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/b1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/b2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/b3.jpg"
-              },
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/b.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/b1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/b2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/b3.jpg"
+            },
 
-              {
-                "title": "zurag-1",
-                "url": "/room/b5.jpg"
-              }
-            ]
-          },
-          {
-            "title": "C suite room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+            {
+              "title": "zurag-1",
+              "url": "/room/b5.jpg"
+            }
+          ]
+        },
+        {
+          "title": "C suite room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/c.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c3.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/c4.jpg"
-              }
-            ]
-          },
-          {
-            "title": "KING room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/c.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c3.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/c4.jpg"
+            }
+          ]
+        },
+        {
+          "title": "KING room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/k.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/k1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/k2.jpeg"
-              }
-            ]
-          },
-          {
-            "title": "TWIN room",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/k.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/k1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/k2.jpeg"
+            }
+          ]
+        },
+        {
+          "title": "TWIN room",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/t.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/t1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/t2.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/t3.jpg"
-              }
-            ]
-          },
-          {
-            "title": "APARTMENT Suite",
-            "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/t.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/t1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/t2.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/t3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "APARTMENT Suite",
+          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-            "type": "Single room",
-            "size": "25 м2",
-            "images": [
-              {
-                "title": "zurag-1",
-                "url": "/room/a.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a1.jpg"
-              },
-              {
-                "title": "zurag-1",
-                "url": "/room/a2.jpg"
-              }
-            ]
-          }
+          "type": "Single room",
+          "size": "25 м2",
+          "images": [
+            {
+              "title": "zurag-1",
+              "url": "/room/a.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a1.jpg"
+            },
+            {
+              "title": "zurag-1",
+              "url": "/room/a2.jpg"
+            }
+          ]
+        }
       ],
       "facilities": [
         {

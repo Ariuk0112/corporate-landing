@@ -54,12 +54,12 @@ const Sector = ({ locale = 'en' }) => {
                     <p className="text-[#ebebeb]">{sector.title}</p>
                   </div>
                 </div>
-                <div className="absolute bottom-32 left-5 font-semibold md:lg md:text-xl text-[#ebebeb]">
-                  <div className="flex justify-center items-center gap-3 text-vertical rotate-180">
-                    <span>Тав тух</span>
-                    <div className="flex items-center justify-center w-full">
-                      <div className="border-l border-white h-5 pl-1"></div>
-                    </div>
+              </div>
+              <div className="absolute bottom-32 left-5 font-semibold md:lg md:text-xl text-[#ebebeb]">
+                <div className="flex justify-center items-center gap-3 text-vertical rotate-180">
+                  <span>{sector.text}</span>
+                  <div className="flex items-center justify-center w-full">
+                    <div className="border-l border-white h-5 pl-1"></div>
                   </div>
                 </div>
               </div>
