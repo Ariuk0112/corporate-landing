@@ -32,7 +32,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       <div className="w-full">
         <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
       </div>
-      <div className="max-w-[1550px]">
+      <div className="max-w-[1420px]">
         <div className="flex justify-end -mt-10 mb-[50px] z-20">
           <div className="w-full md:w-[926px] md:h-[358px] bg-[#B0985A] text-[#E9E9E9] text-[40px] md:text-[28px] z-30">
             <div className="flex flex-col w-full justify-center items-center">

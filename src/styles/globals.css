@@ -22,7 +22,6 @@ html {
   align-items: center;
   background: black;
 }
-
 .text-vertical {
   text-orientation: mixed;
   writing-mode: vertical-rl;

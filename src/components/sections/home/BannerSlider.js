@@ -12,15 +12,16 @@ import 'swiper/css/effect-fade';
 
 const BannerSlider = ({ facility }) => {
   return (
-    <div className="relative h-screen w-screen">
-      {/* <div className="absolute inset-0 z-10 opacity-90">
+    <div className="relative h-[75vh] md:h-screen w-screen">
+      <div className="absolute inset-0 z-10 opacity-90">
         <Swiper
           effect="fade"
           modules={[EffectFade, Autoplay]}
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
           }}
+          speed={3000}
           centeredSlides
           loop
           className="mySwiper"
@@ -31,9 +32,10 @@ const BannerSlider = ({ facility }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
+              className="w-full h-full"
             >
               <div className="h-full w-full">
-                <img src="/logo.png" className="w-full h-full" />
+                <img src="/slider/hero-0.png" className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>
@@ -43,14 +45,28 @@ const BannerSlider = ({ facility }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
+              className="w-full h-full"
             >
               <div className="h-full w-full">
-                <img src="/news.png" className="w-full h-full" />
+                <img src="/slider/hero-1.png" className="w-full h-full" />
+              </div>
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <motion.div
+              exit={{ opacity: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="w-full h-full"
+            >
+              <div className="h-full w-full">
+                <img src="/slider/hero-2.png" className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>
         </Swiper>
-      </div> */}
+      </div>
       <div className="absolute inset-0 z-20">
         <div className="text-center flex flex-col items-center justify-around text-white h-full w-full">
           <div className="w-[300px] h-auto">

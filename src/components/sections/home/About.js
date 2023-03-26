@@ -36,39 +36,36 @@ const About = () => {
             conveniently located in the lobby.
           </article>
 
-          {/* swiper-container */}
-          <div className="swiper-container">
-            <div className="md:p-16">
-              <Swiper
-                effect={'cards'}
-                grabCursor={true}
-                modules={[EffectCards, Autoplay]}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
-                centeredSlides
-                loop
-                className="card-swiper"
-              >
-                {/* todo: images */}
-                <SwiperSlide>
-                  <div className="w-42 h-auto">
-                    <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="w-42 h-auto">
-                    <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="w-42 h-auto">
-                    <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
+          <div className="md:p-16 md:mt-16">
+            <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              modules={[EffectCards, Autoplay]}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              centeredSlides
+              loop
+              className="card-swiper"
+            >
+              {/* todo: images */}
+              <SwiperSlide>
+                <div className="w-42 h-auto">
+                  <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-42 h-auto">
+                  <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-42 h-auto">
+                  <img src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

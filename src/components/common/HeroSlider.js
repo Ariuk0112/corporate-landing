@@ -17,9 +17,10 @@ const HeroSlider = (props) => {
           effect="fade"
           modules={[EffectFade, Autoplay]}
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
           }}
+          speed={3000}
           centeredSlides
           loop
           className="mySwiper"
@@ -33,6 +34,7 @@ const HeroSlider = (props) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
+                  className="w-full h-full"
                 >
                   <div className="h-full w-full">
                     <img src={imgSrc} alt={title || 'image'} className="w-full h-full" />
