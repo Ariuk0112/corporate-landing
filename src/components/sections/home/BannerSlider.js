@@ -71,7 +71,7 @@ const BannerSlider = ({ facility }) => {
       <div className="absolute inset-0 z-20">
         <div className="text-center flex flex-col items-center justify-around text-white h-full w-full">
           <div className="w-[300px] h-auto">
-            <Image src="/logo.png" alt="logo" fill className="w-full h-full" />
+            <img src="/logo.png" alt="logo" className="w-full h-full" />
           </div>
           <div className="w-full">
             <p className="font-light text-2xl">The Corporate Hotel</p>

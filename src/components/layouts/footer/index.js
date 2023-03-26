@@ -28,7 +28,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
             <div className="w-full md:w-[300px] flex flex-col items-center justify-center">
               <div className="w-32 md:w-[300px]">
                 {/* <img src={'/logo/logo-white.png'} alt="sb" className="w-full h-full" /> */}
-                <Image src={(logo && logo) || '/logo/logo-white.png'} fill alt="sb" className="w-full md:h-full" />
+                <img src={(logo && logo) || '/logo/logo-white.png'} alt="sb" className="w-full md:h-full" />
               </div>
               <div className="flex items-center justify-center gap-[30px]">
                 <Image alt="zurag" src={'/icons/facebook.png'} width={32} height={32}></Image>

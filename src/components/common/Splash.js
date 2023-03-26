@@ -13,7 +13,7 @@ const Splash = () => {
         transition={{ delay: 1, duration: 2 }}
       >
         <div className="w-42 h-auto">
-          <Image src="/logo.png" alt="logo" fill className="w-full h-full" />
+          <img src="/logo.png" alt="logo" className="w-full h-full" />
         </div>
       </motion.div>
       ;
