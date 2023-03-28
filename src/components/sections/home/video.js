@@ -8,7 +8,7 @@ const Video = () => {
       <div
         className="w-full md:w-[840px] lg:w-[1080px] h-[330px] md:h-[530px] md:mr-auto rounded-md relative"
         style={{
-          backgroundImage: "url('/home-bg-1.jpg')",
+          backgroundImage: "url('/video.jpg')",
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -22,10 +22,11 @@ const Video = () => {
           </a>
         </div>
         <div className="hidden md:block absolute -bottom-16 -right-16 md:-bottom-[215px] md:-right-[280px]">
-          <div className="bg-[#B0985A] p-5 w-32 h-32 md:h-[430px] md:w-[560px] rounded-lg text-center text-white">
-            <b className="text-[75px] md:text-[200px] leading-[1]">“</b>
-            <p className="leading-none text-xl md:text-[32px] px-5 md:px-[65px] text-justify tracking-tighter">
-              Great hospitality is the key to Pride of Britain’s longstanding reputation for excellence.
+          <div className="bg-[#B0985A] flex flex-col p-5 w-32 h-32 md:h-[430px] md:w-[560px] rounded-lg text-center text-white">
+            <b className="text-[75px] md:text-[200px] leading-none">“</b>
+            <p className=" text-[32px]"> WELCOME TO THE CORPORATE HOTEL</p>
+            <p className="leading-none text-xl md:text-[32px] text-justify mx-auto ">
+              Superior service & Warm hospitality
             </p>
           </div>
         </div>

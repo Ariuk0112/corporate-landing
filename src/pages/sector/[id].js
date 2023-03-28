@@ -3,7 +3,7 @@ import Facility from '@/components/sections/sector/Facility';
 import Room from '@/components/sections/sector/Room';
 //custom
 import { Video } from '@/components/sections/home';
-import { Container, RootLayout } from '../../components/layouts';
+import { Container, Header, RootLayout } from '../../components/layouts';
 
 import MOCK_DATA from '@/assets/i18n/data.json';
 import HeroSlider from '@/components/common/HeroSlider';
@@ -37,11 +37,14 @@ const SectorDetail = ({ id, locale }) => {
         mail={sectorDetail.mail}
         id={id}
       >
+        <div className="absolute top-0">
+          <Header />
+        </div>
+        <div className="w-full overflow-x-hidden pt-[76px] relative">
+          <HeroSlider images={sliderImages} title={sectorDetail.title} subTitle={sectorDetail.subTitle} />
+        </div>
         <Container>
           <div className="w-full ">
-            <div className="w-full overflow-x-hidden mt-[76px]">
-              <HeroSlider images={sliderImages} title={sectorDetail.title} subTitle="Ulaanbaatar" />
-            </div>
             <div className="w-full relative ">
               <div className="absolute top-2/3 left-16 transform  -translate-y-1/2">
                 <div className="flex flex-col items-center justify-center gap-5 text-center">
@@ -63,7 +66,7 @@ const SectorDetail = ({ id, locale }) => {
             >
               <Facility facilities={MOCK_SECTOR.facilities} sector={id} />
             </div>
-            <div className="md:mx-[90px] md:-mt-[600px]">
+            <div className="w-full" id="About-us">
               <Video />
             </div>
           </div>

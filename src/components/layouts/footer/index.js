@@ -45,7 +45,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                     {sectors.map((sector, index) => (
                       <div key={`sector-${index}`}>
                         <Link className="mb-[11px]" href={`/sector/${sector.id}`}>
-                          {sector.title}
+                          {sector.title} {sector.subTitle}
                         </Link>
                       </div>
                     ))}

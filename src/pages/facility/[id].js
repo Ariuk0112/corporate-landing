@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import { Container, RootLayout } from '../../components/layouts';
+import { Container, Header, RootLayout } from '../../components/layouts';
 import StaticData from '../../assets/i18n/home.json';
 
 import MOCK_DATA from '@/assets/i18n/data.json';
@@ -24,14 +24,22 @@ export async function getServerSideProps(context) {
 const FacilityDetail = ({ id, sectorId, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[sectorId] || {};
   const FACILITIES = MOCK_SECTOR?.facilities || [];
+  const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === sectorId);
   const currentFacility = FACILITIES[id];
-  console.log(currentFacility);
-  const sliderImages = ['/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png', '/slider/corp-1.png'];
+  const sliderImages = currentFacility.bg_img;
 
   return (
-    <RootLayout title="sda" description="sda" logo={MOCK_SECTOR.logo}>
-      <div className="w-full mt-[76px]">
-        <HeroSlider images={sliderImages} title="The Corporate Hotel" subTitle="Ulaanbaatar" />
+    <RootLayout
+      title="facility"
+      description="facility"
+      logo={sectorDetail.logo}
+      address={sectorDetail.address}
+      mail={sectorDetail.mail}
+      id={id}
+    >
+      <Header />
+      <div className="w-full pt-[76px]">
+        <HeroSlider images={sliderImages} title={sectorDetail.title} subTitle={sectorDetail.subTitle} />
       </div>
       <div className="max-w-[1420px]">
         <div className="flex justify-end -mt-10 mb-[50px] z-20">
@@ -68,14 +76,9 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   </div>
                   <div>
                     <div className="mt-[24px]">
-                      <div className="mb-[32px]">
-                        <p className="text-[40px] leading-none"> Feel Real Comfortable</p>
-                      </div>
                       <div>
                         <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal text-justify">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry standard dummy text ever since the 1500s, when an unknown printer took a
-                          galley of type and scrambled it to make a type specimen book.
+                          {currentFacility.title1}
                         </p>
                       </div>
                     </div>
@@ -92,9 +95,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                       </div>
                       <div>
                         <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry standard dummy text ever since the 1500s, when an unknown printer took a
-                          galley of type and scrambled it to make a type specimen book.
+                          {currentFacility.title2}
                         </p>
                       </div>
                     </div>

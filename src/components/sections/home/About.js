@@ -77,17 +77,17 @@ const About = () => {
               {/* todo: images */}
               <SwiperSlide>
                 <div className="w-42 h-auto">
-                  <Image fill src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                  <Image fill src="/about.jpg" alt="logo" className="w-full h-full rounded-2xl" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-42 h-auto">
-                  <Image fill src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                  <Image fill src="/about-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-42 h-auto">
-                  <Image fill src="/home-bg-1.jpg" alt="logo" className="w-full h-full rounded-2xl" />
+                  <Image fill src="/about-2.webp" alt="logo" className="w-full h-full rounded-2xl" />
                 </div>
               </SwiperSlide>
             </Swiper>

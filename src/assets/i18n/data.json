@@ -2,6 +2,31 @@
   "en": {
     "sectors": [
       {
+        "id": "sector-4",
+        "title": "The Corporate Hotel & ",
+        "subTitle": "Convention Centre",
+        "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "img": "/3.jpg",
+        "logo": "/logo/convention.png",
+        "address": "Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia",
+        "mail": " 7000 2030 , 9911 1355",
+        "background_image": ["/home-bg-1.jpg", "/con-bg-2.jpg", "/con-bg-1.jpg"],
+        "text": "LUXURY ENVIRONMENT"
+      },
+
+      {
+        "id": "sector-3",
+        "title": "THE CORPORATE HOTEL ",
+        "subTitle": "NUKHT RESORT",
+        "desc": "The Corporate Hotel  Nukht Resort with it amazing location in Nukht Valley, Bogd Reserve, will offer our guests an experience of serene natural location, outstanding accommodations, and exceptional services. The hotel resort is pioneering the use of the eco-green technology hallow Geothermal Energy in Mongolia. With a limited number of rooms and suites,  Nukht Resort is a perfect getaway for anyone seeking privacy and relaxation.",
+        "img": "/4.jpg",
+        "background_image": ["/nukht/nukht-slider-1.jpg", "/nukht/nukht-slider-2.jpg", "/nukht/nukht-slider-3.jpg"],
+        "logo": "/logo/nukht.png",
+        "address": "Khan-Uul district 5th khoroo, Ulaanbaatar, Mongolia ",
+        "mail": " 7701 5555 Corporatenukht@gmail.com",
+        "text": "CONVENIENCE"
+      },
+      {
         "id": "sector-1",
         "title": "The Corporate Hotel ",
         "subTitle": "Ulaanbaatar",
@@ -15,33 +40,9 @@
         "text": "SUPERIOR SERVICE"
       },
       {
-        "id": "sector-3",
-        "title": "THE CORPORATE HOTEL ",
-        "subTitle": "NUKHT RESORT",
-        "desc": "The Corporate Hotel &amp; Nukht Resort with it amazing location in Nukht Valley, Bogd Reserve, will offer our guests an experience of serene natural location, outstanding accommodations, and exceptional services. The hotel resort is pioneering the use of the eco-green technology hallow Geothermal Energy in Mongolia. With a limited number of rooms and suites,  Nukht Resort is a perfect getaway for anyone seeking privacy and relaxation.",
-        "img": "/4.jpg",
-        "background_image": ["/nukht/bg.jpg", "/nukht/bg.jpg", "/nukht/bg.jpg"],
-        "logo": "/logo/nukht.png",
-        "address": "Khan-Uul district 5th khoroo, Ulaanbaatar, Mongolia ",
-        "mail": " 7701 5555 Corporatenukht@gmail.com",
-        "text": "CONVENIENCE"
-      },
-      {
-        "id": "sector-4",
-        "title": "The Corporate Hotel & ",
-        "subTitle": "Convention Centre",
-        "desc": "lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        "img": "/3.jpg",
-        "logo": "/logo/convention.png",
-        "address": "Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia",
-        "mail": " 7000 2030",
-        "background_image": ["/home-bg-1.jpg", "/home-bg-1.jpg", "/home-bg-1.jpg"],
-        "text": "LUXURY ENVIRONMENT"
-      },
-      {
         "id": "sector-5",
-        "title": "SHAMBHA LA GARDEN AND ",
-        "subTitle": "VILLAGE",
+        "title": "CORPORATE ZAISAN & ",
+        "subTitle": "TERRACE GARDEN",
         "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city&#39;s smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
         "img": "/1.jpg",
         "background_image": ["/shambala/bg.jpg", "/shambala/bg.jpg", "/shambala/bg.jpg"],
@@ -57,7 +58,6 @@
           "title": "STANDARD KING",
           "description": "1 king sized bed",
 
-          "type": "Single room",
           "size": "35m2",
           "images": [
             {
@@ -74,7 +74,6 @@
           "title": "STANDARD TWIN",
           "description": "Decorated using variety of soft colors with natural materials. These rooms are ideal for those who travel for work.Exclusively designed bed linen, an interior bathed in warm light, sparkling clean bathroom. In this atmosphere, guests are sure to feel the detailedattentiveness. The standard king room has a large comfortable bed with 2 pillows. The standard twin room has two queen size beds with 2 pillows on each bed.",
 
-          "type": "Single room",
           "size": "33m2",
           "images": [
             {
@@ -124,7 +123,6 @@
           "title": "DELUXE ",
           "description": "The deluxe rooms are comfortable and spacious ideal for a romantic evening or a business traveling entrepreneurs separating the work area.",
 
-          "type": "Single room",
           "size": "53m2",
           "images": [
             {
@@ -145,7 +143,6 @@
           "title": "Premium suite ",
           "description": "With luxurious furnishings and decoration, the spacious suite is consisted of 2 separate rooms. The bedroom has a luxurious Jacuzzi. It comes with a mini-bar, 1 flat-screen TVand 1 smart TV with home theater. Private bathrooms in each room. ",
 
-          "type": "Single room",
           "size": "95m2",
           "images": [
             {
@@ -170,7 +167,6 @@
           "title": "THE PENTHOUSE SUITE",
           "description": "",
 
-          "type": "Single room",
           "size": "150m2",
           "images": [
             {
@@ -249,8 +245,8 @@
         {
           "title": "Superior A",
           "description": "",
-          "type": "Single room",
-          "size": "25 м2",
+
+          "size": "",
           "images": [
             {
               "title": "zurag-1",
@@ -275,8 +271,7 @@
           "title": "Superior B",
           "description": "",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "",
           "images": [
             {
               "title": "zurag-1",
@@ -300,8 +295,7 @@
           "title": "Standard Twin",
           "description": " ",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "",
           "images": [
             {
               "title": "zurag-1",
@@ -325,8 +319,7 @@
           "title": "Standard Single",
           "description": " ",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "",
           "images": [
             {
               "title": "zurag-1",
@@ -354,10 +347,13 @@
       "facilities": [
         {
           "title": "CONFERENCE HALL & MEETING ROOM",
-          "description": "Our resort offers two Conference Halls with the state- of the art equipment for your private affairs and can be tailored to your needs. Both halls are equipped with high - definition projectors, wireless microphones, 4 channels of simultaneous translation  equipment, and high-speed internet access. We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT \n•  MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \nTel: 976-7701-5555,976-8811-3601",
+          "description": "Our resort offers two Conference Halls with the state- of the art equipment for your private affairs and can be tailored to your needs. Both halls are equipped with high - definition projectors, wireless microphones, 4 channels of simultaneous translation  equipment, and high-speed internet access.",
+          "title1": "Tel: 976-7701-5555,976-8811-3601",
+          "title2": " We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT \n•  MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \n",
+          "bg_img": ["/nukht/services/hall-slider-1.jpg", "/nukht/services/hall-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/hall1.jpg" },
-            { "url": "/nukht/services/hall.jpg" },
+            { "url": "/nukht/services/hall.webp" },
             { "url": "/nukht/services/hall2.jpg" }
           ],
           "video_id": "5r_CtgsCVrs"
@@ -365,7 +361,14 @@
 
         {
           "title": "CHAIRMAN RESTAURANTS",
-          "description": "Spend your day in the beauty of nature savoring our selection of Western and Asian cuisines and an amazing selection from our breakfast buffet. Our restaurant provides each guests and locals with a great place to dine and entertain. This is a perfect  destination for you to enjoy our delicious coffee and food over breakfast, lunch, or  dinner. Escape from the hustle of the busy city to experience relaxation, fresh air, and a delicious meal or a cup of coffee with family, friends, and colleagues. Tel: 976-7701-5555, 976-8811-3601",
+          "description": "Spend your day in the beauty of nature savoring our selection of Western and Asian cuisines and an amazing selection from our breakfast buffet. Our restaurant provides each guests and locals with a great place to dine and entertain.",
+          "title1": "Tel: 976-7701-5555, 976-8811-3601",
+          "title2": "  This is a perfect  destination for you to enjoy our delicious coffee and food over breakfast, lunch, or  dinner. Escape from the hustle of the busy city to experience relaxation, fresh air, and a delicious meal or a cup of coffee with family, friends, and colleagues. ",
+          "bg_img": [
+            "/nukht/services/chairman-slider-1.jpg",
+            "/nukht/services/chairman-slider-2.jpg",
+            "/nukht/services/chairman-slider-3.jpg"
+          ],
           "image": [
             { "url": "/nukht/services/chairman.jpg" },
             { "url": "/nukht/services/chairman1.jpg" },
@@ -375,17 +378,27 @@
 
         {
           "title": "EVENT HALL & EVENT TERRACE",
-          "description": "Your events could well become the most unforgettable experience in our amazing events hall. We ensure your special day run smoothly. Take advantage of our event terrace and event hall to plan your special day. We offer event spaces and rooms ideal  for meetings, celebrations, weddings, exhibitions and seminars. Our event hall can accommodate up to 280 people depending on seating arrangements. \nAddress: Khan-Uul district-5, Bogd Khan National Reserve Ulaanbaatar, Mongolia \nTel: 976-7701-5555, 976-8811-3601, Fax: 976-11-334422 Web: www.corporatehotel.mn E-mail: mail@corporatehotel.mn",
+          "description": "Your events could well become the most unforgettable experience in our amazing events hall. We ensure your special day run smoothly. Take advantage of our event terrace and event hall to plan your special day. ",
+          "title1": " \nAddress: Khan-Uul district-5, Bogd Khan National Reserve Ulaanbaatar, Mongolia \nTel: 976-7701-5555, 976-8811-3601, Fax: 976-11-334422 Web: www.corporatehotel.mn E-mail: mail@corporatehotel.mn",
+          "title2": "  We offer event spaces and rooms ideal  for meetings, celebrations, weddings, exhibitions and seminars. Our event hall can accommodate up to 280 people depending on seating arrangements.",
+          "bg_img": [
+            "/nukht/services/event-slider-1.jpg",
+            "/nukht/services/event-slider-2.jpg",
+            "/nukht/services/event-slider-3.jpg"
+          ],
           "image": [
             { "url": "/nukht/services/event4.jpg" },
-            { "url": "/nukht/services/event2.jpeg" },
+            { "url": "/nukht/services/event2.jpg" },
             { "url": "/nukht/services/event3.jpg" }
           ]
         },
 
         {
           "title": "HEALTH CLUB",
-          "description": "Our Health Club offers an amazing selection of options to elevate your getaway. Guests can relax and forget the stress of the busy city in one of our sauna, steam room, jacuzzi,or enjoy pampering at the spa. Our Fitness Centre and indoor swimming Pool will  satisfy your need to exercise and let loose. \nThe Nukht Resort offer our guests a number of amazing selections from the Recreational Centre. Guests may choose to spend their getaway at the outdoor garden,basketball court, snooker room, the karaoke, grill house. Our young guests also have the option of spending their time at the kids room.\nSauna & Jacuzzi \nFitness Center \nIndoor Swimming pool \nSpa",
+          "description": "Our Health Club offers an amazing selection of options to elevate your getaway. Guests can relax and forget the stress of the busy city in one of our sauna, steam room, jacuzzi,or enjoy pampering at the spa. Our Fitness Centre and indoor swimming Pool will  satisfy your need to exercise and let loose. \nThe Nukht Resort offer our guests a number of amazing selections from the Recreational Centre. ",
+          "title1": "",
+          "title2": "Guests may choose to spend their getaway at the outdoor garden,basketball court, snooker room, the karaoke, grill house. Our young guests also have the option of spending their time at the kids room.\nSauna & Jacuzzi \nFitness Center \nIndoor Swimming pool \nSpa",
+          "bg_img": ["/nukht/services/pool-slider-1.jpg", "/nukht/services/pool-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/pool.jpg" },
             { "url": "/nukht/services/pool1.jpg" },
@@ -398,10 +411,10 @@
       "rooms": [
         {
           "title": "A suite room",
-          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+          "description": "Distinguished by comfort, our Executive Deluxe suites have been elegantly and stylishly decorated with modern looks. Spacious suites have stylish decor with living room, dining room, guest bath, kitchen, meeting and work area with two bedrooms with dry sauna and jacuzzi. These Executive Deluxe suites are ideal for big families.",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "type": "",
+          "size": "193 M2",
           "images": [
             {
               "title": "zurag-1",
@@ -423,10 +436,8 @@
         },
         {
           "title": "B suite room",
-          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
-
-          "type": "Single room",
-          "size": "25 м2",
+          "description": "Distinguished by comfort, our Executive Deluxe suites have been elegantly and stylishly decorated with modern looks. Spacious suites have stylish decor with living room, dining room, guest bath, kitchen, meeting and work area with two bedrooms with dry sauna and jacuzzi. These Executive Deluxe suites are ideal for big families.",
+          "size": "186м2",
           "images": [
             {
               "title": "zurag-1",
@@ -453,10 +464,9 @@
         },
         {
           "title": "C suite room",
-          "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
+          "description": "Distinguished by comfort, our Executive Deluxe suites have been elegantly and stylishly decorated with modern looks. Spacious suites have stylish decor with living room, dining room, guest bath, kitchen, meeting and work area with two bedrooms with dry sauna and jacuzzi. These Executive Deluxe suites are ideal for big families.",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "134 м2",
           "images": [
             {
               "title": "zurag-1",
@@ -484,8 +494,7 @@
           "title": "KING room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "25m2-30m2",
           "images": [
             {
               "title": "zurag-1",
@@ -497,7 +506,7 @@
             },
             {
               "title": "zurag-1",
-              "url": "/room/k2.jpeg"
+              "url": "/room/k2.jpg"
             }
           ]
         },
@@ -505,8 +514,7 @@
           "title": "TWIN room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "30m2-60m2",
           "images": [
             {
               "title": "zurag-1",
@@ -530,8 +538,7 @@
           "title": "APARTMENT Suite",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-          "type": "Single room",
-          "size": "25 м2",
+          "size": "53m2",
           "images": [
             {
               "title": "zurag-1",
@@ -551,9 +558,10 @@
       "facilities": [
         {
           "title": "CONCERT HALL",
-          "description": "The Corporate Hotel &amp; Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
+          "description": "The Corporate Hotel  Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
+          "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
-            { "url": "/service/convention/hall.jpg" },
+            { "url": "/service/convention/concert.jpg" },
             { "url": "/service/concert1.jpg" },
             { "url": "/service/convention/hall1.jpg" }
           ]
@@ -561,6 +569,7 @@
         {
           "title": "EVENT HALL",
           "description": "With capacity to service up to 800 seating and 1200 standing, our event Hall at The Corporate Hotel is spacious and versatile. Ability to host from weddings and parties to large scale seminars, it is an outstanding facility with top notch services backed by our dedicated team of staff to meet any of our clients&#39; needs. Recommend Events: •Wedding •Company functions •Conferences and seminars •Anniversary Celebrations •Exhibitions • Product launches • Fashion Show • Parties  ",
+          "bg_img": ["/service/convention/event-slider-1.jpg", "/service/convention/event-slider-2.jpg"],
           "image": [
             { "url": "/service/convention/event.jpg" },
             { "url": "/service/convention/1.jpg" },
@@ -569,7 +578,14 @@
         },
         {
           "title": "CHAIRMAN RESTAURANTS",
-          "description": "The hotel is home to the one of the finest restaurants in Ulaanbaatar. Located on the 3rd floor, The Chairman restaurant is an excellent choice for all kinds of meetings. We invite you for delicious lunch during work day, spontaneous dinner with family, romantic evening with your loved ones. The high ceiling dining room with warm colored walls, widely spaced tables and  friendly service offers a decidedly 21st century take on Western and Asian cuisines. Our team of dedicated workers will serve you with proud and show you top notch service. The restaurant offers many vegetable dishes in the menu, making it convenient for vegetarians. Our regularly changing and extensive menu satisfy all tastes and is a good mixture of traditional and new dishes. The top- grade beef, fresh vegetables are carefully selected to create our delicious dishes accompanied by variety of specially made sauces. The Chairman Restaurant will delight you with an interplay of flavors that keeps you expectant and interested. We also offer 5 VIP rooms for your convenience and privacy.    ",
+          "description": "The hotel is home to the one of the finest restaurants in Ulaanbaatar. Located on the 3rd floor, The Chairman restaurant is an excellent choice for all kinds of meetings. We invite you for delicious lunch during work day, spontaneous dinner with family, romantic evening with your loved ones. The high ceiling dining room with warm colored walls, widely spaced tables and  friendly service offers a decidedly 21st century take on Western and Asian cuisines. Our team of dedicated workers will serve you with proud and show you top notch service.  ",
+          "title1": "The restaurant offers many vegetable dishes in the menu, making it convenient for vegetarians. Our regularly changing and extensive menu satisfy all tastes and is a good mixture of traditional and new dishes. The top- grade beef, fresh vegetables are carefully selected to create our delicious dishes accompanied by variety of specially made sauces.",
+          "title2": "The Chairman Restaurant will delight you with an interplay of flavors that keeps you expectant and interested. We also offer 5 VIP rooms for your convenience and privacy.",
+          "bg_img": [
+            "/service/convention/chairman-slider-1.jpg",
+            "/service/convention/chairman-slider-2.jpg",
+            "/service/convention/chairman-slider-3.jpg"
+          ],
           "image": [
             { "url": "/service/convention/chairman.jpg" },
             { "url": "/service/convention/chairman2.jpg" },
@@ -579,7 +595,14 @@
 
         {
           "title": "CONFERENCE HALL & ROOMS",
-          "description": "The Corporate Hotel conference facilities aim to provide top notch services to ensure our clients satisfaction. With a capacity for gatherings up to 150 persons, from high level board meetings to seminars can be comfortably accommodated in our conference halls. For further information, please contact the front desk or call 70002030 • Ulaanbaatar Conference Hall - 120 seating • Seoul Hall- 40 seating • Hong Kong Meeting Room- 25 seating • Tokyo Meeting Room- 15 seating ",
+          "description": "The Corporate Hotel conference facilities aim to provide top notch services to ensure our clients satisfaction. With a capacity for gatherings up to 150 persons, from high level board meetings to seminars can be comfortably accommodated in our conference halls.  ",
+          "title1": "For further information, please contact the front desk or call us Tel: 70002030 , 99108649",
+          "title2": "• Ulaanbaatar Conference Hall - 120 seating • Seoul Hall- 40 seating • Hong Kong Meeting Room- 25 seating • Tokyo Meeting Room- 15 seating ",
+          "bg_img": [
+            "/service/convention/conference-slider-1.jpg",
+            "/service/convention/conference-slider-2.jpg",
+            "/service/convention/conference-slider-3.jpg"
+          ],
           "image": [
             { "url": "/service/convention/conference.jpg" },
             { "url": "/service/convention/conference2.jpg" },
@@ -589,7 +612,14 @@
 
         {
           "title": "COFFEE LOUNGE",
-          "description": "Start your day with an assortment of delicious hot and cold beverages, light snacks, lunch at our coffee shop located on the first floor of the hotel. With its casual and relaxing atmosphere and comfortable seating, it&#39;s the perfect place to relax over a delicious cup of coffee or have a quick impromptu meeting. Operating hours: Monday -Friday 8:00am -10:00 pm Saturday &amp; Sunday 10:00am - 8:00 pm  ",
+          "description": "Start your day with an assortment of delicious hot and cold beverages, light snacks, lunch at our coffee shop located on the first floor of the hotel. ",
+          "title1": " Operating hours: Monday -Friday 8:00am -10:00 pm Saturday & Sunday 10:00am - 8:00 pm ",
+          "title2": "With its casual and relaxing atmosphere and comfortable seating, it's the perfect place to relax over a delicious cup of coffee or have a quick impromptu meeting.",
+          "bg_img": [
+            "/service/convention/coffe-slider-1.jpg",
+            "/service/convention/coffe-slider-2.jpg",
+            "/service/convention/coffe-slider-3.jpg"
+          ],
           "image": [
             { "url": "/service/convention/coffe.jpg" },
             { "url": "/service/convention/coffe1.jpg" },
@@ -598,7 +628,14 @@
         },
         {
           "title": "CIGAR BAR",
-          "description": "Perfectly located at the entrance of the hotel, the Lobby Bar offers wide selection of beers, cigars, craft cocktails and many more beverages. Wowing first arrivals with its modern design, elegant city photos and high ceiling bar, the Lobby Bar is an ideal place to relax and meet for drinks. Operating Hours: Monday-Friday 12:00 pm- 02:00 am Saturday and Sunday 06:00 pm -02:00am  ",
+          "description": "Perfectly located at the entrance of the hotel, the Lobby Bar offers wide selection of beers, cigars, craft cocktails and many more beverages. ",
+          "title1": "  Operating Hours: Monday-Friday 12:00 pm- 02:00 am Saturday and Sunday 06:00 pm -02:00am  ",
+          "title2": "Wowing first arrivals with its modern design, elegant city photos and high ceiling bar, the Lobby Bar is an ideal place to relax and meet for drinks.",
+          "bg_img": [
+            "/service/convention/cigar-slider-1.jpg",
+            "/service/convention/cigar-slider-2.jpg",
+            "/service/convention/cigar-slider-3.jpg"
+          ],
           "image": [
             { "url": "/service/cigar2.jpg" },
             { "url": "/service/convention/cigar2.jpg" },
@@ -607,7 +644,14 @@
         },
         {
           "title": "HEALTH CLUB",
-          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage &amp; Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday &amp; Sunday 10:00 am - 7:00 pm ",
+          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. ",
+          "title1": " Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage & Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday  Sunday 10:00 am - 7:00 pm ",
+          "title2": "Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse.",
+          "bg_img": [
+            "/service/convention/club-slider-1.jpg",
+            "/service/convention/club-slider-2.jpg",
+            "/service/convention/club-slider-3.jpg"
+          ],
           "image": [
             { "url": "/service/convention/club2.jpg" },
             { "url": "/service/convention/club1.jpg" },
@@ -616,10 +660,17 @@
         },
         {
           "title": "BEAUTY SALON & MASSAGE AND SPA",
-          "description": "Conveniently located at the entrance of the hotel, our beauty salon offers haircut, manicure, pedicure, eyelash and waxing service. And At Corporate Hotels, we are always looking for new ways to make your stay even more unforgettable. On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.   ",
+          "description": "Conveniently located at the entrance of the hotel, our beauty salon offers haircut, manicure, pedicure, eyelash and waxing service. And At Corporate Hotels, we are always looking for new ways to make your stay even more unforgettable.  ",
+          "title1": " ",
+          "title2": "On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.  ",
+          "bg_img": [
+            "/service/convention/spa-slider-1.jpg",
+            "/service/convention/spa-slider-2.jpg",
+            "/service/convention/spa-slider-3.jpg"
+          ],
           "image": [
             { "url": "/service/spa1.jpg" },
-            { "url": "/service/convention/spa23.png" },
+            { "url": "/service/convention/spa23.jpg" },
             { "url": "/service/spa.jpg" }
           ]
         }
@@ -629,7 +680,14 @@
       "facilities": [
         {
           "title": "CHAIRMAN RESTAURANTS",
-          "description": "",
+          "description": "The hotel is home to the one of the finest restaurants in Ulaanbaatar. The Chairman restaurant is an excellent choice for all kinds of meetings. We invite you for delicious lunch during work day, spontaneous dinner with family, romantic evening with your loved ones. The high ceiling dining room with warm colored walls, widely spaced tables and friendly service offers a decidedly 21st century take on Western and Asian cuisines. Our team of dedicated workers will serve you with proud and show you top notch service. ",
+          "title1": "Operating Hours: Monday - Sunday 11:00 am - 12:00 pm Tel: 976-77353399   ",
+          "title2": "The restaurant offers many vegetable dishes in the menu, making it convenient for vegetarians. Our regularly changing and extensive menu satisfy all tastes and is a good mixture of traditional and new dishes. The top- grade beef, fresh vegetables are carefully selected to create our delicious dishes accompanied by variety of specially made sauces. The Chairman Restaurant will delight you with an interplay of flavors that keeps you expectant and interested. ",
+          "bg_img": [
+            "/shambala/service/chairman-slider-1.jpg",
+            "/shambala/service/chairman-slider-2.jpg",
+            "/shambala/service/chairman-slider-3.jpg"
+          ],
           "image": [
             { "url": "/shambala/service/chairman.jpg" },
             { "url": "/shambala/service/chairman1.jpg" },
@@ -639,7 +697,14 @@
 
         {
           "title": "HEALTH CLUB",
-          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage &amp; Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday &amp; Sunday 10:00 am - 7:00 pm ",
+          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage  Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday  Sunday 10:00 am - 7:00 pm ",
+          "title1": " ",
+          "title2": "On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.  ",
+          "bg_img": [
+            "/shambala/service/spa-slider-1.jpg",
+            "/shambala/service/spa-slider-2.jpg",
+            "/shambala/service/spa-slider-3.jpg"
+          ],
           "image": [
             { "url": "/shambala/service/club3.jpg" },
             { "url": "/shambala/service/club.jpg" },
@@ -648,7 +713,14 @@
         },
         {
           "title": "GRILL HOUSE",
-          "description": "",
+          "description": "On the weekend, turn to those who are living happily with their loved ones. By placing an order, you can grill the meat you want in the grill house for 10-12 people, enjoy a delicious meal, and spend time comfortably in the beauty of nature.",
+          "title1": "Tel: 976-77353399, 88187579",
+          "title2": "The most delicious   Perfect service   fresh air environment The opportunity to taste the meat you want    ",
+          "bg_img": [
+            "/shambala/service/chairman-slider-1.jpg",
+            "/shambala/service/chairman-slider-2.jpg",
+            "/shambala/service/chairman-slider-3.jpg"
+          ],
           "image": [
             { "url": "/shambala/service/grill.jpg" },
             { "url": "/shambala/service/grill1.jpg" },
@@ -674,7 +746,7 @@
       {
         "id": "sector-3",
         "title": "THE CORPORATE HOTEL NUKHT RESORT",
-        "desc": "The Corporate Hotel &amp; Nukht Resort with it amazing location in Nukht Valley, Bogd Reserve, will offer our guests an experience of serene natural location, outstanding accommodations, and exceptional services. The hotel resort is pioneering the use of the eco-green technology hallow Geothermal Energy in Mongolia. With a limited number of rooms and suites,  Nukht Resort is a perfect getaway for anyone seeking privacy and relaxation.",
+        "desc": "The Corporate Hotel  Nukht Resort with it amazing location in Nukht Valley, Bogd Reserve, will offer our guests an experience of serene natural location, outstanding accommodations, and exceptional services. The hotel resort is pioneering the use of the eco-green technology hallow Geothermal Energy in Mongolia. With a limited number of rooms and suites,  Nukht Resort is a perfect getaway for anyone seeking privacy and relaxation.",
         "img": "/4.jpg",
         "background_image": "/nukht/bg.jpg",
         "logo": "/logo/nukht.png",
@@ -688,7 +760,7 @@
         "img": "/3.jpg",
         "logo": "/logo/convention.png",
         "address": "Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia",
-        "mail": " 7000 2030",
+        "mail": " 7000 2030 , 99111355",
         "background_image": "/aaa.jpg"
       },
       {
@@ -707,7 +779,7 @@
         {
           "title": "STANDARD KING",
           "description": "1 king sized bed",
-          "type": "Single room",
+
           "size": "35m2",
           "images": [
             {
@@ -723,7 +795,7 @@
         {
           "title": "STANDARD TWIN",
           "description": "Decorated using variety of soft colors with natural materials. These rooms are ideal for those who travel for work.Exclusively designed bed linen, an interior bathed in warm light, sparkling clean bathroom. In this atmosphere, guests are sure to feel the detailedattentiveness. The standard king room has a large comfortable bed with 2 pillows. The standard twin room has two queen size beds with 2 pillows on each bed.",
-          "type": "Single room",
+
           "size": "33m2",
           "images": [
             {
@@ -773,7 +845,6 @@
           "title": "DELUXE ",
           "description": "The deluxe rooms are comfortable and spacious ideal for a romantic evening or a business traveling entrepreneurs separating the work area.",
 
-          "type": "Single room",
           "size": "53m2",
           "images": [
             {
@@ -794,7 +865,6 @@
           "title": "Premium suite ",
           "description": "With luxurious furnishings and decoration, the spacious suite is consisted of 2 separate rooms. The bedroom has a luxurious Jacuzzi. It comes with a mini-bar, 1 flat-screen TVand 1 smart TV with home theater. Private bathrooms in each room. ",
 
-          "type": "Single room",
           "size": "95m2",
           "images": [
             {
@@ -819,7 +889,6 @@
           "title": "THE PENTHOUSE SUITE",
           "description": "",
 
-          "type": "Single room",
           "size": "150m2",
           "images": [
             {
@@ -898,7 +967,7 @@
         {
           "title": "Superior A",
           "description": "",
-          "type": "Single room",
+
           "size": "25 м2",
           "images": [
             {
@@ -924,7 +993,6 @@
           "title": "Superior B",
           "description": "",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -949,7 +1017,6 @@
           "title": "Standard Twin",
           "description": " ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -974,7 +1041,6 @@
           "title": "Standard Single",
           "description": " ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1003,7 +1069,10 @@
       "facilities": [
         {
           "title": "CONFERENCE HALL & MEETING ROOM",
-          "description": "Our resort offers two Conference Halls with the state- of the art equipment for your private affairs and can be tailored to your needs. Both halls are equipped with high - definition projectors, wireless microphones, 4 channels of simultaneous translation  equipment, and high-speed internet access. We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT \n•  MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \nTel: 976-7701-5555,976-8811-3601",
+          "description": "Our resort offers two Conference Halls with the state- of the art equipment for your private affairs and can be tailored to your needs. Both halls are equipped with high - definition projectors, wireless microphones, 4 channels of simultaneous translation  equipment, and high-speed internet access.",
+          "title1": "Tel: 976-7701-5555,976-8811-3601",
+          "title2": " We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT \n•  MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \n",
+          "bg_img": ["/service/nukht/hall-slider-1.jpg", "/service/nukht/hall-slider-1.jpg"],
           "image": [
             { "url": "/nukht/services/hall1.jpg" },
             { "url": "/nukht/services/hall.jpg" },
@@ -1015,6 +1084,7 @@
         {
           "title": "CHAIRMAN RESTAURANTS",
           "description": "Spend your day in the beauty of nature savoring our selection of Western and Asian cuisines and an amazing selection from our breakfast buffet. Our restaurant provides each guests and locals with a great place to dine and entertain. This is a perfect  destination for you to enjoy our delicious coffee and food over breakfast, lunch, or  dinner. Escape from the hustle of the busy city to experience relaxation, fresh air, and a delicious meal or a cup of coffee with family, friends, and colleagues. Tel: 976-7701-5555, 976-8811-3601",
+          "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/chairman.jpg" },
             { "url": "/nukht/services/chairman1.jpg" },
@@ -1025,9 +1095,10 @@
         {
           "title": "EVENT HALL & EVENT TERRACE",
           "description": "Your events could well become the most unforgettable experience in our amazing events hall. We ensure your special day run smoothly. Take advantage of our event terrace and event hall to plan your special day. We offer event spaces and rooms ideal  for meetings, celebrations, weddings, exhibitions and seminars. Our event hall can accommodate up to 280 people depending on seating arrangements. \nAddress: Khan-Uul district-5, Bogd Khan National Reserve Ulaanbaatar, Mongolia \nTel: 976-7701-5555, 976-8811-3601, Fax: 976-11-334422 Web: www.corporatehotel.mn E-mail: mail@corporatehotel.mn",
+          "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/event4.jpg" },
-            { "url": "/nukht/services/event2.jpeg" },
+            { "url": "/nukht/services/event2.jpg" },
             { "url": "/nukht/services/event3.jpg" }
           ]
         },
@@ -1035,6 +1106,7 @@
         {
           "title": "HEALTH CLUB",
           "description": "Our Health Club offers an amazing selection of options to elevate your getaway. Guests can relax and forget the stress of the busy city in one of our sauna, steam room, jacuzzi,or enjoy pampering at the spa. Our Fitness Centre and indoor swimming Pool will  satisfy your need to exercise and let loose. \nThe Nukht Resort offer our guests a number of amazing selections from the Recreational Centre. Guests may choose to spend their getaway at the outdoor garden,basketball court, snooker room, the karaoke, grill house. Our young guests also have the option of spending their time at the kids room.\nSauna & Jacuzzi \nFitness Center \nIndoor Swimming pool \nSpa",
+          "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/pool.jpg" },
             { "url": "/nukht/services/pool1.jpg" },
@@ -1049,7 +1121,6 @@
           "title": "A suite room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1074,7 +1145,6 @@
           "title": "B suite room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1104,7 +1174,6 @@
           "title": "C suite room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1133,7 +1202,6 @@
           "title": "KING room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1146,7 +1214,7 @@
             },
             {
               "title": "zurag-1",
-              "url": "/room/k2.jpeg"
+              "url": "/room/k2.jpg"
             }
           ]
         },
@@ -1154,7 +1222,6 @@
           "title": "TWIN room",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..  ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1179,7 +1246,6 @@
           "title": "APARTMENT Suite",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна..   ",
 
-          "type": "Single room",
           "size": "25 м2",
           "images": [
             {
@@ -1200,7 +1266,7 @@
       "facilities": [
         {
           "title": "CONCERT HALL",
-          "description": "The Corporate Hotel &amp; Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
+          "description": "The Corporate Hotel  Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
           "image": [
             { "url": "/service/convention/hall.jpg" },
             { "url": "/service/concert1.jpg" },
@@ -1238,7 +1304,7 @@
 
         {
           "title": "COFFEE LOUNGE",
-          "description": "Start your day with an assortment of delicious hot and cold beverages, light snacks, lunch at our coffee shop located on the first floor of the hotel. With its casual and relaxing atmosphere and comfortable seating, it&#39;s the perfect place to relax over a delicious cup of coffee or have a quick impromptu meeting. Operating hours: Monday -Friday 8:00am -10:00 pm Saturday &amp; Sunday 10:00am - 8:00 pm  ",
+          "description": "Start your day with an assortment of delicious hot and cold beverages, light snacks, lunch at our coffee shop located on the first floor of the hotel. With its casual and relaxing atmosphere and comfortable seating, it&#39;s the perfect place to relax over a delicious cup of coffee or have a quick impromptu meeting. Operating hours: Monday -Friday 8:00am -10:00 pm Saturday  Sunday 10:00am - 8:00 pm  ",
           "image": [
             { "url": "/service/convention/coffe.jpg" },
             { "url": "/service/convention/coffe1.jpg" },
@@ -1256,7 +1322,7 @@
         },
         {
           "title": "HEALTH CLUB",
-          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage &amp; Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday &amp; Sunday 10:00 am - 7:00 pm ",
+          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage  Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday  Sunday 10:00 am - 7:00 pm ",
           "image": [
             { "url": "/service/convention/club2.jpg" },
             { "url": "/service/convention/club1.jpg" },
@@ -1268,7 +1334,7 @@
           "description": "Conveniently located at the entrance of the hotel, our beauty salon offers haircut, manicure, pedicure, eyelash and waxing service. And At Corporate Hotels, we are always looking for new ways to make your stay even more unforgettable. On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.   ",
           "image": [
             { "url": "/service/spa1.jpg" },
-            { "url": "/service/convention/spa23.png" },
+            { "url": "/service/convention/spa23.jpg" },
             { "url": "/service/spa.jpg" }
           ]
         }
@@ -1288,7 +1354,7 @@
 
         {
           "title": "HEALTH CLUB",
-          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage &amp; Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday &amp; Sunday 10:00 am - 7:00 pm ",
+          "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. Please contact 70002030 for more information • Indoor swimming pool (complimentary for hotel guests) • Dry and steam sauna (complimentary for hotel guests) • Fitness room (complimentary for hotel guests) • Jacuzzi (complimentary for hotel guests) • Sand room (complimentary for hotel guests) • Yoga (rates apply) * Massage  Spa services (rates apply) • Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday  Sunday 10:00 am - 7:00 pm ",
           "image": [
             { "url": "/shambala/service/club3.jpg" },
             { "url": "/shambala/service/club.jpg" },

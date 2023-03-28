@@ -36,7 +36,7 @@ const BannerSlider = ({ facility }) => {
               className="w-full h-full"
             >
               <div className="h-full w-full">
-                <Image src="/slider/hero-0.png" fill className="w-full h-full" />
+                <Image src="/slider/bg-2.jpg" fill className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>
@@ -49,7 +49,7 @@ const BannerSlider = ({ facility }) => {
               className="w-full h-full"
             >
               <div className="h-full w-full">
-                <Image src="/slider/hero-1.png" fill className="w-full h-full" />
+                <Image src="/slider/bg-1.jpg" fill className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>
@@ -62,7 +62,7 @@ const BannerSlider = ({ facility }) => {
               className="w-full h-full"
             >
               <div className="h-full w-full">
-                <Image src="/slider/hero-2.png" fill className="w-full h-full" />
+                <Image src="/slider/bg-3.jpg" fill className="w-full h-full" />
               </div>
             </motion.div>
           </SwiperSlide>

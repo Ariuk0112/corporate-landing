@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Facility = ({ facilities, sector }) => {
   const slidesLength = facilities.length > 8 ? 7 : facilities.length;
-  console.log(slidesLength);
   return (
     <div className="w-full overflow-x-hidden font-Montserrat">
       <div className="text-white -mr-28">

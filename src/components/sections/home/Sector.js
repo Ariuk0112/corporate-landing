@@ -47,7 +47,9 @@ const Sector = ({ locale = 'en' }) => {
                 <div className="absolute top-5 left-5">
                   <div className="">
                     <h5 className="text-[20px] md:text-[48px] uppercase leading-none">{`0${index + 1}`}</h5>
-                    <p className="text-[#ebebeb]">{sector.title}</p>
+                    <p className="text-[#ebebeb] uppercase ">
+                      {sector.title} {sector.subTitle}
+                    </p>
                   </div>
                 </div>
                 <div className="absolute bottom-32 left-5 font-semibold md:lg md:text-xl text-[#ebebeb]">
