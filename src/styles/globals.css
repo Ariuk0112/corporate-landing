@@ -44,7 +44,6 @@ html {
 
 .pulse {
   margin:100px;
-  display: block;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -52,9 +51,6 @@ html {
   cursor: pointer;
   box-shadow: 0 0 0 rgba(255, 255, 255, 0.9);
   animation: pulse 2s infinite;
-}
-.pulse:hover {
-  animation: none;
 }
 
 @-webkit-keyframes pulse {
