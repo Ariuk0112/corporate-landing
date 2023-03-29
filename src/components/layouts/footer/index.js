@@ -32,13 +32,12 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                 <img src={(logo && logo) || '/logo/logo-white.png'} alt="sb" className="w-full md:h-full" />
               </div>
               <div className="flex items-center justify-center gap-[30px]">
-                <Image alt="zurag" src={'/icons/facebook.png'} width={32} height={32}></Image>
-                <Image alt="zurag" src={'/icons/twitter.png'} width={32} height={32}></Image>
-                <Image alt="zurag" src={'/icons/youtube.png'} width={32} height={32}></Image>
-                <Image alt="zurag" src={'/icons/instagram.png'} width={32} height={32}></Image>
-              </div>
-            </div>
-            <div className="w-full">
+                <Image src={'/icons/facebook.png'} width={32} height={32}></Image>
+                <Image src={'/icons/twitter.png'} width={32} height={32}></Image>
+                <Image src={'/icons/youtube.png'} width={32} height={32}></Image>
+                <Image src={'/icons/instagram.png'} width={32} height={32}></Image>
+width={32} height={32}></Image>
+     <div className="w-full">
               <div className="w-full grid grid-cols-2 md:grid-cols-3">
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">Sectors</div>
