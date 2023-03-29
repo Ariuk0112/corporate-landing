@@ -120,7 +120,7 @@ const Header = ({ textColor, bgColor }) => {
         {toggleMenu && (
           <ul
             className="z-20 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
-            flex flex-col justify-start items-end rounded-md bg-black/50 opacity-70 animate-slide-in"
+            flex flex-col justify-start items-end rounded-md bg-black/80 opacity-95 animate-slide-in"
           >
             <li className="text-xl w-full my-2">
               <Close onClick={() => setToggleMenu(false)} />

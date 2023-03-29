@@ -12,11 +12,11 @@ const NewsCard = ({ news }) => {
           }}
         >
           <div className="my-auto w-full">
-            <h5 className="font-semibold text-[#B58E3E] text-2xl md:text-[34px] text-justify leading-none">
+            <h5 className="font-semibold text-[#B58E3E] text-xl md:text-[34px] text-justify leading-none">
               {news.title}
             </h5>
           </div>
-          <div className=" my-auto w-full leading-none text-[#B58E3E] text-[32px]">
+          <div className=" my-auto w-full leading-none text-[#B58E3E] text-md md:text-[32px]">
             <p>{news.phone}</p>
           </div>
         </div>

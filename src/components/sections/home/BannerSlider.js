@@ -74,12 +74,12 @@ const BannerSlider = ({ facility }) => {
             <img src="/logo.png" alt="logo" className="w-full h-full" />
           </div>
           <div className="w-full">
-            <p className="font-light text-2xl">The Corporate Hotel</p>
-            <h1 className="font-medium my-5 leading-none text-[48px] md:text-[64px]">WELCOME TO THE CORPORATE</h1>
-            <h className="font-light text-2xl">Superior service & Warm hospitality</h>
+            <p className="font-light text-xl md:text-2xl">The Corporate Hotel</p>
+            <h1 className="font-medium my-5 leading-none text-[32px] md:text-[64px]">WELCOME TO THE CORPORATE</h1>
+            <h className="font-light text-xl md:text-2xl">Superior service & Warm hospitality</h>
           </div>
           <div className="w-full my-2">
-            <button className="rounded shadow hover:opacity-70 bg-[#B0985A] w-[280px] h-[60px] text-lg">
+            <button className="rounded shadow hover:opacity-70 bg-[#B0985A] w-32 md:w-[280px] h-16 md:h-[60px] text-lg">
               Book now
             </button>
           </div>
