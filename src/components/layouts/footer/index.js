@@ -36,61 +36,62 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                 <Image src={'/icons/twitter.png'} width={32} height={32}></Image>
                 <Image src={'/icons/youtube.png'} width={32} height={32}></Image>
                 <Image src={'/icons/instagram.png'} width={32} height={32}></Image>
-width={32} height={32}></Image>
-     <div className="w-full">
-              <div className="w-full grid grid-cols-2 md:grid-cols-3">
-                <div className="w-full flex-row pl-[20px] md:pl-[41px]">
-                  <div className="text-[24px]">Sectors</div>
-                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
-                    {sectors.map((sector, index) => (
-                      <div key={`sector-${index}`}>
-                        <Link className="mb-[11px]" href={`/sector/${sector.id}`}>
-                          {sector.title} {sector.subTitle}
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                {MOCK_SECTOR.facilities && (
+              </div>
+              <div className="w-full">
+                <div className="w-full grid grid-cols-2 md:grid-cols-3">
                   <div className="w-full flex-row pl-[20px] md:pl-[41px]">
-                    <div className="text-[24px]">Service</div>
+                    <div className="text-[24px]">Sectors</div>
                     <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
-                      {MOCK_SECTOR.facilities.map((facility, index) => (
-                        <div key={index}>
-                          <Link className="mb-[11px]" href={`/facility/${index}`}>
-                            {facility.title}
+                      {sectors.map((sector, index) => (
+                        <div key={`sector-${index}`}>
+                          <Link className="mb-[11px]" href={`/sector/${sector.id}`}>
+                            {sector.title} {sector.subTitle}
                           </Link>
                         </div>
                       ))}
                     </div>
                   </div>
-                )}
-
-                <div className="w-full flex-row pl-[20px] md:pl-[41px]">
-                  <div className="text-[24px]">Contact us</div>
-                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
-                    <div>
-                      <div className="mb-[11px]" href="/sector">
-                        {(address && address) || 'Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia'}
+                  {MOCK_SECTOR.facilities && (
+                    <div className="w-full flex-row pl-[20px] md:pl-[41px]">
+                      <div className="text-[24px]">Service</div>
+                      <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
+                        {MOCK_SECTOR.facilities.map((facility, index) => (
+                          <div key={index}>
+                            <Link className="mb-[11px]" href={`/facility/${index}`}>
+                              {facility.title}
+                            </Link>
+                          </div>
+                        ))}
                       </div>
                     </div>
-                    <div>
-                      <div className="mb-[11px] overflow-hidden" href="/sector">
-                        {(mail && mail) || '11-33 4411 manager@corporatehotel.mn'}
+                  )}
+
+                  <div className="w-full flex-row pl-[20px] md:pl-[41px]">
+                    <div className="text-[24px]">Contact us</div>
+                    <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
+                      <div>
+                        <div className="mb-[11px]" href="/sector">
+                          {(address && address) || 'Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia'}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="mb-[11px] overflow-hidden" href="/sector">
+                          {(mail && mail) || '11-33 4411 manager@corporatehotel.mn'}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="w-full my-[40px] border-[1px] border-solid border-[#CACACA] h-[1px]"></div>
-          <div className="w-full  items-center justify-center flex text-white text-[14px] md:text-[18px]">
-            <div className="pr-[28px]">
-              <p>All Rights Reserved</p>
-            </div>
-            <div>
-              <p>2023</p>
+            <div className="w-full my-[40px] border-[1px] border-solid border-[#CACACA] h-[1px]"></div>
+            <div className="w-full  items-center justify-center flex text-white text-[14px] md:text-[18px]">
+              <div className="pr-[28px]">
+                <p>All Rights Reserved</p>
+              </div>
+              <div>
+                <p>2023</p>
+              </div>
             </div>
           </div>
         </div>
