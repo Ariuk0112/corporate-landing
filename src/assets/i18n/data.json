@@ -32,7 +32,7 @@
         "subTitle": "Ulaanbaatar",
         "desc": "Located in the heart of Ulaanbaatar City, The Corporate Hotel Ulaanbaatar has the ideal location for sightseeing with majority of the city tourist hotspots and night life within walking distance. We offer 56 guest rooms and suites with a modern design coupled with all the necessary accommodations to meet our guests’ expectation and satisfaction.",
         "img": "/2.jpg",
-        "background_image": ["/3M9A5243.jpg", "/3M9A5243.jpg", "/3M9A5243.jpg"],
+        "background_image": ["/tuv/tuv_slider_1.jpg", "/tuv/tuv_slider_2.jpg", "/tuv/tuv_slider_3.jpg"],
         "video_id": "wnXgzH2JJ9g",
         "logo": "/logo/tuv.png",
         "address": "Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia",
@@ -45,7 +45,7 @@
         "subTitle": "TERRACE GARDEN",
         "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city&#39;s smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
         "img": "/1.jpg",
-        "background_image": ["/shambala/bg.jpg", "/shambala/bg.jpg", "/shambala/bg.jpg"],
+        "background_image": ["/shambala/bg-slider-1.jpg", "/shambala/bg-slider-2.jpg", "/shambala/bg-slider-3.jpg"],
         "logo": "/logo/shambala.png",
         "address": "Shambha-La garden and village, khan uul district-11, South Zaisan",
         "mail": "",
@@ -94,7 +94,6 @@
           "title": "APARTMENT ",
           "description": "Өвөрмөц шийдэл бүхий тохижилттой Таньд хэрэгтэй бүх үйлчилгээ нэг дор Ажлынхаа чөлөөт цагаар фитнессээр хичээллэж, усанд сэлж, амттай хоолоо захиалах боломжтой. Энгийн , минималист орчин бүхий тав тухтай орчныг ажлын байрандаа бий болгохоор зорьж тохижуулсан оффис , өвөрмөц өнгө төрх нь уламжлалт хэв маягийг өөрчилж чадсан.Ажлын байрандаа олон төрлийн арга хэмжээ зохион байгуулах,хамтран ажиллах түншүүдтэйгээ уулзах тав тухтай өрөөг олон шийдлээр тохижуулснаар үр бүтээмжтэй ажиллах нөхцөлийг бүрдүүлсэн. Цаг үе үргэлж өөрчлөлтөд бэлэн байж, чөлөөтэй сэтгэж, хурдтай ажиллахыг бидэнд сануулсаар байна. Хэн нэгэндээ саад болохгүй ч хамтран шийдвэр гаргах, зөвлөлдөх боломж, орчинг бүрдүүлсэн шийдэл бүхий тохижилттой. Та бүхнийг урьж байна.. ",
 
-          "type": "2 rooms",
           "size": "53m2",
           "images": [
             {
@@ -195,7 +194,10 @@
       "facilities": [
         {
           "title": "CONFERENCE HALL & MEETING ROOM",
-          "description": "Located on the 3rd floor, we have the perfect venue for all types of conferences and meetings coupled with our expertise to ensure your event is hosted seamlessly.\nOUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT\n• MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN \n 976-88118569 \n976-11334411",
+          "description": "Located on the 3rd floor, we have the perfect venue for all types of conferences and meetings coupled with our expertise to ensure your event is hosted seamlessly.\n\n",
+          "title1": "Tel:  976-88118569 \n976-11334411",
+          "title2": " OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT\n• MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN ",
+          "bg_img": ["/tuv/service/Conference-slider-1.jpg", "/tuv/service/Conference-slider-2.jpg"],
           "image": [
             { "url": "/tuv/service/Conference.jpg" },
             { "url": "/tuv/service/Conference2.jpg" },
@@ -205,15 +207,29 @@
         {
           "title": "EVENT HALL",
           "description": "Newly remodeled event hall features and event space ideal for high profile gatherings, networking, private parties,meetings, and celebrations. With a view of the city center from the 11th floor of the hotel, it&#39;s an ideal place to entertain,business net work, or to simply relax with friends. Accommodates up to 100 people depending on the arrangement. \n976-88118569 \n 976-11334411",
+          "title1": "Tel:  976-88118569 \n976-11334411",
+          "title2": " OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT\n• MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN ",
+          "bg_img": [
+            "/tuv/service/event-slider-1.jpg",
+            "/tuv/service/event-slider-2.jpg",
+            "/tuv/service/event-slider-3.jpg"
+          ],
           "image": [
-            { "url": "/service/event2.jpg" },
-            { "url": "/service/event2.jpg" },
-            { "url": "/service/event2.jpg" }
+            { "url": "/tuv/service/event-1.jpg" },
+            { "url": "/tuv/service/event-3.jpg" },
+            { "url": "/tuv/service/event-2.jpg" }
           ]
         },
         {
           "title": "CHAIRMAN RESTAURANTS",
-          "description": "The Chairman Restaurant is a truly exceptional location for special events and occasions or your everyday dining experience. Our dedicated staff will cater to every guest and client’s needs paired with an exceptional service. We offer a wide array of Western and Asian cuisines with a sumptuous breakfast buffet every morning in an elegant, modern fine dining setting.\n 976-88118569\n976-11334411",
+          "description": "The Chairman Restaurant is a truly exceptional location for special events and occasions or your everyday dining experience. Our dedicated staff will cater to every guest and client’s needs paired with an exceptional service. ",
+          "title1": "Tel:  976-88118569\n976-11334411",
+          "title2": " We offer a wide array of Western and Asian cuisines with a sumptuous breakfast buffet every morning in an elegant, modern fine dining setting.\n ",
+          "bg_img": [
+            "/tuv/service/chairman-slider-1.jpg",
+            "/tuv/service/chairman-slider-2.webp",
+            "/tuv/service/chairman-slider-3.jpg"
+          ],
           "image": [
             { "url": "/tuv/service/chairman.jpg" },
             { "url": "/tuv/service/chairman1.jpg" },
@@ -223,15 +239,25 @@
         {
           "title": "COFFEE SHOP",
           "description": "Conveniently located in the lobby of the hotel, guests have the convenience of starting their day or simply to lounge and enjoy a delicious cup of coffee or any of the various beverages that are offered in our coffee shop.",
+          "title1": "Tel:  976-88118569 \n976-11334411",
+          "title2": " OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n• DATA PROJECTOR \n• TRANSLATOR EQUIPMENT\n• MICROPHONE \n• HEAD-PHONE TRANSLATOR CABIN ",
+          "bg_img": ["/tuv/service/Coffee-slider-1.jpg", "/tuv/service/Coffee-slider-2.jpg"],
           "image": [
             { "url": "/tuv/service/Coffee.jpg" },
-            { "url": "/tuv/service/Coffee1.jpg" },
+            { "url": "/tuv/service/Coffee1.webp" },
             { "url": "/tuv/service/Coffee2.jpg" }
           ]
         },
         {
           "title": "HEALTH CLUB",
-          "description": "Located on the B1 floor of the Corporate Hotel, a newly equipped fitness center offers a variety of strength and resistance machines. Guests are accommodated with a shower,towels, and private lockers. Sauna\n Jacuzzi\n  Fitness Center\nSpa\n Indoor Swimming pool",
+          "description": "Located on the B1 floor of the Corporate Hotel, a newly equipped fitness center offers a variety of strength and resistance machines. Guests are accommodated with a shower,towels, and private lockers. ",
+          "title1": "",
+          "title2": " Sauna\n ,Jacuzzi\n , Fitness Center\n,Spa\n ,Indoor ,Swimming pool",
+          "bg_img": [
+            "/tuv/service/fitness-slider-1.webp",
+            "/tuv/service/fitness-slider-2.jpg",
+            "/tuv/service/fitness-slider-3.jpg"
+          ],
           "image": [
             { "url": "/tuv/service/fitness.jpg" },
             { "url": "/tuv/service/fitness1.jpg" },
@@ -559,6 +585,8 @@
         {
           "title": "CONCERT HALL",
           "description": "The Corporate Hotel  Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
+          "title1": "For further information, please contact the front desk or call us Tel: 70002030 , 99108649",
+          "title2": "",
           "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
             { "url": "/service/convention/concert.jpg" },
@@ -568,7 +596,9 @@
         },
         {
           "title": "EVENT HALL",
-          "description": "With capacity to service up to 800 seating and 1200 standing, our event Hall at The Corporate Hotel is spacious and versatile. Ability to host from weddings and parties to large scale seminars, it is an outstanding facility with top notch services backed by our dedicated team of staff to meet any of our clients&#39; needs. Recommend Events: •Wedding •Company functions •Conferences and seminars •Anniversary Celebrations •Exhibitions • Product launches • Fashion Show • Parties  ",
+          "description": "With capacity to service up to 800 seating and 1200 standing, our event Hall at The Corporate Hotel is spacious and versatile. Ability to host from weddings and parties to large scale seminars, it is an outstanding facility with top notch services backed by our dedicated team of staff to meet any of our clients needs. ",
+          "title1": "Tel: 976-7000-2030, 976-9910-8649",
+          "title2": "Recommend Events: Wedding Company functions ,Conferences and seminars Anniversary Celebrations ,Exhibitions , Product launches ,Fashion Show ,Parties  ",
           "bg_img": ["/service/convention/event-slider-1.jpg", "/service/convention/event-slider-2.jpg"],
           "image": [
             { "url": "/service/convention/event.jpg" },
@@ -683,15 +713,11 @@
           "description": "The hotel is home to the one of the finest restaurants in Ulaanbaatar. The Chairman restaurant is an excellent choice for all kinds of meetings. We invite you for delicious lunch during work day, spontaneous dinner with family, romantic evening with your loved ones. The high ceiling dining room with warm colored walls, widely spaced tables and friendly service offers a decidedly 21st century take on Western and Asian cuisines. Our team of dedicated workers will serve you with proud and show you top notch service. ",
           "title1": "Operating Hours: Monday - Sunday 11:00 am - 12:00 pm Tel: 976-77353399   ",
           "title2": "The restaurant offers many vegetable dishes in the menu, making it convenient for vegetarians. Our regularly changing and extensive menu satisfy all tastes and is a good mixture of traditional and new dishes. The top- grade beef, fresh vegetables are carefully selected to create our delicious dishes accompanied by variety of specially made sauces. The Chairman Restaurant will delight you with an interplay of flavors that keeps you expectant and interested. ",
-          "bg_img": [
-            "/shambala/service/chairman-slider-1.jpg",
-            "/shambala/service/chairman-slider-2.jpg",
-            "/shambala/service/chairman-slider-3.jpg"
-          ],
+          "bg_img": ["/shambala/service/chairman-slider-2.jpg", "/shambala/service/chairman-slider-3.jpg"],
           "image": [
             { "url": "/shambala/service/chairman.jpg" },
             { "url": "/shambala/service/chairman1.jpg" },
-            { "url": "/shambala/service/chairman2.jpg" }
+            { "url": "/shambala/service/chairman2.webp" }
           ]
         },
 
@@ -701,9 +727,9 @@
           "title1": " ",
           "title2": "On the 7 th floor, guests can enjoy a wide range of spa and massage treatments using some of the best products.  ",
           "bg_img": [
-            "/shambala/service/spa-slider-1.jpg",
-            "/shambala/service/spa-slider-2.jpg",
-            "/shambala/service/spa-slider-3.jpg"
+            "/shambala/service/pool-slider-1.jpg",
+            "/shambala/service/pool-slider-2.jpg",
+            "/shambala/service/pool-slider-3.jpg"
           ],
           "image": [
             { "url": "/shambala/service/club3.jpg" },
@@ -716,14 +742,10 @@
           "description": "On the weekend, turn to those who are living happily with their loved ones. By placing an order, you can grill the meat you want in the grill house for 10-12 people, enjoy a delicious meal, and spend time comfortably in the beauty of nature.",
           "title1": "Tel: 976-77353399, 88187579",
           "title2": "The most delicious   Perfect service   fresh air environment The opportunity to taste the meat you want    ",
-          "bg_img": [
-            "/shambala/service/chairman-slider-1.jpg",
-            "/shambala/service/chairman-slider-2.jpg",
-            "/shambala/service/chairman-slider-3.jpg"
-          ],
+          "bg_img": ["/shambala/service/grill-slider-1.jpg", "/shambala/service/grill-slider-2.jpg"],
           "image": [
             { "url": "/shambala/service/grill.jpg" },
-            { "url": "/shambala/service/grill1.jpg" },
+            { "url": "/shambala/service/grill1.webp" },
             { "url": "/shambala/service/grill2.jpg" }
           ]
         }
@@ -1098,7 +1120,7 @@
           "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/event4.jpg" },
-            { "url": "/nukht/services/event2.jpg" },
+            { "url": "/nukht/services/event2.jpeg" },
             { "url": "/nukht/services/event3.jpg" }
           ]
         },

@@ -5,22 +5,17 @@ import Link from 'next/link';
 
 const MOCK_NEWS = [
   {
-    title: 'Төрсөн өдрийн хүлээн авалт хийж байна',
-    phone: '99111355',
+    title:
+      'We offer everything you’ve been needing of all in one place. Sit back and experience great time with your friends and loved ones. ',
+    phone: '70002030 99111355 99108649',
     date: '2022-02-23',
-    image: '/news.png',
+    image: '/news.webp',
   },
   {
-    title: 'Төрсөн өдрийн хүлээн авалт  хийж байна ',
-    phone: '99111355',
+    title: 'Book your birthday party  with us. Sit back and experience great time with your friends and loved ones.',
+    phone: '70002030 99111355 99108649',
     date: '2022-02-23',
-    image: '/news.png',
-  },
-  {
-    title: 'Төрсөн өдрийн хүлээн авалт  хийж байна ',
-    phone: '99111355',
-    date: '2022-02-23',
-    image: '/news.png',
+    image: '/news1.png',
   },
 ];
 const News = () => {
