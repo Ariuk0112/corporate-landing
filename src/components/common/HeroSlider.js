@@ -37,7 +37,7 @@ const HeroSlider = (props) => {
                   transition={{ duration: 1 }}
                   className="w-full h-full"
                 >
-                  <div className="h-full w-full">
+                  <div className="h-full w-full relative">
                     <Image src={imgSrc} alt={title || 'image'} fill className="w-full h-full" />
                   </div>
                 </motion.div>
@@ -47,7 +47,7 @@ const HeroSlider = (props) => {
       </div>
       <div className="absolute inset-x-0 md:bottom-32 z-20">
         <div className="px-5 md:px-[36px] text-left flex flex-col items-center justify-around text-white h-full w-full">
-          <div className="w-full">
+          <div className="w-full max-w-[1420px]">
             <h1 className="font-medium my-5 leading-none text-[48px] md:text-[64px]">{title}</h1>
             <h className="font-light text-[#B58E3E] text-[48px] md:text-[64px]">{subTitle}</h>
           </div>

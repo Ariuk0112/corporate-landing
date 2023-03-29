@@ -6,6 +6,8 @@ import { Container, Header, RootLayout } from '../../components/layouts';
 
 import MOCK_DATA from '@/assets/i18n/data.json';
 import Image from 'next/image';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export async function getServerSideProps(context) {
   const { id } = context.params;
@@ -39,6 +41,37 @@ export default function RoomDetail({ id, sectorId, locale }) {
     sliderRef.current.swiper.slideNext();
   }, []);
 
+  const [overview, setOverview] = useState('');
+  const [showReadMore, setShowReadMore] = useState(false);
+
+  useEffect(() => {
+    console.log(currentRoom.description);
+    if (currentRoom?.description) {
+      const desc = currentRoom.description;
+      if (desc.length > 16) {
+        setOverview(currentRoom?.description.slice(0, 16));
+        setShowReadMore(true);
+      } else {
+      }
+    }
+  }, [currentRoom]);
+
+  const handleReadMore = () => {
+    setShowReadMore(false);
+    setOverview(currentRoom?.description || '');
+  };
+
+  const handleReadLess = () => {
+    if (currentRoom?.description) {
+      const desc = currentRoom.description;
+      if (desc.length > 16) {
+        setOverview(currentRoom?.description.slice(0, 16));
+        setShowReadMore(true);
+      } else {
+      }
+    }
+  };
+
   return (
     <RootLayout
       title="room"
@@ -48,16 +81,16 @@ export default function RoomDetail({ id, sectorId, locale }) {
       mail={sectorDetail.mail}
       id={id}
     >
-      <div className="pt-[70px] md:pt-0">
+      <div className="w-full h-full">
         <Container mx="0">
           <Header />
-          <div className="w-full h-screen relative overflow-hidden">
+          <div className="w-full h-screen relative overflow-hidden pt-[70px]  md:pt-0">
             <div className="absolute inset-0">
               <div className="w-full h-full relative">
                 <Swiper ref={sliderRef} slidesPerView={1} slidesPerGroup={1} spaceBetween={0} loop>
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                      <Image src={image.url} alt="bg image" fill className="w-full h-full object-cover " />
+                      <Image src={image.url} alt="bg image" fill className="w-full h-full object-cover" />
                     </SwiperSlide>
                   ))}
                 </Swiper>
@@ -110,13 +143,44 @@ export default function RoomDetail({ id, sectorId, locale }) {
                   </div>
 
                   <div className="mt-5 md:mt-[85px] flex flex-col md:flex-row gap-5 md:gap-[120px] text-xl md:text-[26px]">
-                    <div>
-                      <h5 className="uppercase">guest</h5>
-                      <p className="text-white truncate md:w-[200px]">{currentRoom.description}</p>
+                    <div className="w-full">
+                      <div className="overflow-y-auto overflow-x-hidden scrollbar-hide">
+                        <h5 className="uppercase">overview</h5>
+                        <div className="flex flex-col md:w-[200px] md:max-h-96">
+                          <p className="text-white text-md">
+                            {overview}
+                            {showReadMore && <span className="text-white">...</span>}
+                          </p>
+
+                          {showReadMore ? (
+                            <div className="flex items-center justify-center w-full">
+                              <button
+                                onClick={() => {
+                                  handleReadMore();
+                                }}
+                                className=" bg-[#B58E3E] text-white px-2 py-1 text-md w-full rounded mt-3"
+                              >
+                                Read more
+                              </button>
+                            </div>
+                          ) : (
+                            <div className="flex items-center justify-center w-full">
+                              <button
+                                onClick={() => {
+                                  handleReadLess();
+                                }}
+                                className=" bg-[#B58E3E] text-white px-2 py-1 text-md w-full rounded mt-3"
+                              >
+                                Read less
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
                     </div>
                     <div>
-                      <h5 className="uppercase">{currentRoom.size == ' ' && 'size'}</h5>
-                      <p className="text-white uppercase">{currentRoom.size}</p>
+                      <h5 className="uppercase">{currentRoom.size ? 'size' : ''}</h5>
+                      <p className="text-white uppercase md:w-24">{currentRoom.size}</p>
                     </div>
                   </div>
                   <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[22px]">

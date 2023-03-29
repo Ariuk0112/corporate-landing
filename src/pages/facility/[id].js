@@ -77,9 +77,9 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   <div>
                     <div className="mt-[24px]">
                       <div>
-                        <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal text-justify">
+                        <pre className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal text- whitespace-pre-wrap text-right">
                           {currentFacility.title1}
-                        </p>
+                        </pre>
                       </div>
                     </div>
                   </div>

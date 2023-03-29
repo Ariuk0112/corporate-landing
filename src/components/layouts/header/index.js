@@ -110,6 +110,35 @@ const Header = ({ textColor, bgColor }) => {
           </li>
         ))}
       </ul>
+      <div className="flex relative ml-auto text-white">
+        {!toggleMenu && (
+          <MenuIcon fontSize={28} className="m-3 md:hidden cursor-pointer" onClick={() => setToggleMenu(true)} />
+        )}
+        {toggleMenu && (
+          <MenuIcon fontSize={28} className="m-3 md:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
+        )}
+        {toggleMenu && (
+          <ul
+            className="z-20 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
+            flex flex-col justify-start items-end rounded-md bg-black/50 opacity-70 animate-slide-in"
+          >
+            <li className="text-xl w-full my-2">
+              <Close onClick={() => setToggleMenu(false)} />
+            </li>
+            {navigations.map((item, index) => (
+              <li key={`mobile-nav-${index}`} className="mx-4 cursor-pointer">
+                <button
+                  onClick={() => {
+                    handleScroll(item.title.toLowerCase());
+                  }}
+                >
+                  {item.title}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </nav>
   );
 };

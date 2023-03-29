@@ -48,29 +48,29 @@ const Facility = ({ facilities, sector }) => {
               {facilities.map((facility, index) => (
                 <SwiperSlide key={index}>
                   <div className="h-[300px] md:h-[570px] mx-auto rounded-[8px]">
-                    <div
-                      className="w-full h-full flex items-center justify-center relative rounded-[8px]"
-                      style={{
-                        backgroundImage: `url('${facility.image[0].url}')`,
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
+                    <Link
+                      href={{
+                        pathname: `/facility/${index}`,
+                        query: {
+                          sector: sector,
+                        },
                       }}
                     >
-                      <div className="w-full h-full flex items-center justify-center absolute bg-[#3A3A3A] opacity-60 rounded-[8px]"></div>
-                      <div className="absolute">
-                        <Link
-                          href={{
-                            pathname: `/facility/${index}`,
-                            query: {
-                              sector: sector,
-                            },
-                          }}
-                        >
+                      <div
+                        className="w-full h-full flex items-center justify-center relative rounded-[8px]"
+                        style={{
+                          backgroundImage: `url('${facility.image[0].url}')`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'cover',
+                          backgroundRepeat: 'no-repeat',
+                        }}
+                      >
+                        <div className="w-full h-full flex items-center justify-center absolute bg-[#3A3A3A] opacity-60 rounded-[8px]"></div>
+                        <div className="absolute">
                           <div className="text-white opacity-100 text-center md:text-[26px] ">{facility.title}</div>
-                        </Link>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </SwiperSlide>
               ))}
