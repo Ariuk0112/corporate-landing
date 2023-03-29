@@ -26,7 +26,7 @@ const SectorDetail = ({ id, locale }) => {
   const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === id);
   const sliderImages = sectorDetail.background_image;
   // console.log(MOCK_SECTOR.background_image)
-  console.log();
+  // console.log();
   return (
     <>
       <RootLayout

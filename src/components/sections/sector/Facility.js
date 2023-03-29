@@ -1,14 +1,24 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import SectionTitle from '@/components/common/SectionTitle';
 import { Video } from '../home';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 
+const MAX_SWIPER_SLIDES = 6;
+
 const Facility = ({ facilities, sector }) => {
-  const slidesLength = facilities.length > 8 ? 7 : facilities.length;
+  const [slidesLength, setSlidesLength] = useState(3);
+
+  useEffect(() => {
+    const length = facilities.length > MAX_SWIPER_SLIDES ? MAX_SWIPER_SLIDES : facilities.length;
+
+    setSlidesLength(length);
+  }, [facilities]);
+
   return (
-    <div className="w-full overflow-x-hidden font-Montserrat">
+    <div className="w-full overflow-x-hidden font-Montserrat" id="service">
       <div className="text-white -mr-28">
         <SectionTitle index="02" title="Services" isRight={true} isTransparent={true} />
       </div>
@@ -16,6 +26,7 @@ const Facility = ({ facilities, sector }) => {
         <div className="w-full flex flex-col md:flex-row justify-between items-stretch relative gap-2">
           <div className="absolute inset-0 z-10 opacity-90 h-[350px] md:h-[570px] md:mx-[50px] rounded-[8px]">
             <Swiper
+              key={slidesLength}
               className="mySwiper"
               slidesPerView={1}
               spaceBetween={23}
@@ -30,7 +41,7 @@ const Facility = ({ facilities, sector }) => {
                 },
                 1420: {
                   width: 1320,
-                  slidesPerView: 5,
+                  slidesPerView: slidesLength,
                 },
               }}
             >

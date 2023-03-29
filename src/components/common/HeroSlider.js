@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const HeroSlider = (props) => {
   const { images, title, subTitle } = props;
-  console.log(images);
+  // console.log(images);
   return (
     <div className="relative h-96 md:h-screen w-screen">
       <div className="absolute inset-0 z-10 opacity-90">

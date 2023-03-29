@@ -8,10 +8,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 
 const Room = ({ rooms, sector }) => {
-  console.log(rooms);
+  // console.log(rooms);
   return (
-    <Container>
-      <div className="w-full overflow-x-hidden">
+    <Container mx="0">
+      <div className="w-full overflow-x-hidden" id="room">
         <div className="w-full font-Montserrat">
           <div className="text-white">
             <SectionTitle index="01" title="Rooms" isRight={false} />
@@ -42,7 +42,7 @@ const Room = ({ rooms, sector }) => {
             {rooms.map((room, index) => (
               <SwiperSlide key={`room-${index}`}>
                 <div className="md:my -10 w-full text-white">
-                  <div className="h-[350px] md:h-[400px] rounded-[8px] relative">
+                  <div className="w-full h-[350px] md:h-[400px] rounded-[8px] relative">
                     <Image className="h-full  rounded-[8px]" alt="rooms" fill src={room.images[0].url} />
                     <div
                       className="absolute w-full bottom-0 h-[150px]"

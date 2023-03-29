@@ -11,9 +11,10 @@ import { useRouter } from 'next/router';
 const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
   const sectors = MOCK_DATA[locale]?.sectors || [];
-  console.log(MOCK_SECTOR);
+  // console.log(MOCK_SECTOR);
   return (
     <section
+      id="footer"
       className="w-full md:p-[60px]  font-light bg-[#E5E5E5]"
       style={{
         backgroundImage: `url('/footer.png')`,

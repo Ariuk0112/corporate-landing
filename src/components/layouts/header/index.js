@@ -6,6 +6,7 @@ import { Menu as MenuIcon, Close } from '../../../assets/svg';
 import { Menu, Transition } from '@headlessui/react';
 import headerData from '../../../assets/i18n/header.json';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const navigations = headerData.navigation.find((data) => data.locale === 'en').items;
 const Header = ({ textColor, bgColor }) => {
@@ -24,16 +25,39 @@ const Header = ({ textColor, bgColor }) => {
     };
   }, []);
 
+  const router = useRouter();
+
+  const handleScroll = (targetId) => {
+    // get the element by id and use scrollIntoView
+
+    if (targetId === 'home') {
+      router.push('/');
+      return;
+    }
+    if (targetId === 'contact') {
+      const elem = document.getElementById('footer');
+      elem?.scrollIntoView({
+        behavior: 'smooth',
+      });
+      return;
+    }
+
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav
-      className={`h-[70px] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed z-10 trasition ease-in-out duration-500 ${
+      className={`h-[70px] z-[999] flex w-full backdrop-filter backdrop-blur-lg gap-3 bg-black/50 fixed trasition ease-in-out duration-500 ${
         animateHeader && 'shadow-xl'
       }`}
       s
     >
       <div className={`my-auto mx-5 md:w-[100px]`}>
         <Link href="/">
-          <Image width={48} height={48} src="/logo.png" alt="logo" className="w-12 md:w-[84px] cursor-pointer" />
+          <Image width={84} height={64} src="/logo/logo-white.png" alt="logo" className="cursor-pointer" />
         </Link>
       </div>
       <Head>
@@ -75,7 +99,13 @@ const Header = ({ textColor, bgColor }) => {
               </Menu>
             ) : (
               // <Link href={`/${item.id}`}>{item.title}</Link>
-              <Link href={`/#${item.title}`}>{item.title}</Link>
+              <button
+                onClick={() => {
+                  handleScroll(item.title.toLowerCase());
+                }}
+              >
+                {item.title}
+              </button>
             )}
           </li>
         ))}
