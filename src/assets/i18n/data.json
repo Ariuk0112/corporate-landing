@@ -11,7 +11,8 @@
         "address": "Mahatma Gandhi street-39, Khan-Uul district 15th khoroo, Ulaanbaatar, Mongolia",
         "mail": " 7000 2030 , 9911 1355",
         "background_image": ["/home-bg-1.jpg", "/con-bg-2.jpg", "/con-bg-1.jpg"],
-        "text": "LUXURY ENVIRONMENT"
+        "text": "LUXURY ENVIRONMENT",
+        "fb_link": "https://www.facebook.com/TheCorporateConventionCentre"
       },
 
       {
@@ -24,7 +25,8 @@
         "logo": "/logo/nukht.png",
         "address": "Khan-Uul district 5th khoroo, Ulaanbaatar, Mongolia ",
         "mail": " 7701 5555 Corporatenukht@gmail.com",
-        "text": "CONVENIENCE"
+        "text": "CONVENIENCE",
+        "fb_link": "https://www.facebook.com/TheCorporateResortNukht/"
       },
       {
         "id": "sector-1",
@@ -37,7 +39,8 @@
         "logo": "/logo/tuv.png",
         "address": "Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia",
         "mail": " 11-33 4411 manager@corporatehotel.mn",
-        "text": "SUPERIOR SERVICE"
+        "text": "SUPERIOR SERVICE",
+        "fb_link": "https://www.facebook.com/TheCorporateUlaanbaatar"
       },
       {
         "id": "sector-5",
@@ -49,7 +52,8 @@
         "logo": "/logo/shambala.png",
         "address": "Shambha-La garden and village, khan uul district-11, South Zaisan",
         "mail": "",
-        "text": "SUPERIOR SERVICE"
+        "text": "SUPERIOR SERVICE",
+        "fb_link": "https://www.facebook.com/profile.php?id=100057731736883"
       }
     ],
     "sector-1": {

@@ -35,7 +35,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       logo={sectorDetail.logo}
       address={sectorDetail.address}
       mail={sectorDetail.mail}
-      id={id}
+      id={sectorId}
     >
       <Header />
       <div className="w-full pt-[76px]">
@@ -61,7 +61,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       </div>
       <Container>
         {currentFacility && (
-          <div className="w-full font-Montserrat flex flex-col text-white text-justify">
+          <div className="w-full  flex flex-col text-white text-justify">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[120px] pb-10 md:pb-[120px]">
               <div>
                 <div className="h-46 md:h-[589px]">
@@ -77,7 +77,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   <div>
                     <div className="mt-[24px]">
                       <div>
-                        <pre className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal text- whitespace-pre-wrap text-right">
+                        <pre className="text-[20px] text-[#E9E9E9] leading-[24px] font-serif whitespace-pre-wrap text-right">
                           {currentFacility.title1}
                         </pre>
                       </div>
