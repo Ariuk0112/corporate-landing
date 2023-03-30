@@ -36,10 +36,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                 <div className="flex items-center justify-center gap-[30px]">
                   <a
                     target={'_blank'}
-                    href={
-                      (sectorDetail.fb_link && sectorDetail.fb_link) ||
-                      'https://www.facebook.com/TheCorporateUlaanbaatar'
-                    }
+                    href={(sectorDetail && sectorDetail.fb_link) || 'https://www.facebook.com/TheCorporateUlaanbaatar'}
                     className="w-[32px] h-[32px]"
                   >
                     <Image src={'/icons/facebook.png'} width={32} height={32} />
