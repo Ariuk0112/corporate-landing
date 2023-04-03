@@ -43,14 +43,14 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       </div>
       <div className="max-w-[1420px]">
         <div className="flex justify-end -mt-10 mb-[50px] z-20">
-          <div className="w-full md:w-[926px] md:h-[358px] bg-[#B0985A] text-[#E9E9E9] text-[40px] md:text-[28px] z-30">
+          <div className="w-full md:w-[926px] md:h-[358px] bg-[#7c807d] text-white text-[40px] md:text-[28px] z-30">
             <div className="flex flex-col w-full justify-center items-center">
               <div className="mx-5 md:mx-[105px] mt-[14px]">
                 <div className="mt-[24px]">
                   <p className="mx-auto text-[20px] md:text-[32px]">{currentFacility.title}</p>
                 </div>
                 <div className="mb-10 mt-5 md:mt-[20px] text-[24px]">
-                  <p className="text-[20px] text-[#E9E9E9] md:leading-[24px] font-normal">
+                  <p className="text-[20px] text-white md:leading-[24px] font-normal">
                     {currentFacility.description}
                   </p>
                 </div>
