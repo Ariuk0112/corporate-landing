@@ -5,6 +5,7 @@ import SectionTitle from '@/components/common/SectionTitle';
 import { Container } from '@/components/layouts';
 import { Arrow } from '@/assets/svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {Autoplay } from 'swiper';
 import Image from 'next/image';
 
 const Room = ({ rooms, sector }) => {
@@ -37,6 +38,11 @@ const Room = ({ rooms, sector }) => {
                 width: 1420,
                 slidesPerView: 3,
               },
+            }}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
             }}
           >
             {rooms.map((room, index) => (

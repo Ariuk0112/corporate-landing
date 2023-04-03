@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import SectionTitle from '@/components/common/SectionTitle';
 import { Video } from '../home';
+import {Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 
@@ -43,6 +44,10 @@ const Facility = ({ facilities, sector }) => {
                   width: 1320,
                   slidesPerView: slidesLength,
                 },
+              }}  modules={[Autoplay]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
               }}
             >
               {facilities.map((facility, index) => (
