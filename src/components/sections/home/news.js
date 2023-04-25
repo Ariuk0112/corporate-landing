@@ -6,13 +6,13 @@ import Link from 'next/link';
 const MOCK_NEWS = [
   {
     title:
-      'We offer everything you’ve been needing of all in one place. Sit back and experience great time with your friends and loved ones. ',
+      'We offer everything you’ve been needing of all in one place. Experience great time with your friends and loved ones. ',
     phone: '70002030 99111355 99108649',
     date: '2022-02-23',
     image: '/news.webp',
   },
   {
-    title: 'Book your birthday party  with us. Sit back and experience great time with your friends and loved ones.',
+    title: 'Book your birthday party  with us. Experience great time with your friends and loved ones.',
     phone: '70002030 99111355 99108649',
     date: '2022-02-23',
     image: '/news1.png',

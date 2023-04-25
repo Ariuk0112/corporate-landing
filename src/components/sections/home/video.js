@@ -32,7 +32,7 @@ const Video = () => {
         <div className="hidden md:block absolute -bottom-16 -right-16 md:-bottom-[215px] md:-right-[280px]">
           <div className="bg-[#B0985A] flex flex-col p-5 w-32 h-32 md:h-[430px] md:w-[560px] rounded-lg text-center text-white">
             <b className="text-[75px] md:text-[200px] leading-none">“</b>
-            <p className=" text-[32px]"> WELCOME TO THE CORPORATE HOTEL</p>
+            <p className=" text-[32px]"> WELCOME TO THE CORPORATE HOTELS</p>
             <p className="leading-none text-xl md:text-[32px] text-justify mx-auto ">
               Superior service & Warm hospitality
             </p>

@@ -93,7 +93,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                     </div>
                     <div>
                       <div className="mb-[11px] overflow-hidden" href="/sector">
-                        {(mail && mail) || '11-33 4411 manager@corporatehotel.mn'}
+                        {(mail && mail) || '11-33 4411 manager@corporatehotel.mn mail@corporatehotel.mn'}
                       </div>
                     </div>
                   </div>

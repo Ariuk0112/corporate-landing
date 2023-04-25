@@ -74,8 +74,7 @@ const BannerSlider = ({ facility }) => {
             <img src="/logo.png" alt="logo" className="w-full h-full" />
           </div>
           <div className="w-full">
-            <p className="font-light text-xl md:text-2xl">The Corporate Hotel</p>
-            <h1 className="font-medium my-5 leading-none text-[32px] md:text-[64px]">WELCOME TO THE CORPORATE</h1>
+            <h1 className="font-medium my-5 leading-none text-[32px] md:text-[64px]">WELCOME TO THE CORPORATES</h1>
             <h className="font-light text-xl md:text-2xl">Superior service & Warm hospitality</h>
           </div>
           <div className="w-full my-2">
