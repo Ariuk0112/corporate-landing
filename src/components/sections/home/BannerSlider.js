@@ -79,7 +79,14 @@ const BannerSlider = ({ facility }) => {
           </div>
           <div className="w-full my-2">
             <button className="rounded shadow hover:opacity-70 bg-[#B0985A] w-32 md:w-[280px] h-16 md:h-[60px] text-lg">
-              Book now
+              <a
+                className="w-full h-full"
+                target="_blank"
+                href="https://www.agoda.com/the-corporate-hotel-and-convention-centre/hotel/ulaanbaatar-mn.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1815363&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-05-9&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tag=Tyhb&isCityHaveAsq=false&tspTypes=9,9,8,8&los=1&searchrequestid=dc58ce03-6efd-4392-9dc4-2cb8462ae1ea"
+                rel="noopener noreferrer"
+              >
+                Book now{' '}
+              </a>
             </button>
           </div>
         </div>

@@ -50,9 +50,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   <p className="mx-auto text-[20px] md:text-[32px]">{currentFacility.title}</p>
                 </div>
                 <div className="mb-10 mt-5 md:mt-[20px] text-[24px]">
-                  <p className="text-[20px] text-white md:leading-[24px] font-normal">
-                    {currentFacility.description}
-                  </p>
+                  <p className="text-[20px] text-white md:leading-[24px] font-normal">{currentFacility.description}</p>
                 </div>
               </div>
             </div>
@@ -77,7 +75,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   <div>
                     <div className="mt-[24px]">
                       <div>
-                        <pre className="text-[20px] text-[#E9E9E9] leading-[24px] font-serif whitespace-pre-wrap text-right">
+                        <pre className="w-full h-full text-[20px] text-[#E9E9E9] leading-[24px] font-serif whitespace-pre-wrap text-right">
                           {currentFacility.title1}
                         </pre>
                       </div>
@@ -94,9 +92,9 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                         <p className="text-[40px] leading-none text-left"> Feel Real Comfortable</p>
                       </div>
                       <div>
-                        <p className="text-[20px] text-[#E9E9E9] leading-[24px] font-normal">
+                        <pre className="text-[20px] text-[#E9E9E9] whitespace-pre-wrap leading-[24px] font-normal">
                           {currentFacility.title2}
-                        </p>
+                        </pre>
                       </div>
                     </div>
                   </div>
