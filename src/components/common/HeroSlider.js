@@ -49,7 +49,7 @@ const HeroSlider = (props) => {
         <div className="px-5 md:px-[36px] text-left flex flex-col items-center justify-around text-white h-full w-full">
           <div className="w-full max-w-[1420px]">
             <h1 className="font-medium my-0 md:my-5 leading-none text-[32px] md:text-[64px]">{title}</h1>
-            <h className="font-light text-[#B58E3E] text-[32px] md:text-[64px]">{subTitle}</h>
+            <h2 className="font-light text-[#B58E3E] text-[32px] md:text-[64px]">{subTitle}</h2>
           </div>
         </div>
       </div>

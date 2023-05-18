@@ -80,9 +80,9 @@ const BannerSlider = () => {
             <h1 className="font-medium my-5 leading-none text-[32px] md:text-[64px]">
               {locale == 'en' ? 'WELCOME TO THE CORPORATE' : 'КОРПОРАЙТАД ТАВТАЙ МОРИЛ'}
             </h1>
-            <h className="font-light text-xl md:text-2xl">
+            <h2 className="font-light text-xl md:text-2xl">
               {locale == 'en' ? 'Superior service & Warm hospitality' : 'Тав тухтай орчин & төгс үйлчилгээ'}
-            </h>
+            </h2>
           </div>
           <div className="w-full my-2">
             <button className="rounded shadow hover:opacity-70 bg-[#B0985A] w-32 md:w-[280px] h-16 md:h-[60px] text-lg">

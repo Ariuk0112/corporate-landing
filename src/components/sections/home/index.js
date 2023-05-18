@@ -1,5 +1,5 @@
 import RoomsCard from './RoomsCard';
-import News from './News';
+import News from './News.js';
 import BannerSlider from './BannerSlider';
 import Map from './Map';
 import VideoPlayer from './VideoPlayer';
