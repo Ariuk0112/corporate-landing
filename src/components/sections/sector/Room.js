@@ -5,17 +5,20 @@ import SectionTitle from '@/components/common/SectionTitle';
 import { Container } from '@/components/layouts';
 import { Arrow } from '@/assets/svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 const Room = ({ rooms, sector }) => {
+  const router = useRouter();
+  const { locale } = router;
   // console.log(rooms);
   return (
     <Container mx="0">
       <div className="w-full overflow-x-hidden" id="room">
         <div className="w-full font-Montserrat">
           <div className="text-white">
-            <SectionTitle index="01" title="Rooms" isRight={false} />
+            <SectionTitle index="01" title={locale == 'en' ? 'Rooms' : 'Өрөө'} isRight={false} />
           </div>
         </div>
         <div className="w-full font-Montserrat">

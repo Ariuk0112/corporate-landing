@@ -3,15 +3,16 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import SectionTitle from '@/components/common/SectionTitle';
 import { Video } from '../home';
-import {Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
+import { useRouter } from 'next/router';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 
 const MAX_SWIPER_SLIDES = 6;
-
 const Facility = ({ facilities, sector }) => {
   const [slidesLength, setSlidesLength] = useState(3);
-
+  const router = useRouter();
+  const { locale } = router;
   useEffect(() => {
     const length = facilities.length > MAX_SWIPER_SLIDES ? MAX_SWIPER_SLIDES : facilities.length;
 
@@ -21,7 +22,12 @@ const Facility = ({ facilities, sector }) => {
   return (
     <div className="w-full overflow-x-hidden font-Montserrat" id="service">
       <div className="text-white -mr-28">
-        <SectionTitle index="02" title="Services" isRight={true} isTransparent={true} />
+        <SectionTitle
+          index="02"
+          title={locale == 'en' ? 'Services' : 'Үйлчилгээ'}
+          isRight={true}
+          isTransparent={true}
+        />
       </div>
       <div className="h-[350px] md:h-[600px] items-center justify-center">
         <div className="w-full flex flex-col md:flex-row justify-between items-stretch relative gap-2">
@@ -44,7 +50,8 @@ const Facility = ({ facilities, sector }) => {
                   width: 1320,
                   slidesPerView: slidesLength,
                 },
-              }}  modules={[Autoplay]}
+              }}
+              modules={[Autoplay]}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,

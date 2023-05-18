@@ -4,6 +4,7 @@ import { EffectCards, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 import { Container } from '@/components/layouts';
 import SectionTitle from '@/components/common/SectionTitle';
@@ -12,6 +13,8 @@ import 'swiper/css/effect-cards';
 import Image from 'next/image';
 
 const About = () => {
+  const router = useRouter();
+  const { locale } = router;
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -27,7 +30,7 @@ const About = () => {
     <div className="text-white">
       <div className="flex flex-col pt-10 w-full">
         <div className="text-white">
-          <SectionTitle index="01" title="About us" isRight />
+          <SectionTitle index="02" title={locale == 'en' ? 'About us' : 'Бидний тухай'} isRight />
         </div>
         <div className="w-full">
           <div className="grid grid-cols-1 md:hidden gap-5">

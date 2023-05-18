@@ -2,16 +2,18 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-
+import { useRouter } from 'next/router';
 //custom
 import SectionTitle from '@/components/common/SectionTitle';
 import MOCK_DATA from '@/assets/i18n/data.json';
 import Image from 'next/image';
 
 // TODO: change when locale changes
-const Sector = ({ locale = 'en' }) => {
-  const sectors = MOCK_DATA[locale]?.sectors || [];
 
+const Sector = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const sectors = MOCK_DATA[locale]?.sectors || [];
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -26,7 +28,7 @@ const Sector = ({ locale = 'en' }) => {
   return (
     <div className="overflow-hidden text-white my-10">
       <div className="">
-        <SectionTitle index="01" title="Sectors" />
+        <SectionTitle index="01" title={locale == 'en' ? 'Sectors' : 'Cалбарууд'} />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 mt-5">
         {sectors.map((sector, index) => (

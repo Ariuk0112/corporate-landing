@@ -2,6 +2,7 @@ import NewsCard from './NewsCard';
 import SectionTitle from '@/components/common/SectionTitle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const MOCK_NEWS = [
   {
@@ -19,10 +20,12 @@ const MOCK_NEWS = [
   },
 ];
 const News = () => {
+  const router = useRouter();
+  const { locale } = router;
   return (
     <div className="">
       <div className="w-full text-white">
-        <SectionTitle title="news" index="03" />
+        <SectionTitle title={locale == 'en' ? 'news' : 'Мэдээ'} index="03" />
       </div>
 
       <div className="w-full py-5 md:py-10">

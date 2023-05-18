@@ -8,9 +8,10 @@ import { useRouter } from 'next/router';
 
 // TODO: change when locale changes
 
-const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
+const Footer = ({ logo, address, mail, id }) => {
+  const router = useRouter();
+  const { locale } = router;
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
-  console.log(id);
   const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === id);
   const sectors = MOCK_DATA[locale]?.sectors || [];
   // console.log(MOCK_SECTOR);
@@ -49,7 +50,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
               </div>
               <div className="w-full grid grid-cols-2 md:grid-cols-3">
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
-                  <div className="text-[24px]">Sectors</div>
+                  <div className="text-[24px]">{locale == 'en' ? 'Sectors' : 'Салбарууд'}</div>
                   <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
                     {sectors.map((sector, index) => (
                       <div key={`sector-${index}`}>
@@ -62,7 +63,7 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                 </div>
                 {MOCK_SECTOR.facilities && (
                   <div className="w-full flex-row pl-[20px] md:pl-[41px]">
-                    <div className="text-[24px]">Service</div>
+                    <div className="text-[24px]">{locale == 'en' ? 'Service' : 'Үйлчилгээ'}</div>
                     <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
                       {MOCK_SECTOR.facilities.map((facility, index) => (
                         <div key={index}>
@@ -84,11 +85,13 @@ const Footer = ({ logo, address, mail, id, locale = 'en' }) => {
                 )}
 
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
-                  <div className="text-[24px]">Contact us</div>
+                  <div className="text-[24px]">{locale == 'en' ? 'Contact us' : 'Холбоо барих'}</div>
                   <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
                     <div>
                       <div className="mb-[11px]" href="/sector">
-                        {(address && address) || 'Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia'}
+                        {(address && address) || locale == 'en'
+                          ? 'Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia'
+                          : 'Монгол улс, Улаанбаатар, Сүхбаатар дүүрэг, Чингисийн өргөн чөлөө 9-2'}
                       </div>
                     </div>
                     <div>

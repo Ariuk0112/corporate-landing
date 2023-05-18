@@ -27,18 +27,22 @@
       "items": [
         {
           "title": "Нүүр",
+          "id": "Home",
           "link": "/"
         },
         {
           "title": "Өрөө",
+          "id": "Room",
           "link": "/"
         },
         {
           "title": "Үйлчилгээ",
+          "id": "Service",
           "link": "/"
         },
         {
           "title": "Холбоо барих",
+          "id": "Contact",
           "link": "/"
         }
       ]
@@ -48,18 +52,22 @@
       "items": [
         {
           "title": "Home",
+          "id": "Home",
           "link": "/"
         },
         {
           "title": "Room",
+          "id": "Room",
           "link": "/"
         },
         {
           "title": "Service",
+          "id": "Service",
           "link": "/"
         },
         {
           "title": "Contact",
+          "id": "Contact",
           "link": "/"
         }
       ]

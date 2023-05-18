@@ -12,7 +12,8 @@ import { useState } from 'react';
 
 export async function getServerSideProps(context) {
   const { id } = context.query;
-  const { locale } = context.locale;
+  const { locale = 'en' } = context;
+
   return {
     props: {
       id,
@@ -25,8 +26,8 @@ const SectorDetail = ({ id, locale }) => {
   const MOCK_SECTOR = MOCK_DATA[locale]?.[id] || {};
   const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === id);
   const sliderImages = sectorDetail.background_image;
-  // console.log(MOCK_SECTOR.background_image)
-  // console.log();
+  const FACILITIES = MOCK_SECTOR?.facilities || [];
+  console.log(sectorDetail);
   return (
     <>
       <RootLayout
@@ -64,7 +65,7 @@ const SectorDetail = ({ id, locale }) => {
                 backgroundImage: 'url("/services-bg.png")',
               }}
             >
-              <Facility facilities={MOCK_SECTOR.facilities} sector={id} />
+              <Facility facilities={FACILITIES} sector={id} />
             </div>
             <div className="w-full" id="About-us">
               <Video />

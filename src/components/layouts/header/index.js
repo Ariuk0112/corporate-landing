@@ -8,8 +8,10 @@ import headerData from '../../../assets/i18n/header.json';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-const navigations = headerData.navigation.find((data) => data.locale === 'en').items;
 const Header = ({ textColor, bgColor }) => {
+  const router = useRouter();
+  const { locale } = router;
+  const navigations = headerData.navigation.find((data) => data.locale === locale).items;
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const [animateHeader, setAnimateHeader] = useState(false);
@@ -24,8 +26,6 @@ const Header = ({ textColor, bgColor }) => {
       window.removeEventListener('scroll', listener);
     };
   }, []);
-
-  const router = useRouter();
 
   const handleScroll = (targetId) => {
     // get the element by id and use scrollIntoView
@@ -101,7 +101,7 @@ const Header = ({ textColor, bgColor }) => {
               // <Link href={`/${item.id}`}>{item.title}</Link>
               <button
                 onClick={() => {
-                  handleScroll(item.title.toLowerCase());
+                  handleScroll(item.id.toLowerCase());
                 }}
               >
                 {item.title}

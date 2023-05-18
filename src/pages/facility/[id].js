@@ -27,7 +27,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
   const sectorDetail = MOCK_DATA[locale]?.sectors.find((sctr) => sctr.id === sectorId);
   const currentFacility = FACILITIES[id];
   const sliderImages = currentFacility.bg_img;
-
+  console.log(locale);
   return (
     <RootLayout
       title="facility"
@@ -75,7 +75,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                   <div>
                     <div className="mt-[24px]">
                       <div>
-                        <pre className="w-full h-full text-[20px] text-[#E9E9E9] leading-[24px] font-serif whitespace-pre-wrap text-right">
+                        <pre className="w-full h-full text-[20px] text-[#E9E9E9] leading-[24px] font-serif whitespace-pre-wrap text-left">
                           {currentFacility.title1}
                         </pre>
                       </div>
@@ -89,7 +89,9 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                     <div className="w-[72px] border-[5px] border-solid border-[#B0985A]"></div>
                     <div className="mt-[24px]">
                       <div className="mb-[32px]">
-                        <p className="text-[40px] leading-none text-left"> Feel Real Comfortable</p>
+                        <p className="text-[40px] leading-none text-left">
+                          {locale == 'en' ? 'Feel Real Comfortable' : 'Жинхэнэ тав тухыг мэдэр'}{' '}
+                        </p>
                       </div>
                       <div>
                         <pre className="text-[20px] text-[#E9E9E9] whitespace-pre-wrap leading-[24px] font-normal">

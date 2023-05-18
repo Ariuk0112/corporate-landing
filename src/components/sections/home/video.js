@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from 'next/image';
-
+import { useRouter } from 'next/router';
 const Video = () => {
+  const router = useRouter();
+  const { locale } = router;
   return (
     <section className="w-full flex flex-col justify-end items-end py-10 md:pb-64 gap-2 md:gap-0 overflow-hidden">
       <div
@@ -31,10 +33,11 @@ const Video = () => {
         </div>
         <div className="hidden md:block absolute -bottom-16 -right-16 md:-bottom-[215px] md:-right-[280px]">
           <div className="bg-[#B0985A] flex flex-col p-5 w-32 h-32 md:h-[430px] md:w-[560px] rounded-lg text-center text-white">
-            <b className="text-[75px] md:text-[200px] leading-none">“</b>
-            <p className=" text-[32px]"> WELCOME TO THE CORPORATE HOTELS</p>
+            <b className="text-[75px] md:text-[200px] leading-none">“</b>{' '}
+            {locale == 'en' ? 'WELCOME TO THE CORPORATE HOTELS' : 'КОРПОРАЙТАД ТАВТАЙ МОРИЛ'}
+            <p className=" text-[32px]"> </p>
             <p className="leading-none text-xl md:text-[32px] text-justify mx-auto ">
-              Superior service & Warm hospitality
+              {locale == 'en' ? 'Superior service & Warm hospitality' : 'Тав тухтай орчин & төгс үйлчилгээ'}
             </p>
           </div>
         </div>
