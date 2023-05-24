@@ -86,7 +86,7 @@ const Footer = ({ logo, address, mail, id }) => {
 
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">{locale == 'en' ? 'Contact us' : 'Холбоо барих'}</div>
-                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
+                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] uppercase md:text-[18px] text-[#CACACA]">
                     <div>
                       <div className="mb-[11px]" href="/sector">
                         {(address && address) || locale == 'en'
