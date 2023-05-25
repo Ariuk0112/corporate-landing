@@ -186,7 +186,7 @@ export default function RoomDetail({ id, sectorId, locale }) {
                   <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[22px]">
                     <div>
                       <h5 className="uppercase">room includes:</h5>
-                      <ul className="decoration-none">
+                      <ul className="decoration-none font-Montserrat">
                         <li className="text-white room-list ">Wifi</li>
                         <li className="text-white room-list">Health Club</li>
                         <li className="text-white room-list">Breakfast Bufeet</li>

@@ -48,7 +48,11 @@ const Footer = ({ logo, address, mail, id }) => {
                   <Image src={'/icons/instagram.png'} width={32} height={32}></Image>
                 </div>
               </div>
-              <div className="w-full grid grid-cols-2 md:grid-cols-3">
+              <div
+                className={
+                  MOCK_SECTOR.facilities ? 'w-full grid grid-cols-2 md:grid-cols-3' : 'w-full grid grid-cols-2'
+                }
+              >
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">{locale == 'en' ? 'Sectors' : 'Салбарууд'}</div>
                   <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
@@ -89,14 +93,16 @@ const Footer = ({ logo, address, mail, id }) => {
                   <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] uppercase md:text-[18px] text-[#CACACA]">
                     <div>
                       <div className="mb-[11px]" href="/sector">
-                        {(address && address) || locale == 'en'
+                        {address && address
+                          ? address
+                          : locale == 'en'
                           ? 'Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia'
                           : 'Монгол улс, Улаанбаатар, Сүхбаатар дүүрэг, Чингисийн өргөн чөлөө 9-2'}
                       </div>
                     </div>
                     <div>
                       <div className="mb-[11px] overflow-hidden" href="/sector">
-                        {(mail && mail) || '11-33 4411 manager@corporatehotel.mn mail@corporatehotel.mn'}
+                        {mail && mail ? mail : '11-33 4411 manager@corporatehotel.mn mail@corporatehotel.mn'}
                       </div>
                     </div>
                   </div>

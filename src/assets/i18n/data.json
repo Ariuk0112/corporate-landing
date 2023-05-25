@@ -24,7 +24,7 @@
         "background_image": ["/nukht/nukht-slider-1.jpg", "/nukht/nukht-slider-2.jpg", "/nukht/nukht-slider-3.jpg"],
         "logo": "/logo/nukht.png",
         "address": "Khan-Uul district 4th khoroo, Ulaanbaatar, Mongolia ",
-        "mail": " 7701 5555 Corporatenukht@gmail.com",
+        "mail": " 7701 5555 , 8811 3601 Corporatenukht@gmail.com",
         "text": "CONVENIENCE",
         "fb_link": "https://www.facebook.com/TheCorporateResortNukht/"
       },
@@ -38,7 +38,7 @@
         "video_id": "wnXgzH2JJ9g",
         "logo": "/logo/tuv.png",
         "address": "Chinggis Avenue 9-2, Sukhbaatar District, Ulaanbaatar, Mongolia",
-        "mail": " 11-33 4411 99111355 mail@corporatehotel.mn",
+        "mail": " 11-33 4411 8811 8569 mail@corporatehotel.mn",
         "text": "SUPERIOR SERVICE",
         "fb_link": "https://www.facebook.com/TheCorporateUlaanbaatar"
       },
@@ -46,7 +46,7 @@
         "id": "sector-5",
         "title": "SHAMBHA-LA RESTAURANT & ",
         "subTitle": "TERRACE",
-        "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city&#39;s smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
+        "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city's smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
         "img": "/1.jpg",
         "background_image": ["/shambala/bg-slider-1.jpg", "/shambala/bg-slider-2.jpg", "/shambala/bg-slider-3.jpg"],
         "logo": "/logo/shambala.png",
@@ -199,8 +199,8 @@
         {
           "title": "CONFERENCE HALL & MEETING ROOM",
           "description": "Located on the 3rd floor, we have the perfect venue for all types of conferences and meetings coupled with our expertise to ensure your event is hosted seamlessly.\n\n",
-          "title1": "Tel:  976-88118569 \n976-11334411",
-          "title2": " OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n\n• DATA PROJECTOR \n\n• TRANSLATOR EQUIPMENT\n\n• MICROPHONE \n\n• HEAD-PHONE TRANSLATOR CABIN ",
+          "title1": "",
+          "title2": "OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS:\n   • HIGH SPEED INTERNET ACCESS \n   • DATA PROJECTOR \n   • TRANSLATOR EQUIPMENT\n   • MICROPHONE \n   • HEAD-PHONE TRANSLATOR CABIN ",
           "bg_img": ["/tuv/service/Conference-slider-1.jpg", "/tuv/service/Conference-slider-2.jpg"],
           "image": [
             { "url": "/tuv/service/Conference.jpg" },
@@ -210,9 +210,9 @@
         },
         {
           "title": "EVENT HALL",
-          "description": "Newly remodeled event hall features and event space ideal for high profile gatherings, networking, private parties,meetings, and celebrations. With a view of the city center from the 11th floor of the hotel, it&#39;s an ideal place to entertain,business net work, or to simply relax with friends. Accommodates up to 100 people depending on the arrangement. \n976-88118569 \n 976-11334411",
-          "title1": "Tel:  976-88118569 \n976-11334411",
-          "title2": " OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n\n• DATA PROJECTOR \n\n• TRANSLATOR EQUIPMENT\n\n• MICROPHONE \n\n• HEAD-PHONE TRANSLATOR CABIN ",
+          "description": "Newly remodeled event hall features and event space ideal for high profile gatherings, networking, private parties,meetings, and celebrations. With a view of the city center from the 11th floor of the hotel, it's an ideal place to entertain,business net work, or to simply relax with friends. Accommodates up to 100 people depending on the arrangement. \n976-88118569 \n 976-11334411",
+          "title1": "",
+          "title2": "OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \n   • HIGH SPEED INTERNET ACCESS \n   • DATA PROJECTOR \n   • TRANSLATOR EQUIPMENT\n   • MICROPHONE \n   • HEAD-PHONE TRANSLATOR CABIN ",
           "bg_img": [
             "/tuv/service/event-slider-1.jpg",
             "/tuv/service/event-slider-2.jpg",
@@ -227,7 +227,7 @@
         {
           "title": "CHAIRMAN RESTAURANTS",
           "description": "The Chairman Restaurant is a truly exceptional location for special events and occasions or your everyday dining experience. Our dedicated staff will cater to every guest and client’s needs paired with an exceptional service. ",
-          "title1": "Tel:  976-88118569\n976-11334411",
+          "title1": "",
           "title2": " We offer a wide array of Western and Asian cuisines with a sumptuous breakfast buffet every morning in an elegant, modern fine dining setting.\n ",
           "bg_img": [
             "/tuv/service/chairman-slider-1.jpg",
@@ -243,8 +243,8 @@
         {
           "title": "COFFEE SHOP",
           "description": "Conveniently located in the lobby of the hotel, guests have the convenience of starting their day or simply to lounge and enjoy a delicious cup of coffee or any of the various beverages that are offered in our coffee shop.",
-          "title1": "Tel:  976-88118569 \n976-11334411",
-          "title2": " OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: \nHIGH SPEED INTERNET ACCESS \n\n• DATA PROJECTOR \n\n• TRANSLATOR EQUIPMENT\n\n• MICROPHONE \n\n• HEAD-PHONE TRANSLATOR CABIN ",
+          "title1": "",
+          "title2": "",
           "bg_img": ["/tuv/service/Coffee-slider-1.jpg", "/tuv/service/Coffee-slider-2.jpg"],
           "image": [
             { "url": "/tuv/service/Coffee.jpg" },
@@ -256,7 +256,7 @@
           "title": "HEALTH CLUB",
           "description": "Located on the B1 floor of the Corporate Hotel, a newly equipped fitness center offers a variety of strength and resistance machines. Guests are accommodated with a shower,towels, and private lockers. ",
           "title1": "",
-          "title2": " Sauna\n ,Jacuzzi\n , Fitness Center\n,Spa\n ,Indoor ,Swimming pool",
+          "title2": "   • Sauna\n   • Jacuzzi\n   • Fitness Center\n   • Spa\n   • Indoor Swimming pool",
           "bg_img": [
             "/tuv/service/fitness-slider-1.webp",
             "/tuv/service/fitness-slider-2.jpg",
@@ -378,8 +378,8 @@
         {
           "title": "CONFERENCE HALL & MEETING ROOM",
           "description": "Our resort offers two Conference Halls with the state- of the art equipment for your private affairs and can be tailored to your needs. Both halls are equipped with high - definition projectors, wireless microphones, 4 channels of simultaneous translation  equipment, and high-speed internet access.",
-          "title1": "Tel: 976-7701-5555,976-8811-3601",
-          "title2": " We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n\n• DATA PROJECTOR \n\n• TRANSLATOR EQUIPMENT \n\n•  MICROPHONE \n\n• HEAD-PHONE TRANSLATOR CABIN \n",
+          "title1": "",
+          "title2": " We also offer a private meeting room for six people.\n OUR CONFERENCE HALLS AND MEETING ROOMS OFFER THE FOLLOWING EQUIPMENTS: HIGH SPEED INTERNET ACCESS \n   \n• DATA PROJECTOR \n   \n• TRANSLATOR EQUIPMENT \n   \n•  MICROPHONE \n   \n• HEAD-PHONE TRANSLATOR CABIN \n",
           "bg_img": ["/nukht/services/hall-slider-1.jpg", "/nukht/services/hall-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/hall1.jpg" },
@@ -392,7 +392,7 @@
         {
           "title": "CHAIRMAN RESTAURANTS",
           "description": "Spend your day in the beauty of nature savoring our selection of Western and Asian cuisines and an amazing selection from our breakfast buffet. Our restaurant provides each guests and locals with a great place to dine and entertain.",
-          "title1": "Tel: 976-7701-5555, 976-8811-3601",
+          "title1": "",
           "title2": "  This is a perfect  destination for you to enjoy our delicious coffee and food over breakfast, lunch, or  dinner. Escape from the hustle of the busy city to experience relaxation, fresh air, and a delicious meal or a cup of coffee with family, friends, and colleagues. ",
           "bg_img": [
             "/nukht/services/chairman-slider-1.jpg",
@@ -409,8 +409,8 @@
         {
           "title": "EVENT HALL & EVENT TERRACE",
           "description": "Your events could well become the most unforgettable experience in our amazing events hall. We ensure your special day run smoothly. Take advantage of our event terrace and event hall to plan your special day. ",
-          "title1": " \nAddress: Khan-Uul district-5, Bogd Khan National Reserve Ulaanbaatar, Mongolia \nTel: 976-7701-5555, 976-8811-3601, Fax: 976-11-334422 Web: www.corporatehotel.mn E-mail: mail@corporatehotel.mn",
-          "title2": "  We offer event spaces and rooms ideal  for meetings, celebrations, weddings, exhibitions and seminars. Our event hall can accommodate up to 280 people depending on seating arrangements.",
+          "title1": "",
+          "title2": "We offer event spaces and rooms ideal  for meetings, celebrations, weddings, exhibitions and seminars. Our event hall can accommodate up to 280 people depending on seating arrangements.",
           "bg_img": [
             "/nukht/services/event-slider-1.jpg",
             "/nukht/services/event-slider-2.jpg",
@@ -427,7 +427,7 @@
           "title": "FAMILY POOL",
           "description": "Our Health Club offers an amazing selection of options to elevate your getaway. Guests can relax and forget the stress of the busy city in one of our sauna, steam room, jacuzzi,or enjoy pampering at the spa. Our Fitness Centre and indoor swimming Pool will  satisfy your need to exercise and let loose. \nThe Nukht Resort offer our guests a number of amazing selections from the Recreational Centre. ",
           "title1": "",
-          "title2": "Guests may choose to spend their getaway at the outdoor garden,basketball court, snooker room, the karaoke, grill house. Our young guests also have the option of spending their time at the kids room.\nSauna & Jacuzzi \nFitness Center \nIndoor Swimming pool \nSpa",
+          "title2": "Guests may choose to spend their getaway at the outdoor garden,basketball court, snooker room, the karaoke, grill house. Our young guests also have the option of spending their time at the kids room.\n• Sauna & Jacuzzi \n• Fitness Center \n• Indoor Swimming pool \n• Spa",
           "bg_img": ["/nukht/services/pool-slider-1.jpg", "/nukht/services/pool-slider-2.jpg"],
           "image": [
             { "url": "/nukht/services/pool.jpg" },
@@ -600,9 +600,9 @@
       "facilities": [
         {
           "title": "CONCERT HALL",
-          "description": "The Corporate Hotel  Convention Centre is home to one of the most modern concert halls. With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
-          "title1": "For further information, please contact the front desk or call us Tel: 70002030 , 99108649",
-          "title2": "",
+          "description": "The Corporate Hotel  Convention Centre is home to one of the most modern concert halls.",
+          "title1": "",
+          "title2": "With capacity to seat 1012, our concert hall offers high-tech sound and lighting equipment and one of the most experienced technical staff to make it ideal place to organize any kind of events including ballet, cinema, opera, concerts, conferences, and movie openings. ",
           "bg_img": ["/service/convention/concert-slider-1.jpg", "/service/convention/concert-slider-2.jpg"],
           "image": [
             { "url": "/service/convention/concert.jpg" },
@@ -614,7 +614,7 @@
           "title": "EVENT HALL",
           "description": "With capacity to service up to 800 seating and 1200 standing, our event Hall at The Corporate Hotel is spacious and versatile. Ability to host from weddings and parties to large scale seminars, it is an outstanding facility with top notch services backed by our dedicated team of staff to meet any of our clients needs. ",
           "title1": "",
-          "title2": "Recommend Events: Wedding, Company functions ,Conferences and seminars Anniversary Celebrations ,Exhibitions , Product launches ,Fashion Show ,Parties  ",
+          "title2": "Recommend Events: \nWedding\nCompany functions \nConferences and seminars Anniversary Celebrations \nExhibitions \nProduct launches \nFashion Show \nParties",
           "bg_img": [
             "/service/convention/event-slider-1.jpg",
             "/service/convention/event-slider-2.jpg",
@@ -647,7 +647,7 @@
           "title": "CONFERENCE HALL & ROOMS",
           "description": "The Corporate Hotel conference facilities aim to provide top notch services to ensure our clients satisfaction. With a capacity for gatherings up to 150 persons, from high level board meetings to seminars can be comfortably accommodated in our conference halls.  ",
           "title1": "For further information, please contact the front desk or call us.",
-          "title2": "\n\n• Ulaanbaatar Conference Hall - 120 seating \n\n• Seoul Hall- 40 seating \n\n• Hong Kong Meeting Room- 25 seating \n\n• Tokyo Meeting Room- 15 seating ",
+          "title2": "\n   \n• Ulaanbaatar Conference Hall - 120 seating \n   \n• Seoul Hall- 40 seating \n   \n• Hong Kong Meeting Room- 25 seating \n   \n• Tokyo Meeting Room- 15 seating ",
           "bg_img": [
             "/service/convention/conference-slider-1.jpg",
             "/service/convention/conference-slider-2.jpg",
@@ -663,7 +663,7 @@
         {
           "title": "COFFEE LOUNGE",
           "description": "Start your day with an assortment of delicious hot and cold beverages, light snacks, lunch at our coffee shop located on the first floor of the hotel. ",
-          "title1": " Operating hours: Monday -Friday 8:00am -10:00 pm Saturday & Sunday 10:00am - 8:00 pm ",
+          "title1": "Operating hours: Monday -Friday 8:00am -10:00 pm Saturday & Sunday 10:00am - 8:00 pm ",
           "title2": "With its casual and relaxing atmosphere and comfortable seating, it's the perfect place to relax over a delicious cup of coffee or have a quick impromptu meeting.",
           "bg_img": [
             "/service/convention/coffe-slider-1.jpg",
@@ -679,7 +679,7 @@
         {
           "title": "CIGAR BAR",
           "description": "Perfectly located at the entrance of the hotel, the Lobby Bar offers wide selection of beers, cigars, craft cocktails and many more beverages. ",
-          "title1": "  Operating Hours: Monday-Friday 12:00 pm- 02:00 am Saturday and Sunday 06:00 pm -02:00am  ",
+          "title1": "Operating Hours: \nMonday-Friday 12:00pm-02:00am \nSaturday and Sunday 06:00pm-02:00am",
           "title2": "Wowing first arrivals with its modern design, elegant city photos and high ceiling bar, the Lobby Bar is an ideal place to relax and meet for drinks.",
           "bg_img": [
             "/service/convention/cigar-slider-1.jpg",
@@ -695,7 +695,7 @@
         {
           "title": "HEALTH CLUB",
           "description": " The Corporate Hotel offers an outstanding health club facility located on the 2 nd floor of the hotel. Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse. ",
-          "title1": " Please contact 70002030 for more information \n• Indoor swimming pool (complimentary for hotel guests) \n• Dry and steam sauna (complimentary for hotel guests) \n• Fitness room (complimentary for hotel guests) \n• Jacuzzi (complimentary for hotel guests) \n• Sand room (complimentary for hotel guests) \n• Yoga (rates apply) * Massage & Spa services (rates apply) \n• Personal fitness and swim instructor (rates apply) Operating hours: Monday - Friday 8:00 am - 10:00 pm Saturday  Sunday 10:00 am - 7:00 pm ",
+          "title1": " Please contact 70002030 for more information\n   • Indoor swimming pool (complimentary for hotel guests)\n   • Dry and steam sauna (complimentary for hotel guests)\n   • Fitness room (complimentary for hotel guests)\n   • Jacuzzi (complimentary for hotel guests)\n   • Sand room (complimentary for hotel guests)\n   • Yoga (rates apply) * Massage & Spa services (rates apply)\n   • Personal fitness and swim instructor (rates apply) \nOperating hours:\n   Monday-Friday 8:00am - 10:00pm\n   Saturday  Sunday 10:00am - 7:00pm ",
           "title2": "Our guests may enjoy a numerous selection of work out equipment to a relaxing massage by our trained masseuse.",
           "bg_img": [
             "/service/convention/club-slider-1.jpg",
@@ -743,7 +743,7 @@
         {
           "title": "CHAIRMAN RESTAURANTS",
           "description": "The hotel is home to the one of the finest restaurants in Ulaanbaatar. The Chairman restaurant is an excellent choice for all kinds of meetings. We invite you for delicious lunch during work day, spontaneous dinner with family, romantic evening with your loved ones. The high ceiling dining room with warm colored walls, widely spaced tables and friendly service offers a decidedly 21st century take on Western and Asian cuisines. Our team of dedicated workers will serve you with proud and show you top notch service. ",
-          "title1": "Operating Hours: Monday - Sunday 11:00 am - 12:00 pm",
+          "title1": "Operating Hours:\n Monday - Sunday 11:00 am - 12:00 pm",
           "title2": "The restaurant offers many vegetable dishes in the menu, making it convenient for vegetarians. Our regularly changing and extensive menu satisfy all tastes and is a good mixture of traditional and new dishes. The top- grade beef, fresh vegetables are carefully selected to create our delicious dishes accompanied by variety of specially made sauces. The Chairman Restaurant will delight you with an interplay of flavors that keeps you expectant and interested. ",
           "bg_img": ["/shambala/service/chairman-slider-2.jpg", "/shambala/service/chairman-slider-3.jpg"],
           "image": [
@@ -831,7 +831,7 @@
         "id": "sector-5",
         "title": "Корпорейт",
         "subTitle": "Шамбала",
-        "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city&#39;s smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
+        "desc": "Shambha-La Garden and Village branch is located 5 km from the center of Ulaanbaatar, on the slopes of Bogd Mountain, in a clean air zone away from the city's smoke and pollution. Surrounded by beautiful nature, Shambha La offers banquet and conference hall for up  to 40 people, restaurant that serves European and Mongolian foods for your dining  pleasure. There are 2 different VIP rooms, grill house with open fire is available. Spendyour day at football, basketball, tennis court and enjoy eco-wooden toys for small children, and a sandpit, swimming pool, fitness and sauna with your loved ones.",
         "img": "/1.jpg",
         "background_image": ["/shambala/bg-slider-1.jpg", "/shambala/bg-slider-2.jpg", "/shambala/bg-slider-3.jpg"],
         "logo": "/logo/shambala.png",
@@ -984,7 +984,7 @@
         {
           "title": "Хурлын өрөө",
           "description": "Уулзалт, хурал, сургалт зохион байгуулах зориулалт бүхий 12-100 хүний багтаамтай гурван өрөөтэй. Хамгийн сүүлийн үеийн тоног төхөөрөмжтэй, өндөр хурдны интернэттэй орчинд та хүссэн арга хэмжээгээ зохион байгуулах бүрэн боломжтой.",
-          "title1": "Tel:  976-88118569 \n976-11334411",
+          "title1": "",
           "title2": "Зохион байгуулж буй арга хэмжээндээ тохируулах өглөөний цай, өдрийн хоолоо сонгон үйлчлүүлээрэй.",
           "bg_img": ["/tuv/service/Conference-slider-1.jpg", "/tuv/service/Conference-slider-2.jpg"],
           "image": [
@@ -996,7 +996,7 @@
         {
           "title": "Хүлээн авалтын танхим",
           "description": "Монголын анхны сүлжээ зочид буудлын ууган, дөрвөн одтой манай салбарын 11 давхарт 100 хүний багтаамжтай хүлээн авалтын танхимтай. Лед дэлгэц бүхий хамгийн сүүлийн үеийн чанартай техник, тоног төхөөрөмжтэй.",
-          "title1": "Tel:  976-88118569 \n976-11334411",
+          "title1": "",
           "title2": "Хүссэн загвараараа тохижуулан, хамгийн сайхан дурсамжаа бидэнтэй хамтран бүтээгээрэй. Найдвартай харуул хамгаалалт бүхий 23 авто машины зогсоолтой.",
           "bg_img": [
             "/tuv/service/event-slider-1.jpg",
@@ -1012,7 +1012,7 @@
         {
           "title": "Chairman ресторан",
           "description": "Амт, чанар, өргөн сонголтоороо ялгардаг Chairman ресторанд мэргэжлийн өндөр ур чадвартай тогооч нар ажилладаг.Үйлчлүүлэгчийн хэрэгцээ, шаардлагыг эрхэмлэн ажилладаг хамт олон Европ болон Азийн олон төрлийн хоолыг технологийн шаардлагад нийцүүлэн амт, чанарыг дээдлэн та бүхэнд үйлчилж байна.",
-          "title1": "Tel:  976-88118569\n976-11334411",
+          "title1": "",
           "title2": "Амтат зоогоо тав тухтай тансаг орчинд  зооглон, найрсаг үйлчилгээг мэдрээрэй.",
           "bg_img": [
             "/tuv/service/chairman-slider-1.jpg",
@@ -1028,7 +1028,7 @@
         {
           "title": "Кофе шоп",
           "description": "Зорин ирсэн үйлчлүүлэгчиддээ цогц үйлчилгээг найрсагаар, чанарын өндөр түвшинд үзүүлдэгээрээ салбартаа танигдсан манай салбарын нэг давхарт  байрлах кофе шопоос та хүссэн кофе, амттанаа захиалан алжаалаа тайлаарай. ",
-          "title1": "Tel:  976-88118569 \n976-11334411",
+          "title1": "",
           "title2": "",
           "bg_img": ["/tuv/service/Coffee-slider-1.jpg", "/tuv/service/Coffee-slider-2.jpg"],
           "image": [
@@ -1177,7 +1177,7 @@
         {
           "title": "Chairman ресторан",
           "description": "SЕвроп болон ази хоолны сонголттой манай ресторан нь хамгийн чанартай, найдвартай бүтээгдэхүүнээр амтат зоог бэлтгэн зочиддоо үйлчилдэг. Мэргэжлийн өндөр ур чадвартай тогооч, найрсаг үйлчилгээг эрхэм болгодог хамт олон таныг угтан авах болно.",
-          "title1": "Tel: 976-7701-5555, 976-8811-3601",
+          "title1": "",
           "title2": ". Байгалийн үзэсгэлэнт газарт өдрийг өнгөрүүлэхээр ирсэн хүмүүс хүссэн хоолоо захиалан ая тухтай орчид амралт чөлөөт цагаа өнгөрөөдөг.",
           "bg_img": [
             "/nukht/services/chairman-slider-1.jpg",
@@ -1528,7 +1528,7 @@
         {
           "title": "Chairman ресторан",
           "description": "Богд уулын аманд байрлах Chairman ресторан нь  дээд зэрэглэлийн үхрийн мах, чанартай шинэ ногоог сонгож, төрөл бүрийн тусгайлан хийсэн сүмстэй амтат хоолыг үйлчлүүлэгчиддээ санал болгодог. ",
-          "title1": "Operating Hours: Monday - Sunday 11:00 am - 12:00 pm",
+          "title1": "Operating Hours:\n Monday - Sunday 11:00 am - 12:00 pm",
           "title2": ". Цэсэндээ ногоон  хоол санал болгодог бөгөөд энэ нь цагаан хоолтон хүмүүст илүү тохиромжтой. Үйлчлүүлэгчдийн эрэлт хэрэгцээнд тулгуурлан менюгээ тогтмол шинэчилж, чанартай хоол, сэтгэл ханамжтай үйлчилгээг эрхэмлэн ажилладаг.",
           "bg_img": ["/shambala/service/chairman-slider-2.jpg", "/shambala/service/chairman-slider-3.jpg"],
           "image": [
