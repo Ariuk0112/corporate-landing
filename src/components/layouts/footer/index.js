@@ -55,7 +55,7 @@ const Footer = ({ logo, address, mail, id }) => {
               >
                 <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                   <div className="text-[24px]">{locale == 'en' ? 'Sectors' : 'Салбарууд'}</div>
-                  <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
+                  <div className="flex-row mt-[10px] md:mt-[15px] uppercase text-[14px] md:text-[18px] text-[#CACACA]">
                     {sectors.map((sector, index) => (
                       <div key={`sector-${index}`}>
                         <Link className="mb-[11px]" href={`/sector/${sector.id}`}>
@@ -68,7 +68,7 @@ const Footer = ({ logo, address, mail, id }) => {
                 {MOCK_SECTOR.facilities && (
                   <div className="w-full flex-row pl-[20px] md:pl-[41px]">
                     <div className="text-[24px]">{locale == 'en' ? 'Service' : 'Үйлчилгээ'}</div>
-                    <div className="flex-row mt-[10px] md:mt-[15px] text-[14px] md:text-[18px] text-[#CACACA]">
+                    <div className="flex-row mt-[10px] md:mt-[15px] uppercase text-[14px] md:text-[18px] text-[#CACACA]">
                       {MOCK_SECTOR.facilities.map((facility, index) => (
                         <div key={index}>
                           <Link

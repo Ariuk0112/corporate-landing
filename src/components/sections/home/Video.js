@@ -37,7 +37,7 @@ const Video = () => {
             {locale == 'en' ? 'WELCOME TO THE CORPORATE HOTELS' : 'КОРПОРЕЙТЭД ТАВТАЙ МОРИЛ'}
             <p className=" text-[32px]"> </p>
             <p className="leading-none text-xl md:text-[32px] text-justify mx-auto ">
-              {locale == 'en' ? 'Superior service & Warm hospitality' : 'Тав тухтай орчин & төгс үйлчилгээ'}
+              {locale == 'en' ? 'Superior service & Warm hospitality' : 'Тав тухтай орчин & Төгс үйлчилгээ'}
             </p>
           </div>
         </div>

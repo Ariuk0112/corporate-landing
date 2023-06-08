@@ -59,7 +59,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
       </div>
       <Container>
         {currentFacility && (
-          <div className="w-full  flex flex-col text-white text-justify">
+          <div className="w-full  flex flex-col text-white text-justify font-Montserrat">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-[40px] md:mr-[80px] pb-10 md:pb-[120px]">
               <div>
                 <div className="h-46 md:h-[589px]">
@@ -89,8 +89,8 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                     <div className="w-[72px] border-[5px] border-solid border-[#B0985A]"></div>
                     <div className="mt-[24px]">
                       <div className="mb-[32px]">
-                        <p className="text-[40px] leading-none text-left">
-                          {locale == 'en' ? 'Feel Real Comfortable' : 'Жинхэнэ тав тухыг мэдэр'}{' '}
+                        <p className="text-[35px] leading-none text-left">
+                          {locale == 'en' ? 'Feel Real Comfortable' : 'Төгс үйлчилгээ , тав тухыг мэдэр'}{' '}
                         </p>
                       </div>
                       <div>
