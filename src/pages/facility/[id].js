@@ -68,7 +68,7 @@ const FacilityDetail = ({ id, sectorId, locale }) => {
                 <div className="h-46 md:h-[292px] mt-10 md:mt-[120px]">
                   <img className="h-full w-full" src={currentFacility.image[1].url} />
                 </div>
-                <div className="flex flex-col w-full text-right mt-10 md:mt-[76px] md:pl-[30px] justify-end items-end">
+                <div className="flex flex-col w-full text-left mt-10 md:mt-[76px] md:pl-[30px] justify-end items-end">
                   <div>
                     <div className="w-[72px] border-[5px] border-solid  border-[#B0985A]"></div>
                   </div>
