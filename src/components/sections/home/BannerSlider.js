@@ -81,7 +81,7 @@ const BannerSlider = () => {
               {locale == 'en' ? 'WELCOME TO THE CORPORATE' : 'КОРПОРЕЙТАД ТАВТАЙ МОРИЛ'}
             </h1>
             <h2 className="font-light text-xl md:text-2xl">
-              {locale == 'en' ? 'Superior service & Warm hospitality' : 'Тав тухтай орчин & төгс үйлчилгээ'}
+              {locale == 'en' ? 'Superior service & Warm hospitality' : 'Тав тухтай орчин & Төгс үйлчилгээ'}
             </h2>
           </div>
           <div className="w-full my-2">

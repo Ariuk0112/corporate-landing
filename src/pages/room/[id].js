@@ -138,14 +138,14 @@ export default function RoomDetail({ id, sectorId, locale }) {
               <div className="h-full w-full bg-[#00000099]">
                 <div className="p-5 md:p-[45px] md:pt-[100px] text-[#B58E3E]">
                   <div className="">
-                    <div className="text-2xl md:text-[80px] uppercase leading-none">{currentRoom.title}</div>
+                    <div className="text-2xl md:text-[50px] uppercase leading-none">{currentRoom.title}</div>
                     <div className="text-lg md:text-[24px] leading-none">{currentRoom.type}</div>
                   </div>
 
-                  <div className="mt-5 md:mt-[85px] flex flex-col md:flex-row gap-5 md:gap-[120px] text-xl md:text-[26px]">
+                  <div className="mt-5 md:mt-[85px] flex flex-col md:flex-row gap-5 md:gap-[100px] text-xl md:text-[26px]">
                     <div className="w-full">
                       <div className="overflow-y-auto overflow-x-hidden scrollbar-hide">
-                        <h5 className="uppercase">overview</h5>
+                        <h5 className="uppercase">{locale == 'en' ? 'overview' : 'ОНЦЛОГ '}</h5>
                         <div className="flex flex-col md:w-[200px] md:max-h-96">
                           <p className="text-white text-md">
                             {overview}
@@ -179,18 +179,18 @@ export default function RoomDetail({ id, sectorId, locale }) {
                       </div>
                     </div>
                     <div>
-                      <h5 className="uppercase">{currentRoom.size ? 'size' : ''}</h5>
+                      <h5 className="uppercase">{locale == 'en' ? 'size' : 'ХЭМЖЭЭ'}</h5>
                       <p className="text-white uppercase md:w-24">{currentRoom.size}</p>
                     </div>
                   </div>
                   <div className="mt-5 md:mt-[85px] flex gap-5 md:gap-[120px] text-xl md:text-[22px]">
                     <div>
-                      <h5 className="uppercase">room includes:</h5>
+                      <h5 className="uppercase">{locale == 'en' ? 'room includes:' : 'ДАВУУ ТАЛ:'}</h5>
                       <ul className="decoration-none font-Montserrat">
                         <li className="text-white room-list ">Wifi</li>
-                        <li className="text-white room-list">Health Club</li>
-                        <li className="text-white room-list">Breakfast Bufeet</li>
-                        <li className="text-white room-list">Vat 10%</li>
+                        <li className="text-white room-list">{locale == 'en' ? 'Health Club' : 'Фитнесс'}</li>
+                        <li className="text-white room-list">{locale == 'en' ? 'Breakfast Bufeet' : 'Өглөөний цай'}</li>
+                        <li className="text-white room-list">{locale == 'en' ? 'Vat 10%' : 'НӨАТ-10 хувь'}</li>
                       </ul>
                     </div>
                   </div>
